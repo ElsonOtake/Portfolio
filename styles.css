@@ -1,5 +1,6 @@
 * {
   font-family: 'Roboto', Helvetica, sans-serif;
+  border: 1px solid white;
 }
 
 body {
@@ -78,13 +79,13 @@ ul {
   flex-wrap: wrap;
   background-image: url(images/Ellipse\ 19.svg);
   background-repeat: no-repeat;
-  background-position: 390px 0;
+  background-position: 300px 0;
 }
 
 .qualif {
   display: flex;
   flex-direction: column;
-  width: 35%;
+  width: 30%;
   margin-left: 44px;
 }
 
@@ -109,7 +110,7 @@ ul {
   margin-left: 0;
   margin-right: 20px;
   gap: 20px;
-  padding-left: 118px;
+  padding-left: 68px;
 }
 
 hr {
@@ -127,4 +128,5 @@ hr {
 .line_2 {
   margin-left: 41px;
   margin-right: 58px;
+  margin-bottom: 50px;
 }
