@@ -200,6 +200,12 @@ hr {
   background-position: right center;
 }
 
+.ellipse_05 {
+  background-image: url(images/Ellipse\ 21.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
 .proj_txt {
   font-family: 'Inter', sans-serif;
   font-size: 20px;
