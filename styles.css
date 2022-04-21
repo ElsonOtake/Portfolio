@@ -31,11 +31,13 @@ a {
   text-decoration: none;
 }
 
-a:link, .company a:visited {
+a:link,
+a:visited {
   color: #fff;
 }
 
-a:hover, .company a:active {
+a:hover,
+a:active {
   color: #9490ff;
 }
 
@@ -308,7 +310,7 @@ button:hover {
   margin-top: 24px;
 }
 
-.contact_button  {
+.contact_button {
   width: fit-content;
   margin-top: 40px;
   margin-bottom: 71px;
