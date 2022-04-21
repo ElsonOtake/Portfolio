@@ -1,5 +1,6 @@
 * {
   font-family: 'Roboto', Helvetica, sans-serif;
+  border: 1px solid white;
 }
 
 
@@ -8,7 +9,7 @@ body {
   max-width: 100%;
   background-image: url(images/Ellipse\ 18.svg);
   background-repeat: no-repeat;
-  background-position: 0 47px;
+  background-position: 8px 40px;
 }
 
 ul {
@@ -71,7 +72,7 @@ ul {
   flex-wrap: wrap;
   background-image: url(images/Ellipse\ 19.svg);
   background-repeat: no-repeat;
-  background-position: 290px 0;
+  background-position: 390px 0;
 }
 
 .qualif {
@@ -99,9 +100,10 @@ ul {
 
 .links {
   display: flex;
-  justify-content: space-between;
-  margin-left: 98.51px;
-  margin-right: 97.5px;
+  margin-left: 0;
+  margin-right: 20px;
+  gap: 20px;
+  padding-left: 118px;
 }
 
 hr {
