@@ -259,3 +259,10 @@ hr {
 .proj_button:hover {
   background-color: #555;
 }
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  margin-right: 24px;
+}
