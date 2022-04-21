@@ -1,15 +1,27 @@
 * {
   font-family: 'Roboto', Helvetica, sans-serif;
+  border: 1px solid white;
 }
 
 body {
   background-color: #191765;
-  ;
 }
 
-header {
+#header_list {
   display: flex;
   justify-content: space-between;
   color: #FFFFFF;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+#company {
   font-size: 18px;
+  align-self: center;
+}
+
+#menu {
+  font-size: 24px;
 }
