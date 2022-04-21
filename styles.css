@@ -163,6 +163,10 @@ hr {
   color: #9490ff;
 }
 
+.themefff {
+  color: #fff;
+}
+
 .proj_sect {
   width: 327px;
   display: block;
@@ -178,7 +182,6 @@ hr {
 .proj_title {
   font-size: 32px;
   font-weight: 500;
-  color: #fff;
 }
 
 .proj_txt {
@@ -186,4 +189,24 @@ hr {
   font-size: 20px;
   font-weight: 400;
   color: #dcdce8;
+}
+
+.proj_group {
+  display: grid;
+  grid-template-columns: repeat(7, max-content);
+  justify-content: space-around;
+  margin-left: 24px;
+  margin-right: 24px;
+  align-items: center;
+}
+
+.proj_lang {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.vl {
+  border-left: 1px solid #555;
+  height: 40px;
 }
