@@ -19,7 +19,7 @@ ul {
 #header_list {
   display: flex;
   justify-content: space-between;
-  color: #FFFFFF;
+  color: #fff;
   align-items: center;
 }
 
@@ -41,9 +41,10 @@ ul {
   max-width: 327px;
   text-align: center;
 }
+
 #name {
   font-size: 48px;
-  color: #7D73FC;
+  color: #7d73fc;
   font-weight: 700;
   margin-bottom: 12px;
 }
@@ -51,14 +52,14 @@ ul {
 #position {
   font-size: 32px;
   font-weight: 500;
-  color: #EDECFF;
+  color: #edecff;
   margin-bottom: 40px;
 }
 
 #descr {
   font-size: 20px;
   font-weight: 400;
-  color: #C8C8D4;
+  color: #c8c8d4;
 }
 
 #qualif_group {
@@ -79,7 +80,7 @@ ul {
 .qualif_title {
   font-size: 12px;
   font-weight: 500;
-  color: #9490FF;
+  color: #9490ff;
   display: flex;
   flex-direction: column;
   margin-bottom: 24.5px;
@@ -88,7 +89,7 @@ ul {
 .qualif_item {
   font-size: 15px;
   font-weight: 400;
-  color: #F5F5FF;
+  color: #f5f5ff;
   margin-bottom: 19.11px;
 }
 
@@ -112,9 +113,6 @@ hr {
 }
 
 #line_2 {
-  margin-left: 41px; 
+  margin-left: 41px;
   margin-right: 58px;
 }
-
-
-
