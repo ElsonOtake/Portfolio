@@ -50,3 +50,28 @@ body {
   font-weight: 400;
   color: #C8C8D4;
 }
+
+#qualif {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.qualif_title {
+  font-size: 12px;
+  font-weight: 500;
+  color: #9490FF;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.qualif_item {
+  font-size: 15px;
+  font-weight: 400;
+  color: #F5F5FF;
+}
+
+.skills {
+  align-self: flex-start;
+}
