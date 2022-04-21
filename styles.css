@@ -21,3 +21,32 @@ body {
   font-size: 18px;
 }
 
+#presentation {
+  display: flex;
+  justify-content: center;
+}
+
+#pres {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 327px;
+  text-align: center;
+}
+#name {
+  font-size: 48px;
+  color: #7D73FC;
+  font-weight: 700;
+}
+
+#position {
+  font-size: 32px;
+  font-weight: 500;
+  color: #EDECFF;
+}
+
+#descr {
+  font-size: 20px;
+  font-weight: 400;
+  color: #C8C8D4;
+}
