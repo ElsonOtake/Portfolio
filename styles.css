@@ -1,14 +1,12 @@
 * {
   font-family: 'Roboto', Helvetica, sans-serif;
+  border: 10x solid white;
 }
 
 body {
   background-color: #191765;
   width: 375px;
   max-width: 100%;
-  background-image: url(images/Ellipse\ 18.svg);
-  background-repeat: no-repeat;
-  background-position: 8px 40px;
 }
 
 ul {
@@ -49,9 +47,12 @@ ul {
 
 .presentation {
   display: flex;
-  margin-left: 24px;
+  padding-left: 24px;
   margin-top: 60px;
   margin-right: 24px;
+  background-image: url(images/Ellipse\ 18.svg);
+  background-repeat: no-repeat;
+
 }
 
 .pres {
@@ -103,7 +104,6 @@ ul {
 .qualif_title {
   font-size: 12px;
   font-weight: 500;
-  color: #9490ff;
   display: flex;
   flex-direction: column;
   margin-bottom: 24.5px;
@@ -152,4 +152,13 @@ hr {
 .next_section {
   font-size: 20px;
   font-weight: 500;
+}
+
+.work {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.theme43 {
+  color: #9490ff;
 }
