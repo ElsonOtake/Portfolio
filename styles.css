@@ -30,6 +30,18 @@ ul {
   margin-top: 30px;
 }
 
+.company a {
+  text-decoration: none;
+}
+
+.company a:link, .company a:visited {
+  color: #fff;
+}
+
+.company a:hover, .company a:active {
+  color: #9490ff;
+}
+
 .menu {
   margin-right: 24px;
   margin-top: 30px;
