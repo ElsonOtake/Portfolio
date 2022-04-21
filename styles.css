@@ -1,6 +1,5 @@
 * {
   font-family: 'Roboto', Helvetica, sans-serif;
-  border: 1px solid white;
 }
 
 body {
@@ -129,4 +128,15 @@ hr {
   margin-left: 41px;
   margin-right: 58px;
   margin-bottom: 50px;
+}
+
+.next {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  color: #A2A3AE;
+}
+.next_section {
+  font-size: 20px;
+  font-weight: 500;
 }
