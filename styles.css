@@ -16,25 +16,25 @@ ul {
   padding: 0;
 }
 
-#header_list {
+.header_list {
   display: flex;
   justify-content: space-between;
   color: #fff;
   align-items: center;
 }
 
-#company {
+.company {
   font-size: 18px;
 }
 
-#presentation {
+.presentation {
   display: flex;
   margin-left: 24px;
   margin-top: 60px;
   margin-right: 24px;
 }
 
-#pres {
+.pres {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -42,27 +42,27 @@ ul {
   text-align: center;
 }
 
-#name {
+.name {
   font-size: 48px;
   color: #7d73fc;
   font-weight: 700;
   margin-bottom: 12px;
 }
 
-#position {
+.position {
   font-size: 32px;
   font-weight: 500;
   color: #edecff;
   margin-bottom: 40px;
 }
 
-#descr {
+.descr {
   font-size: 20px;
   font-weight: 400;
   color: #c8c8d4;
 }
 
-#qualif_group {
+.qualif_group {
   display: flex;
   flex-wrap: wrap;
   background-image: url(images/Ellipse\ 19.svg);
@@ -93,7 +93,7 @@ ul {
   margin-bottom: 19.11px;
 }
 
-#links {
+.links {
   display: flex;
   justify-content: space-between;
   margin-left: 98.51px;
@@ -107,12 +107,12 @@ hr {
   margin-bottom: 24px;
 }
 
-#line_1 {
+.line_1 {
   margin-left: 33px;
   margin-right: 37.33px;
 }
 
-#line_2 {
+.line_2 {
   margin-left: 41px;
   margin-right: 58px;
 }
