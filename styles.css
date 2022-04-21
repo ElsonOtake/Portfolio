@@ -207,6 +207,8 @@ hr {
 }
 
 .ellipse_06 {
+  display: grid;
+  grid-template-columns: auto;
   background-image: url(images/Ellipse\ 22.svg);
   background-repeat: no-repeat;
   background-position: right center;
@@ -220,8 +222,7 @@ hr {
 }
 
 .proj_group {
-  display: grid;
-  grid-template-columns: repeat(7, max-content);
+  display: flex;
   justify-content: space-around;
   margin-left: 24px;
   margin-right: 24px;
