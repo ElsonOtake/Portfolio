@@ -126,19 +126,17 @@ ul {
 hr {
   size: 1px;
   color: #646369;
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
-
-.line_1 {
-  margin-left: 33px;
-  margin-right: 37.33px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .line_2 {
-  margin-left: 41px;
-  margin-right: 58px;
   margin-bottom: 50px;
+}
+
+.line_3 {
+  margin-top: 33px;
+  margin-bottom: 48px;
 }
 
 .next {
@@ -163,4 +161,12 @@ hr {
 
 .theme43 {
   color: #9490ff;
+}
+
+.img_project {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 327px;
+  height: auto;
 }
