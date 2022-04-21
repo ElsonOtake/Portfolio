@@ -5,6 +5,7 @@
 
 body {
   background-color: #191765;
+  max-width: 375px;
 }
 
 #header_list {
@@ -23,7 +24,9 @@ body {
 
 #presentation {
   display: flex;
-  justify-content: center;
+  margin-left: 24px;
+  margin-top: 60px;
+  margin-right: 24px;
 }
 
 #pres {
@@ -37,12 +40,14 @@ body {
   font-size: 48px;
   color: #7D73FC;
   font-weight: 700;
+  margin-bottom: 12px;
 }
 
 #position {
   font-size: 32px;
   font-weight: 500;
   color: #EDECFF;
+  margin-bottom: 40px;
 }
 
 #descr {
@@ -64,15 +69,23 @@ body {
   display: flex;
   flex-direction: column;
   width: 40%;
+  margin-bottom: 24.5px;
 }
 
 .qualif_item {
   font-size: 15px;
   font-weight: 400;
   color: #F5F5FF;
+  margin-bottom: 19.11px;
 }
 
 #links {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-left: 98.51px;
+  margin-right: 97.5px;
+}
+
+.line {
+  margin: 33px 24px 37.33px;
 }
