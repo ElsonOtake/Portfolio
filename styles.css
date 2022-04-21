@@ -188,21 +188,24 @@ hr {
   font-weight: 500;
 }
 
+.project {
+  display: grid;
+  grid-template-columns: auto;
+  background-repeat: no-repeat;
+}
+
 .ellipse_03 {
   background-image: url(images/new_Ellipse\ 19.svg);
-  background-repeat: no-repeat;
   background-position: left center;
 }
 
 .ellipse_04 {
   background-image: url(images/Ellipse\ 20.svg);
-  background-repeat: no-repeat;
   background-position: right center;
 }
 
 .ellipse_05 {
   background-image: url(images/Ellipse\ 21.svg);
-  background-repeat: no-repeat;
   background-position: left center;
 }
 
