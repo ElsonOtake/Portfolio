@@ -2,9 +2,9 @@
   font-family: 'Roboto', Helvetica, sans-serif;
 }
 
-
 body {
   background-color: #191765;
+  width: 375px;
   max-width: 100%;
   background-image: url(images/Ellipse\ 18.svg);
   background-repeat: no-repeat;
