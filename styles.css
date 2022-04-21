@@ -72,6 +72,7 @@ body {
   color: #F5F5FF;
 }
 
-.skills {
-  align-self: flex-start;
+#links {
+  display: flex;
+  justify-content: space-around;
 }
