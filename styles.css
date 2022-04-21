@@ -28,15 +28,15 @@ ul {
   margin-top: 30px;
 }
 
-.company a {
+a {
   text-decoration: none;
 }
 
-.company a:link, .company a:visited {
+a:link, .company a:visited {
   color: #fff;
 }
 
-.company a:hover, .company a:active {
+a:hover, .company a:active {
   color: #9490ff;
 }
 
