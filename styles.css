@@ -194,6 +194,12 @@ hr {
   background-position: left center;
 }
 
+.ellipse_04 {
+  background-image: url(images/Ellipse\ 20.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
 .proj_txt {
   font-family: 'Inter', sans-serif;
   font-size: 20px;
