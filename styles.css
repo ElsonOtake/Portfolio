@@ -1,11 +1,13 @@
 * {
   font-family: 'Roboto', Helvetica, sans-serif;
-  border: 1px solid white;
 }
 
 body {
   background-color: #191765;
   max-width: 375px;
+  background-image: url(images/Ellipse\ 18.svg);
+  background-repeat: no-repeat;
+  background-position: 0 47px;
 }
 
 ul {
@@ -62,6 +64,9 @@ ul {
 #qualif_group {
   display: flex;
   flex-wrap: wrap;
+  background-image: url(images/Ellipse\ 19.svg);
+  background-repeat: no-repeat;
+  background-position: 290px 0;
 }
 
 .qualif {
@@ -110,4 +115,6 @@ hr {
   margin-left: 41px; 
   margin-right: 58px;
 }
+
+
 
