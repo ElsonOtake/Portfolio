@@ -1,6 +1,5 @@
 * {
   font-family: 'Roboto', Helvetica, sans-serif;
-  border: 10x solid white;
 }
 
 body {
@@ -243,7 +242,7 @@ hr {
   height: 40px;
 }
 
-.proj_button {
+button {
   padding: 12px;
   background-color: #7d73fc;
   border: none;
@@ -251,13 +250,16 @@ hr {
   font-weight: 500;
   text-align: center;
   text-decoration: none;
-  margin-top: 24px;
-  margin-left: 24px;
   transition-duration: 0.4s;
 }
 
-.proj_button:hover {
+button:hover {
   background-color: #555;
+}
+
+.proj_button {
+  margin-top: 24px;
+  margin-left: 24px;
 }
 
 .contact {
@@ -265,4 +267,72 @@ hr {
   flex-direction: column;
   margin-left: 24px;
   margin-right: 24px;
+  text-align: center;
+}
+
+.contact_title {
+  font-size: 32px;
+  font-weight: 500;
+  color: #9390ff;
+  margin-top: 120px;
+}
+
+.contact_text {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  color: #f5f5ff;
+  margin-top: 24px;
+}
+
+.input_text {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  color: #81818c;
+  margin-top: 40px;
+  height: 48px;
+}
+
+.input_email {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  color: #191765;
+  margin-top: 24px;
+  height: 48px;
+}
+
+.input_msg {
+  height: 148px;
+  margin-top: 24px;
+}
+
+.contact_button  {
+  width: fit-content;
+  margin-top: 40px;
+  margin-bottom: 71px;
+  align-self: center;
+}
+
+.contact_row {
+  margin-left: 0;
+  margin-bottom: 25px;
+  width: 100%;
+  color: #3a3837;
+}
+
+.contact_links {
+  display: flex;
+  margin-left: 45px;
+  margin-right: 45px;
+  gap: 25px;
+}
+
+.email {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ebebff;
+  text-align: center;
+  margin: 0;
 }
