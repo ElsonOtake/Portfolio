@@ -51,8 +51,6 @@ a:active {
   padding-left: 24px;
   margin-top: 60px;
   margin-right: 24px;
-  background-image: url(images/Ellipse\ 18.svg);
-  background-repeat: no-repeat;
 }
 
 .pres {
@@ -89,9 +87,6 @@ a:active {
 .qualif_group {
   display: flex;
   flex-wrap: wrap;
-  background-image: url(images/Ellipse\ 19.svg);
-  background-repeat: no-repeat;
-  background-position: 300px 0;
 }
 
 .qualif {
@@ -193,6 +188,18 @@ hr {
 .proj_title {
   font-size: 32px;
   font-weight: 500;
+}
+
+.ellipse_01 {
+  background-image: url(images/Ellipse\ 18.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.ellipse_02 {
+  background-image: url(images/Ellipse\ 19.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 
 .ellipse_03 {
