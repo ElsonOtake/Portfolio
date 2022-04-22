@@ -1,6 +1,5 @@
 * {
   font-family: 'Roboto', Helvetica, sans-serif;
-  border: 1px solid white;
 }
 
 body {
@@ -13,18 +12,6 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-.header_list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.company {
-  font-size: 18px;
-  margin-left: 24px;
-  margin-top: 30px;
 }
 
 a {
@@ -41,81 +28,29 @@ a:active {
   color: #9490ff;
 }
 
-.menu {
-  margin-right: 24px;
-  margin-top: 30px;
-}
-
-.presentation {
-  display: flex;
-  padding-left: 24px;
-  margin-top: 60px;
-  margin-right: 24px;
-}
-
-.pres {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-}
-
-.name {
-  font-size: 48px;
-  color: #7d73fc;
-  font-weight: 700;
-  margin: 0 auto;
-}
-
-.position {
-  font-size: 32px;
-  font-weight: 500;
-  margin: 0 auto;
-  padding: 30px 0;
-}
-
-.descr {
-  font-size: 20px;
-  font-weight: 400;
-  color: #c8c8d4;
-  text-align: center;
-  margin-top: 40px;
-  width: auto;
-}
-
-.qualif_group {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.qualif {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  margin-left: 44px;
-}
-
-.qualif_title {
+button {
+  padding: 12px;
+  background-color: #7d73fc;
+  border: none;
   font-size: 12px;
   font-weight: 500;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 24.5px;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.4s;
 }
 
-.qualif_item {
-  font-size: 15px;
-  font-weight: 400;
-  color: #f5f5ff;
-  margin-bottom: 19.11px;
+button:hover {
+  color: #fff;
 }
 
-.links {
-  display: flex;
-  margin-left: 0;
-  margin-right: 20px;
-  gap: 20px;
-  padding-left: 68px;
+button:active {
+  background-color: #5e42d7;
+  color: #eaeaf6;
+}
+
+button:disabled {
+  background-color: #2a2b33;
+  color: #c8c8d4;
 }
 
 hr {
@@ -124,29 +59,16 @@ hr {
   margin-right: 24px;
 }
 
-.line_2 {
-  margin-bottom: 50px;
+.fw400 {
+  font-weight: 400;
 }
 
-.next {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 80px;
-  color: #a2a3ae;
-}
-
-.next_section {
-  font-size: 20px;
+.fw500 {
   font-weight: 500;
 }
 
-.work {
-  font-size: 40px;
-  font-weight: 500;
-  margin-left: 24px;
-  margin-top: 30px;
-  margin-right: 24px;
+.ffinter {
+  font-family: 'Inter', 'Roboto', sans-serif;
 }
 
 .theme43 {
@@ -161,29 +83,10 @@ hr {
   color: #fff;
 }
 
-.project {
-  display: grid;
-  grid-template-columns: auto;
-  background-repeat: no-repeat;
-  margin-top: 40px;
-}
-
-.proj {
-  width: 327px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 48px;
-}
-
-.proj_img {
-  width: 100%;
-  height: auto;
-}
-
-.proj_title {
-  font-size: 32px;
-  font-weight: 500;
+.header_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .ellipse_01 {
@@ -222,10 +125,135 @@ hr {
   background-position: right center;
 }
 
-.proj_txt {
-  font-family: 'Inter', 'Roboto', sans-serif;
+.company {
+  font-size: 18px;
+  margin-left: 24px;
+  margin-top: 30px;
+}
+
+.menu {
+  margin-right: 24px;
+  margin-top: 30px;
+}
+
+.presentation {
+  display: flex;
+  padding-left: 24px;
+  margin-top: 60px;
+  margin-right: 24px;
+}
+
+.pres {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.name {
+  font-size: 48px;
+  color: #7d73fc;
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+.position {
+  font-size: 32px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.descr {
   font-size: 20px;
-  font-weight: 400;
+  color: #c8c8d4;
+  text-align: center;
+  margin-top: 40px;
+  width: auto;
+}
+
+.qualif_group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.qualif {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-left: 44px;
+}
+
+.qualif_title {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.qualif_item {
+  font-size: 15px;
+  color: #f5f5ff;
+  margin-bottom: 19px;
+}
+
+.links {
+  display: flex;
+  margin-left: 0;
+  margin-right: 20px;
+  gap: 20px;
+  padding-left: 68px;
+}
+
+.line_2 {
+  margin-bottom: 50px;
+}
+
+.next {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  color: #a2a3ae;
+  align-items: center;
+}
+
+.next_section {
+  font-size: 20px;
+}
+
+.work {
+  font-size: 40px;
+  margin-left: 24px;
+  margin-top: 30px;
+  margin-right: 24px;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: auto;
+  background-repeat: no-repeat;
+  margin-top: 40px;
+}
+
+.proj {
+  width: 327px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 48px;
+}
+
+.proj_img {
+  width: 100%;
+  height: auto;
+}
+
+.proj_title {
+  font-size: 32px;
+}
+
+.proj_txt {
+  font-size: 20px;
   color: #dcdce8;
 }
 
@@ -236,39 +264,12 @@ hr {
 }
 
 .proj_lang {
-  font-family: 'Inter', 'Roboto', sans-serif;
   font-size: 15px;
-  font-weight: 500;
 }
 
 .vl {
   border-left: 1px solid #555;
   height: 40px;
-}
-
-button {
-  padding: 12px;
-  background-color: #7d73fc;
-  border: none;
-  font-size: 12px;
-  font-weight: 500;
-  text-align: center;
-  text-decoration: none;
-  transition-duration: 0.4s;
-}
-
-button:hover {
-  color: #fff;
-}
-
-button:active {
-  background-color: #5e42d7;
-  color: #eaeaf6;
-}
-
-button:disabled {
-  background-color: #2a2b33;
-  color: #c8c8d4;
 }
 
 .proj_button {
@@ -286,23 +287,18 @@ button:disabled {
 
 .contact_title {
   font-size: 32px;
-  font-weight: 500;
   color: #9390ff;
   margin-top: 120px;
 }
 
 .contact_text {
   font-size: 16px;
-  font-weight: 400;
-  font-family: 'Inter', 'Roboto', sans-serif;
   color: #f5f5ff;
   margin-top: 24px;
 }
 
 .input_text {
   font-size: 15px;
-  font-weight: 400;
-  font-family: 'Inter', 'Roboto', sans-serif;
   color: #81818c;
   margin-top: 40px;
   height: 48px;
@@ -310,8 +306,6 @@ button:disabled {
 
 .input_email {
   font-size: 15px;
-  font-weight: 400;
-  font-family: 'Inter', sans-serif;
   color: #191765;
   margin-top: 24px;
   height: 48px;
@@ -345,7 +339,6 @@ button:disabled {
 
 .email {
   font-size: 20px;
-  font-weight: 400;
   color: #ebebff;
   text-align: center;
   margin: 0;
