@@ -1,5 +1,6 @@
 * {
   font-family: 'Roboto', Helvetica, sans-serif;
+  border: 1px solid white;
 }
 
 body {
@@ -120,8 +121,7 @@ a:active {
 }
 
 hr {
-  size: 1px;
-  color: #646369;
+  border: 1px solid #646369;
   margin-left: 24px;
   margin-right: 24px;
 }
@@ -355,4 +355,11 @@ button:disabled {
   color: #ebebff;
   text-align: center;
   margin: 0;
+}
+
+.contact_end_row {
+  border: 5px solid black;
+  border-radius: 5px;
+  width: 125px;
+  margin: 27px 120px;
 }
