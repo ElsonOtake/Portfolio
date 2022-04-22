@@ -255,7 +255,17 @@ button {
 }
 
 button:hover {
-  background-color: #555;
+  color: #fff;
+}
+
+button:active {
+  background-color: #5e42d7;
+  color: #eaeaf6;
+}
+
+button:disabled {
+  background-color: #2a2b33;
+  color: #c8c8d4;
 }
 
 .proj_button {
