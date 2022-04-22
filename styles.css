@@ -130,10 +130,6 @@ hr {
   margin-bottom: 50px;
 }
 
-.line_3 {
-  margin-top: 33px;
-}
-
 .next {
   display: flex;
   justify-content: center;
@@ -206,22 +202,23 @@ hr {
 
 .ellipse_03 {
   background-image: url(images/new_Ellipse\ 19.svg);
+  background-repeat: no-repeat;
   background-position: left center;
 }
 
 .ellipse_04 {
   background-image: url(images/Ellipse\ 20.svg);
+  background-repeat: no-repeat;
   background-position: right center;
 }
 
 .ellipse_05 {
   background-image: url(images/Ellipse\ 21.svg);
+  background-repeat: no-repeat;
   background-position: left center;
 }
 
 .ellipse_06 {
-  display: grid;
-  grid-template-columns: auto;
   background-image: url(images/Ellipse\ 22.svg);
   background-repeat: no-repeat;
   background-position: right center;
