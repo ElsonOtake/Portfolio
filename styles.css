@@ -1,5 +1,6 @@
 * {
   font-family: 'Roboto', Helvetica, sans-serif;
+  border: 1px solid white;
 }
 
 body {
@@ -228,8 +229,6 @@ hr {
 .proj_group {
   display: flex;
   justify-content: space-around;
-  margin-left: 24px;
-  margin-right: 24px;
   align-items: center;
 }
 
@@ -261,7 +260,6 @@ button:hover {
 
 .proj_button {
   margin-top: 24px;
-  margin-left: 24px;
 }
 
 .contact {
