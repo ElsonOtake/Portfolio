@@ -1,6 +1,5 @@
 * {
   font-family: 'Roboto', Helvetica, sans-serif;
-  border: 1px solid white;
 }
 
 body {
@@ -172,7 +171,13 @@ hr {
   color: #fff;
 }
 
-.proj_sect {
+.project {
+  display: grid;
+  grid-template-columns: auto;
+  background-repeat: no-repeat;
+}
+
+.proj {
   width: 327px;
   display: block;
   margin-left: auto;
@@ -188,12 +193,6 @@ hr {
 .proj_title {
   font-size: 32px;
   font-weight: 500;
-}
-
-.project {
-  display: grid;
-  grid-template-columns: auto;
-  background-repeat: no-repeat;
 }
 
 .ellipse_03 {
