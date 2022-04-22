@@ -138,6 +138,7 @@ hr {
   display: flex;
   justify-content: center;
   margin-top: 30px;
+  margin-bottom: 80px;
   color: #a2a3ae;
 }
 
@@ -170,6 +171,7 @@ hr {
   display: grid;
   grid-template-columns: auto;
   background-repeat: no-repeat;
+  margin-top: 40px;
 }
 
 .proj {
@@ -282,6 +284,7 @@ button:disabled {
   display: flex;
   flex-direction: column;
   margin-left: 24px;
+  margin-top: 120px;
   margin-right: 24px;
   text-align: center;
 }
