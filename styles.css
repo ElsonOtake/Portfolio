@@ -1,5 +1,6 @@
 * {
   font-family: 'Roboto', Helvetica, sans-serif;
+  font-style: normal;
 }
 
 body {
@@ -150,44 +151,52 @@ hr {
 
 .presentation {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   padding-left: 24px;
   margin-top: 60px;
   margin-right: 24px;
-}
-
-.pres {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
 }
 
 .name {
   width: 327px;
   height: 55px;
   font-size: 48px;
-  font-style: normal;
   color: #7d73fc;
   font-weight: 700;
   line-height: 72px;
   letter-spacing: 0.37px;
   flex: none;
+  order: 0;
   flex-grow: 0;
-  margin: 12px 0;
+  margin: 12px 0px;
 }
 
 .position {
+  width: 327px;
+  height: 87px;
   font-size: 32px;
-  margin: 0 auto;
-  padding: 30px 0;
+  line-height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 12px 0px;
 }
 
 .descr {
+  width: 327px;
+  height: 170px;
   font-size: 20px;
+  line-height: 28px;
   color: #c8c8d4;
-  text-align: center;
-  margin-top: 40px;
-  width: auto;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 24px 0px;
 }
 
 .qualif_group {
