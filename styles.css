@@ -42,7 +42,7 @@ button {
 
 button:hover {
   color: #fff;
-  box-shadow: 0px 8px 16px #7d73fc7a;
+  box-shadow: 0 8px 16px #7d73fc7a;
 }
 
 button:active {
@@ -129,7 +129,7 @@ hr {
   justify-content: space-between;
   align-items: center;
   width: 327px;
-  margin: 30px 24px 0px;
+  margin: 30px 24px 0;
 }
 
 .company {
@@ -142,7 +142,7 @@ hr {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0px 0px;
+  margin: 0 0;
 }
 
 .menu {
@@ -156,7 +156,7 @@ hr {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 60px 0px 28px;
+  padding: 60px 0 28px;
 }
 
 .name {
@@ -170,7 +170,7 @@ hr {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 12px 0px;
+  margin: 12px 0;
 }
 
 .position {
@@ -184,7 +184,7 @@ hr {
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 12px 0px;
+  margin: 12px 0;
 }
 
 .qualification {
@@ -193,7 +193,7 @@ hr {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0px 0px;
+  margin: 0 0;
 }
 
 .descr {
@@ -213,7 +213,7 @@ hr {
   flex-wrap: wrap;
   align-items: flex-start;
   width: 327px;
-  margin: 30px 0px;
+  margin: 30px 0;
 }
 
 .qualif_group {
@@ -228,7 +228,7 @@ hr {
   font-size: 12px;
   display: flex;
   flex-direction: column;
-  line-height: 24px;  
+  line-height: 24px;
   align-items: flex-start;
   width: 50%;
   height: 16px;
@@ -236,7 +236,7 @@ hr {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 10px 0px;
+  margin: 10px 0;
 }
 
 .qualif_title.language {
@@ -260,11 +260,11 @@ hr {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 10px 0px;
+  margin: 10px 0;
 }
 
 .links {
-  margin: 58px 0px;
+  margin: 58px 0;
 }
 
 .links_group {
@@ -288,7 +288,7 @@ hr {
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 0px 12px;
+  margin: 0 12px;
 }
 
 .work_title {
@@ -306,7 +306,7 @@ hr {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0px 0px 33px;
+  margin: 0 0 33px;
 }
 
 .project {
@@ -317,9 +317,8 @@ hr {
   display: grid;
   grid-template-columns: auto;
   align-items: center;
-  margin: 48px 0px 0px;
   width: 327px;
-  margin: 40px 24px 0px;
+  margin: 40px 24px 0;
 }
 
 .proj_img {
@@ -341,7 +340,7 @@ hr {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 24px 0px;
+  margin: 24px 0;
 }
 
 .proj_txt {
@@ -353,7 +352,7 @@ hr {
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 24px 0px;
+  margin: 24px 0;
 }
 
 .proj_group {
@@ -371,7 +370,7 @@ hr {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0px 0px;
+  margin: 0 0;
 }
 
 .vl {
@@ -380,7 +379,6 @@ hr {
 }
 
 .proj_button {
-  margin-top: 24px;
   line-height: 24px;
   display: flex;
   align-items: center;
@@ -389,7 +387,7 @@ hr {
   flex: none;
   order: 3;
   flex-grow: 0;
-  margin: 24px 0px 0px;
+  margin: 24px 0 0;
   padding: 12px;
   width: fit-content;
 }
@@ -404,7 +402,7 @@ hr {
   display: flex;
   flex-direction: column;
   width: 327px;
-  margin: 120px 24px 0px;
+  margin: 120px 24px 0;
 }
 
 .contact_us {
@@ -425,7 +423,7 @@ hr {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0px 0px;
+  margin: 0 0;
 }
 
 .contact_text {
@@ -435,7 +433,7 @@ hr {
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 24px 0px 0px;
+  margin: 24px 0 0;
 }
 
 .input_text {
@@ -457,7 +455,7 @@ hr {
   display: flex;
   align-items: center;
   background: #f7f3ff;
-  border: 1px solid #9490FF;
+  border: 1px solid #9490ff;
   box-sizing: border-box;
 }
 
@@ -475,7 +473,7 @@ hr {
 }
 
 .contact_row {
-  margin: 0px 0px 25px;
+  margin: 0 0 25px;
   width: 100%;
   color: #3a3837;
 }
