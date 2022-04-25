@@ -58,7 +58,10 @@ button:disabled {
 
 hr {
   border: 1px solid #646369;
-  max-width: 100%;
+  width: 327px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .fw400 {
@@ -71,6 +74,7 @@ hr {
 
 .ffinter {
   font-family: 'Inter', 'Roboto', sans-serif;
+  font-style: normal;
 }
 
 .theme43 {
@@ -204,13 +208,6 @@ hr {
   flex-grow: 0;
 }
 
-.line_1 {
-  width: 327px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
 .qualif_table {
   display: flex;
   justify-content: flex-start;
@@ -267,13 +264,6 @@ hr {
   margin: 10px 0px;
 }
 
-.line_2 {
-  width: 327px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
 .links {
   margin: 58px 0px;
 }
@@ -302,50 +292,87 @@ hr {
   margin: 0px 12px;
 }
 
-.work {
+.work_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recent_work {
   font-size: 40px;
-  margin-left: 24px;
-  margin-top: 30px;
-  margin-right: 24px;
+  width: 327px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0px 33px;
 }
 
 .project {
-  display: grid;
-  grid-template-columns: auto;
   background-repeat: no-repeat;
-  margin-top: 40px;
+  width: 327px;
+  margin: 40px 24px 0px;
 }
 
 .proj {
-  width: 327px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 48px;
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  margin: 48px 0px 0px;
 }
 
 .proj_img {
   width: 100%;
   height: auto;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .proj_title {
   font-size: 32px;
+  align-self: flex-start;
+  width: 327px;
+  height: 105px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 24px 0px;
 }
 
 .proj_txt {
   font-size: 20px;
   color: #dcdce8;
+  width: 327px;
+  height: 204px;
+  line-height: 28px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 24px 0px;
 }
 
 .proj_group {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }
 
 .proj_lang {
   font-size: 15px;
+  line-height: 20px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0px;
 }
 
 .vl {
@@ -355,6 +382,17 @@ hr {
 
 .proj_button {
   margin-top: 24px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  margin: 24px 0px 0px;
+  padding: 12px;
+  width: fit-content;
 }
 
 .contact {
