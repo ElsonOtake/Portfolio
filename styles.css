@@ -1,7 +1,6 @@
 * {
   font-family: 'Roboto', Helvetica, sans-serif;
   font-style: normal;
-  border: 1px solid white;
 }
 
 body {
@@ -398,22 +397,45 @@ hr {
 .contact {
   display: flex;
   flex-direction: column;
-  margin-left: 24px;
-  margin-top: 120px;
-  margin-right: 24px;
+  width: 100%;
+}
+
+.contact_group {
+  display: flex;
+  flex-direction: column;
+  width: 327px;
+  margin: 120px 24px 0px;
+}
+
+.contact_us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
 .contact_title {
   font-size: 32px;
   color: #9390ff;
-  margin-top: 120px;
+  height: 35px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0px;
 }
 
 .contact_text {
   font-size: 16px;
   color: #f5f5ff;
-  margin-top: 24px;
+  line-height: 24px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 24px 0px 0px;
 }
 
 .input_text {
@@ -421,6 +443,9 @@ hr {
   color: #81818c;
   margin-top: 40px;
   height: 48px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
 }
 
 .input_email {
@@ -428,11 +453,18 @@ hr {
   color: #191765;
   margin-top: 24px;
   height: 48px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  background: #f7f3ff;
+  border: 1px solid #9490FF;
+  box-sizing: border-box;
 }
 
 .input_msg {
   height: 148px;
   margin-top: 24px;
+  line-height: 24px;
 }
 
 .contact_button {
@@ -443,28 +475,20 @@ hr {
 }
 
 .contact_row {
-  margin-left: 0;
-  margin-bottom: 25px;
+  margin: 0px 0px 25px;
   width: 100%;
   color: #3a3837;
-}
-
-.contact_links {
-  display: flex;
-  margin-left: 45px;
-  margin-right: 45px;
-  gap: 25px;
 }
 
 .email {
   font-size: 20px;
   color: #ebebff;
   text-align: center;
-  margin: 0;
+  line-height: 28px;
 }
 
 .contact_end_row {
-  border: 5px solid black;
+  border: 2px solid black;
   border-radius: 5px;
   width: 125px;
   margin: 27px 120px;
