@@ -311,8 +311,6 @@ hr {
 
 .project {
   background-repeat: no-repeat;
-  width: 327px;
-  margin: 40px 24px 0px;
 }
 
 .proj {
@@ -320,6 +318,8 @@ hr {
   grid-template-columns: auto;
   align-items: center;
   margin: 48px 0px 0px;
+  width: 327px;
+  margin: 40px 24px 0px;
 }
 
 .proj_img {
