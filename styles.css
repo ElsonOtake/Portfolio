@@ -63,6 +63,11 @@ hr {
   flex-grow: 0;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+}
+
 .fw400 {
   font-weight: 400;
 }
