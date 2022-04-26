@@ -468,6 +468,7 @@ form {
   height: 148px;
   margin-top: 24px;
   line-height: 24px;
+  resize: none;
 }
 
 .contact_button {
