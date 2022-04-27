@@ -3,7 +3,7 @@
   padding: 0;
   font-family: 'Roboto', Helvetica, sans-serif;
   font-style: normal;
-
+  border: 1px solid white;
 }
 
 body {
@@ -394,7 +394,6 @@ form {
   order: 3;
   flex-grow: 0;
   margin: 24px 0 0;
-  padding: 12px;
   width: fit-content;
 }
 
@@ -533,6 +532,7 @@ form {
   
   hr {
     width: 100%;
+    margin: auto;
   }
 
   .qualif_table {
@@ -564,4 +564,54 @@ form {
     line-height: 28px;
     margin: 0 0;
   }
+
+  .work_title {
+    align-items: flex-start;
+    margin: 24px 142px;
+  }
+
+  .recent_work {
+    font-size: 64px;
+    line-height: 114px;
+    font-weight: 700;
+    margin-bottom: 33px;
+  }
+
+  .proj {
+    width: calc(100% - 284px);
+    grid-template-columns: 60% 40%;
+    grid-column-gap: 24px;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .proj_title {
+    font-size: 40px;
+    font-weight: 700;
+    height: 105px;
+    line-height: 52px;
+  }
+  
+  .proj_txt {
+    color: #dfe1e6;
+    width: 100%;
+  }
+  
+  .proj_group {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+  }
+  
+  .proj_lang {
+    font-family: 'Roboto', Helvetica, sans-serif;
+  }
+  
+  .proj_button {
+    font-size: 15px;
+    line-height: 24px;
+    margin: 0 10px;
+    width: fit-content;
+  }
+  
 }
