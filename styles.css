@@ -3,7 +3,7 @@
   padding: 0;
   font-family: 'Roboto', Helvetica, sans-serif;
   font-style: normal;
-  border: 1px solid white;
+
 }
 
 body {
@@ -228,7 +228,6 @@ form {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: 155px;
 }
 
 .qualif_title {
@@ -491,4 +490,78 @@ form {
   color: #ebebff;
   text-align: center;
   line-height: 28px;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .presentation {
+    padding: 186px 142px 0;
+  }
+  
+  .name {
+    width: 100%;
+    height: 96px;
+    font-size: 90px;
+    color: #9390ff;
+    font-weight: 700;
+    line-height: 105px;
+    margin: 24px 0;
+  }
+  
+  .position {
+    width: 100%;
+    height: 72px;
+    font-size: 40px;
+    line-height: 47px;
+    color: #dfe1e6;
+    margin: 24px 0;
+  }
+
+  .qualification {
+    width: 447px;
+    margin: auto;
+    margin-top: 88px;
+    margin-bottom: 108px;
+  }
+  
+  .descr {
+    width: 100%;
+    height: 155px;
+    line-height: 32px;
+    color: #b3bac5;
+  }
+  
+  hr {
+    width: 100%;
+  }
+
+  .qualif_table {
+    width: 100%;
+    margin: 30px 0 41px;
+  }
+  
+  .qualif_title {
+    font-size: 18px;
+    line-height: 29px;
+    margin: 0 8px 25px;
+  }
+  
+  .qualif_title.language {
+    width: 107px;
+  }
+  
+  .qualif_title.frameworks {
+    width: 140px;
+  }
+  
+  .qualif_title.skills {
+    width: 106px;
+  }
+  
+  .qualif_item {
+    font-size: 14.1935px;
+    color: #ffffff;
+    line-height: 28px;
+    margin: 0 0;
+  }
 }
