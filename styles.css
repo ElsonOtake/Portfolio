@@ -59,6 +59,7 @@ button:disabled {
 
 hr {
   border: 1px solid #646369;
+  width: 327px;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -212,6 +213,7 @@ form {
   flex: none;
   order: 0;
   flex-grow: 0;
+  margin-bottom: 33px;
 }
 
 .qualif_table {
@@ -483,6 +485,7 @@ form {
 .contact_row {
   margin: 0px 0px 25px;
   color: #3a3837;
+  width: 98%;
 }
 
 .email {
