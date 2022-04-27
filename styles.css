@@ -3,12 +3,11 @@
   padding: 0;
   font-family: 'Roboto', Helvetica, sans-serif;
   font-style: normal;
+  border: 1px solid white;
 }
 
 body {
   background-color: #191765;
-  width: 375px;
-  max-width: 100%;
 }
 
 ul {
@@ -59,7 +58,7 @@ button:disabled {
 
 hr {
   border: 1px solid #646369;
-  width: 327px;
+  width: calc(100% - 48px);
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -136,7 +135,6 @@ form {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 327px;
   margin: 30px 24px 0;
 }
 
@@ -168,7 +166,7 @@ form {
 }
 
 .name {
-  width: 327px;
+  width: calc(100% - 48px);
   height: 55px;
   font-size: 48px;
   color: #7d73fc;
@@ -182,7 +180,7 @@ form {
 }
 
 .position {
-  width: 327px;
+  width: calc(100% - 48px);
   height: 87px;
   font-size: 32px;
   line-height: 44px;
@@ -205,7 +203,7 @@ form {
 }
 
 .descr {
-  width: 327px;
+  width: calc(100% - 48px);
   height: 170px;
   font-size: 20px;
   line-height: 28px;
@@ -221,7 +219,7 @@ form {
   justify-content: flex-start;
   flex-wrap: wrap;
   align-items: flex-start;
-  width: 327px;
+  width: calc(100% - 48px);
   margin: 30px 0;
 }
 
