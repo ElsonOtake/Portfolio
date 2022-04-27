@@ -59,10 +59,10 @@ button:disabled {
 
 hr {
   border: 1px solid #646369;
-  width: 327px;
   flex: none;
   order: 0;
   flex-grow: 0;
+  margin: 0px 24px;
 }
 
 form {
@@ -481,8 +481,7 @@ form {
 }
 
 .contact_row {
-  margin: 0 0 25px;
-  width: 100%;
+  margin: 0px 0px 25px;
   color: #3a3837;
 }
 
