@@ -614,4 +614,65 @@ form {
     width: fit-content;
   }
   
+  .contact_group {
+    width: 684px;
+    margin: auto;
+    margin-top: 228px;
+  }
+  
+  .contact_title {
+    font-size: 40px;
+    height: 56px;
+    line-height: 24px;
+    margin: 24px 0;
+  }
+  
+  .contact_text {
+    font-size: 20px;
+    color: #ebebff;
+    line-height: 28px;
+    margin: 24px 0;
+  }
+  
+  .input_text {
+    font-size: 17px;
+    color: #191765;
+    margin-top: 88px;
+    height: 48px;
+    border-radius: 2px;
+    line-height: 20px;
+  }
+  
+  .input_email {
+    font-size: 17px;
+    color: #6d6c70;
+    margin-top: 20px;
+    height: 48px;
+    border-radius: 2px;
+    line-height: 20px;
+  }
+  
+  .input_msg {
+    height: 108px;
+    margin-top: 21px;
+    border-radius: 2px;
+    color: #6d6c70;
+  }
+  
+  .contact_button {
+    margin-top: 89px;
+    margin-bottom: 106px;
+    margin: 88px 0;
+  }
+  
+  .email {
+    font-size: 20px;
+    color: #ebebff;
+    text-align: center;
+    line-height: 28px;
+    flex: none;
+    order: 5;
+    flex-grow: 0;
+    margin: 0 0;
+  }
 }
