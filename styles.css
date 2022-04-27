@@ -157,6 +157,10 @@ form {
   text-align: center;
 }
 
+.header_des {
+  display: none;
+}
+
 .presentation {
   display: flex;
   flex-direction: column;
@@ -270,7 +274,9 @@ form {
 }
 
 .links {
-  margin: 58px 0;
+  width: fit-content;
+  margin: auto;
+  margin-top: 58px;
 }
 
 .links_group {
@@ -279,9 +285,16 @@ form {
   gap: 20px;
 }
 
+.next_des {
+  display: none;
+}
+
 .next {
+  width: fit-content;
   display: flex;
   justify-content: center;
+  margin: auto;
+  margin-top: 38px;
   margin-bottom: 80px;
   color: #a2a3ae;
   align-items: center;
@@ -431,6 +444,10 @@ form {
   margin: 0 0;
 }
 
+.contact_title_des {
+  display: none;
+}
+
 .contact_text {
   font-size: 16px;
   color: #f5f5ff;
@@ -492,6 +509,33 @@ form {
 }
 
 @media only screen and (min-width: 768px) {
+
+  .menu {
+    display: none;
+  }
+
+  .header_des {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .company {
+    line-height: 20px;
+    margin: 0 10px;
+  }
+
+  .link_des {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    line-height: 20px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0 10px;
+  }
 
   .presentation {
     padding: 186px 142px 0;
@@ -565,6 +609,32 @@ form {
     margin: 0 0;
   }
 
+  .next_group {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 232px;
+  }
+
+  .next_des {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    color: #a2a3ae;
+    align-items: center;
+  }
+
+  .next_des .arrow {
+    order: 2;
+  }
+
+  .links {
+    margin: 0 0;
+  }
+
+  .next {
+    margin: 0 0;
+  }
+
   .work_title {
     align-items: flex-start;
     margin: 24px 142px;
@@ -621,10 +691,20 @@ form {
   }
   
   .contact_title {
+    display: none;
+  }
+
+  .contact_title_des {
     font-size: 40px;
     height: 56px;
     line-height: 24px;
     margin: 24px 0;
+    color: #9390ff;
+    display: flex;
+    align-items: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
   }
   
   .contact_text {
@@ -674,5 +754,11 @@ form {
     order: 5;
     flex-grow: 0;
     margin: 0 0;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
   }
 }

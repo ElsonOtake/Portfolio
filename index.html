@@ -11,16 +11,24 @@
   <link rel="stylesheet" 
   href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <title>Elson Otake</title>
 </head>
 <body>
 
   <header class="header">
     <ul class="header_list themefff">
-      <li class="company"><a href="#">Origami Inc</a></li>
+      <li class="company fw500"><a href="#">Origami Inc</a></li>
       <li class="menu">
           <span class="material-symbols-rounded" id="hamburger">menu</span>
       </li>
+      <ul class="header_des">
+        <li class="link_des fw500 themefff"><a href="#">Portfolio</a></li>
+        <li class="link_des fw500 themefff"><a href="#">About</a></li>
+        <li class="link_des fw500 themefff"><a href="#">Contact</a></li>
+        <li><a href="#"><span class="material-icons">email</span></a></li>
+      </ul>
     </ul>
   </header>
 
@@ -68,46 +76,54 @@
     <hr class="line_2">
   </section>
 
-  <section class="links">
-    <ul class="links_group">
-      <li>
-        <a href="#">
-          <img class="icon" src="images/icons8-github-30.png" 
-          alt="github icon from icons8"/>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img class="icon" src="images/icons8-linkedin-30.png" 
-          alt="linkedin icon from icons8"/>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img class="icon" src="images/icons8-mão-fazendo-sinal-de-paz-30.png" 
-          alt="peace icon from icons8"/>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img class="icon" src="images/icons8-twitter-30.png" 
-          alt="twitter icon from icons8"/>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img class="icon" src="images/icons8-circled-m-30.png" 
-          alt="M icon from icons8"/>
-        </a>
-      </li>
+  <div class="next_group">
+    <ul class="next_des">
+      <li class="next_section fw500">Work</li>
+      <li class="arrow"><a href="#"><img src="images/icons8-arrow-down-30.png" 
+        alt="arrow down icon from icons8"/></a></li>
     </ul>
-  </section>
 
-  <ul class="next">
-    <li class="arrow"><a href="#"><img src="images/icons8-arrow-down-30.png" 
-      alt="arrow down icon from icons8"/></a></li>
-    <li class="next_section fw500">Work</li>
-  </ul>
+    <section class="links">
+      <ul class="links_group">
+        <li>
+          <a href="#">
+            <img class="icon" src="images/icons8-github-30.png" 
+            alt="github icon from icons8"/>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img class="icon" src="images/icons8-linkedin-30.png" 
+            alt="linkedin icon from icons8"/>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img class="icon" src="images/icons8-mão-fazendo-sinal-de-paz-30.png" 
+            alt="peace icon from icons8"/>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img class="icon" src="images/icons8-twitter-30.png" 
+            alt="twitter icon from icons8"/>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img class="icon" src="images/icons8-circled-m-30.png" 
+            alt="M icon from icons8"/>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <ul class="next">
+      <li class="arrow"><a href="#"><img src="images/icons8-arrow-down-30.png" 
+        alt="arrow down icon from icons8"/></a></li>
+      <li class="next_section fw500">Work</li>
+    </ul>
+  </div>
 
   <section class="project ellipse_03">
     <section class="work_title">
@@ -201,6 +217,7 @@
     <div class="contact_group">
       <section class="contact_us">
         <h1 class="contact_title fw500">CONTACT US</h1>
+        <h1 class="contact_title_des fw500">Let's chat!</h1>
         <p class="contact_text ffinter fw400">If you have an application you are interested in developing, 
           a feature that you need built or a project that needs coding. I'd love to help with it</p>
       </section>
