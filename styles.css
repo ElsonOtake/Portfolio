@@ -95,16 +95,18 @@ form {
   color: #fff;
 }
 
-.ellipse_01 {
+.circle_1 {
   background-image: url(images/Ellipse\ 18.svg);
   background-repeat: no-repeat;
-  background-position: left center;
+  /* background-position: left center; */
+  background-position: 0% 10%;
 }
 
-.ellipse_02 {
+.circle_2 {
   background-image: url(images/Ellipse\ 19.svg);
   background-repeat: no-repeat;
-  background-position: right center;
+  /* background-position: right center; */
+  background-position: 100% 50%;
 }
 
 .ellipse_03 {
@@ -159,6 +161,12 @@ form {
 
 .header_des {
   display: none;
+}
+
+.circle_1, 
+.circle_2 {
+  padding: 0;
+  margin: 0;
 }
 
 .presentation {
@@ -535,6 +543,18 @@ form {
     order: 0;
     flex-grow: 0;
     margin: 0 10px;
+  }
+
+  .circle_1 {
+    background-image: url(images/circle\ 1\ header.svg);
+    background-repeat: no-repeat;
+    background-position: 0% 25%;
+  }
+
+  .circle_2 {
+    background-image: url(images/circle\ 2\ header.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
   }
 
   .presentation {
