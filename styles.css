@@ -1,4 +1,6 @@
 * {
+  margin: 0;
+  padding: 0;
   font-family: 'Roboto', Helvetica, sans-serif;
   font-style: normal;
 }
@@ -61,6 +63,12 @@ hr {
   flex: none;
   order: 0;
   flex-grow: 0;
+  margin: 0 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
 }
 
 .fw400 {
@@ -205,6 +213,7 @@ hr {
   flex: none;
   order: 0;
   flex-grow: 0;
+  margin-bottom: 33px;
 }
 
 .qualif_table {
@@ -463,6 +472,7 @@ hr {
   height: 148px;
   margin-top: 24px;
   line-height: 24px;
+  resize: none;
 }
 
 .contact_button {
@@ -474,8 +484,8 @@ hr {
 
 .contact_row {
   margin: 0 0 25px;
-  width: 100%;
   color: #3a3837;
+  width: 98%;
 }
 
 .email {
@@ -483,11 +493,4 @@ hr {
   color: #ebebff;
   text-align: center;
   line-height: 28px;
-}
-
-.contact_end_row {
-  border: 2px solid black;
-  border-radius: 5px;
-  width: 125px;
-  margin: 27px 120px;
 }
