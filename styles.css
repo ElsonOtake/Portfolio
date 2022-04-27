@@ -63,7 +63,7 @@ hr {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0px 24px;
+  margin: 0 24px;
 }
 
 form {
@@ -483,7 +483,7 @@ form {
 }
 
 .contact_row {
-  margin: 0px 0px 25px;
+  margin: 0 0 25px;
   color: #3a3837;
   width: 98%;
 }
