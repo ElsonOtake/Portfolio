@@ -1,4 +1,6 @@
 * {
+  margin: 0px;
+  padding: 0px;
   font-family: 'Roboto', Helvetica, sans-serif;
   font-style: normal;
 }
@@ -489,11 +491,4 @@ form {
   color: #ebebff;
   text-align: center;
   line-height: 28px;
-}
-
-.contact_end_row {
-  border: 2px solid black;
-  border-radius: 5px;
-  width: 125px;
-  margin: 27px 120px;
 }
