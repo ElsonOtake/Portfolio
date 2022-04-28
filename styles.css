@@ -729,19 +729,6 @@ form {
     flex: none;
     order: 0;
     flex-grow: 0;
-    animation-duration: 2s;
-    animation-name: slidein;
-  }
-
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
   }
 
   .contact_text {
@@ -813,5 +800,13 @@ form {
     order: 5;
     flex-grow: 0;
     margin: 0 0;
+  }
+
+  .icon {
+    transition: transform .5s;
+  }
+
+  .icon:hover {
+    transform: scale(1.5);
   }
 }
