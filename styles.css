@@ -95,10 +95,14 @@ form {
 }
 
 .ellipses {
-  background-image: url(images/Ellipse\ 18.svg), url(images/Ellipse\ 19.svg),
-  url(images/new_Ellipse\ 19.svg), url(images/Ellipse\ 20.svg),
-  url(images/Ellipse\ 21.svg), url(images/Ellipse\ 22.svg);
-  background-position: left top, right 12%, left 37%, right 56%, left 74%, right 93%;
+  background-image:
+    url(images/Ellipse\ 18.svg),
+    url(images/Ellipse\ 19.svg),
+    url(images/new_Ellipse\ 19.svg),
+    url(images/Ellipse\ 20.svg),
+    url(images/Ellipse\ 21.svg),
+    url(images/Ellipse\ 22.svg);
+  background-position: left top, right 11%, left 39%, right 57%, left 76%, right 94%;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
 }
 
@@ -128,11 +132,15 @@ form {
   text-align: center;
 }
 
-.header_des {
+.header_desktop {
   display: none;
 }
 
-.circle_1, 
+.header_container {
+  display: none;
+}
+
+.circle_1,
 .circle_2 {
   padding: 0;
   margin: 0;
@@ -305,6 +313,9 @@ form {
   margin: 0 0 33px;
 }
 
+.recent_work_des {
+  display: none;
+}
 .project {
   background-repeat: no-repeat;
 }
@@ -347,7 +358,7 @@ form {
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 24px 0;
+  margin: 0 0;
 }
 
 .proj_group {
@@ -434,6 +445,10 @@ form {
   margin: 24px 0 0;
 }
 
+.dsk_form {
+  display: none;
+}
+
 .input_text {
   font-size: 15px;
   color: #81818c;
@@ -477,6 +492,17 @@ form {
   width: 98%;
 }
 
+.footer_links {
+  width: fit-content;
+  margin: auto;
+}
+
+.footer_links_group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 .email {
   font-size: 20px;
   color: #ebebff;
@@ -486,11 +512,19 @@ form {
 
 @media only screen and (min-width: 768px) {
 
+  .header {
+    margin: 0 142px;
+  }
+
   .menu {
     display: none;
   }
 
-  .header_des {
+  .header_desktop {
+    display: contents;
+  }
+
+  .header_container {
     display: flex;
     gap: 32px;
     align-items: center;
@@ -514,16 +548,20 @@ form {
   }
 
   .ellipses {
-    background-image: url(images/circle\ 1\ header.svg), url(images/circle\ 2\ header.svg),
-    url(images/dsk_Ellipse\ 19.svg), url(images/dsk_Ellipse\ 20.svg),
-    url(images/dsk_Ellipse\ 21.svg), url(images/dsk_Ellipse\ 22.svg);
-    background-position: left 8%, right 18%, left 45%, right 66%, left 78%, right 90%;
+    background-image:
+      url(images/circle\ 1\ header.svg),
+      url(images/circle\ 2\ header.svg),
+      url(images/dsk_Ellipse\ 19.svg),
+      url(images/dsk_Ellipse\ 20.svg),
+      url(images/dsk_Ellipse\ 21.svg),
+      url(images/dsk_Ellipse\ 22.svg);
+    background-position: left 7%, right 17%, left 48%, right 68%, left 84%, right 96%;
   }
 
   .presentation {
     padding: 186px 142px 0;
   }
-  
+
   .name {
     width: 100%;
     height: 96px;
@@ -531,16 +569,14 @@ form {
     color: #9390ff;
     font-weight: 700;
     line-height: 105px;
-    margin: 24px 0;
   }
-  
+
   .position {
     width: 100%;
     height: 72px;
     font-size: 40px;
     line-height: 47px;
     color: #dfe1e6;
-    margin: 24px 0;
   }
 
   .qualification {
@@ -549,14 +585,14 @@ form {
     margin-top: 88px;
     margin-bottom: 108px;
   }
-  
+
   .descr {
     width: 100%;
     height: 155px;
     line-height: 32px;
     color: #b3bac5;
   }
-  
+
   hr {
     width: 100%;
     margin: auto;
@@ -566,28 +602,28 @@ form {
     width: 100%;
     margin: 30px 0 41px;
   }
-  
+
   .qualif_title {
     font-size: 18px;
     line-height: 29px;
-    margin: 0 8px 25px;
+    margin: 0 8px 25px 0;
   }
-  
+
   .qualif_title.language {
     width: 107px;
   }
-  
+
   .qualif_title.frameworks {
     width: 140px;
   }
-  
+
   .qualif_title.skills {
     width: 106px;
   }
-  
+
   .qualif_item {
     font-size: 14.1935px;
-    color: #ffffff;
+    color: #fff;
     line-height: 28px;
     margin: 0 0;
   }
@@ -624,13 +660,24 @@ form {
   }
 
   .recent_work {
+    display: none;
+  }
+
+  .recent_work_des {
+    display: contents;
     font-size: 64px;
+    width: calc(100% - 48px);
     line-height: 114px;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
     margin-bottom: 33px;
   }
 
-  section.proj {
+  .proj {
     width: calc(100% - 284px);
     display: grid;
     grid-template-columns: calc(60% - 12px) calc(40% - 12px);
@@ -640,21 +687,21 @@ form {
     margin-bottom: 88px;
   }
 
-  section.proj:nth-of-type(even) {
+  .proj:nth-of-type(even) {
     grid-template-columns: calc(60% - 12px) calc(40% - 12px);
     grid-template-areas: 'img title' 'img txt' 'img group' 'img button';
   }
 
-  section.proj:nth-of-type(odd) {
+  .proj:nth-of-type(odd) {
     grid-template-columns: calc(40% - 12px) calc(60% - 12px);
     grid-template-areas: 'title img' 'txt img' 'group img' 'button img';
   }
 
-  img.proj_img {
+  .proj_img {
     grid-area: img;
   }
 
-  h4.proj_title {
+  .proj_title {
     grid-area: title;
     font-size: 40px;
     font-weight: 700;
@@ -662,21 +709,25 @@ form {
     line-height: 52px;
     margin-top: 0;
   }
-  
-  p.proj_txt {
+
+  .proj_txt {
     grid-area: txt;
     color: #dfe1e6;
-  }
-  
-  ul.proj_group {
-    grid-area: group;
+    margin-top: 0;
   }
 
-  li.proj_lang {
+  .proj_group {
+    grid-area: group;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .proj_lang {
     font-family: 'Roboto', Helvetica, sans-serif;
     margin: 0 20px;
   }
-  
+
   button.proj_button {
     grid-area: button;
     font-size: 15px;
@@ -688,7 +739,7 @@ form {
     margin: auto;
     margin-top: 228px;
   }
-  
+
   .contact_title {
     display: none;
   }
@@ -705,14 +756,22 @@ form {
     order: 0;
     flex-grow: 0;
   }
-  
+
   .contact_text {
     font-size: 20px;
     color: #ebebff;
     line-height: 28px;
     margin: 24px 0;
   }
-  
+
+  .mob_form {
+    display: none;
+  }
+
+  .dsk_form {
+    display: contents;
+  }
+
   .input_text {
     font-size: 17px;
     color: #191765;
@@ -721,7 +780,7 @@ form {
     border-radius: 2px;
     line-height: 20px;
   }
-  
+
   .input_email {
     font-size: 17px;
     color: #6d6c70;
@@ -730,22 +789,24 @@ form {
     border-radius: 2px;
     line-height: 20px;
   }
-  
+
   .input_msg {
     height: 108px;
     margin-top: 21px;
     border-radius: 2px;
     color: #6d6c70;
   }
-  
+
   .contact_button {
-    margin-top: 89px;
-    margin-bottom: 106px;
-    margin: 88px 0;
+    width: 160px;
+    height: 48px;
+    padding: 12px;
+    margin: 88px 0 106px;
   }
-  
+
   .contact_row {
     margin: auto;
+    margin-bottom: 20px;
   }
 
   .email {
@@ -759,7 +820,7 @@ form {
     margin: 0 0;
   }
 
-  footer.links {
+  footer {
     display: flex;
     justify-content: center;
     gap: 20px;
