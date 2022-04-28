@@ -632,76 +632,44 @@ form {
 
   section.proj {
     width: calc(100% - 284px);
-    height: 448px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: calc(60% - 12px) calc(40% - 12px);
+    grid-template-areas: 'img title' 'img txt' 'img group' 'img button';
+    grid-column-gap: 24px;
     margin: auto;
     margin-bottom: 88px;
-    justify-content: space-between;
-  }
-
-  section.proj:nth-of-type(odd) {
-    flex-wrap: wrap;
   }
 
   section.proj:nth-of-type(even) {
-    flex-wrap: wrap-reverse;
+    grid-template-columns: calc(60% - 12px) calc(40% - 12px);
+    grid-template-areas: 'img title' 'img txt' 'img group' 'img button';
+  }
+
+  section.proj:nth-of-type(odd) {
+    grid-template-columns: calc(40% - 12px) calc(60% - 12px);
+    grid-template-areas: 'title img' 'txt img' 'group img' 'button img';
   }
 
   img.proj_img {
-    height: 75%;
-    margin-left: 0;
+    grid-area: img;
   }
 
   h4.proj_title {
-    width: 45%;
+    grid-area: title;
     font-size: 40px;
     font-weight: 700;
     height: 105px;
     line-height: 52px;
     margin-top: 0;
-    margin-bottom: 4px;
-    align-self: flex-end;
-  }
-
-  h4.proj_title:nth-of-type(even) {
-    align-self: flex-start;
-  }
-
-  h4.proj_title:nth-of-type(odd) {
-    align-self: flex-end;
   }
   
   p.proj_txt {
-    width: 45%;
+    grid-area: txt;
     color: #dfe1e6;
-    margin-bottom: 14px;
-    align-self: flex-end;
-  }
-
-  p.proj_txt:nth-of-type(even) {
-    align-self: flex-start;
-  }
-
-  p.proj_txt:nth-of-type(odd) {
-    align-self: flex-end;
   }
   
   ul.proj_group {
-    width: 45%;
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 14px;
-    align-self: flex-end;
-  }
-  
-  ul.proj_group:nth-of-type(even) {
-    align-self: flex-start;
-  }
-
-  ul.proj_group:nth-of-type(odd) {
-    align-self: flex-end;
+    grid-area: group;
   }
 
   li.proj_lang {
@@ -710,19 +678,9 @@ form {
   }
   
   button.proj_button {
+    grid-area: button;
     font-size: 15px;
     line-height: 24px;
-    margin: 0 0;
-    width: fit-content;
-    align-self: flex-end;
-  }
-
-  button.proj_button:nth-of-type(even) {
-    align-self: flex-start;
-  }
-
-  button.proj_button:nth-of-type(odd) {
-    align-self: flex-end;
   }
 
   .contact_group {
