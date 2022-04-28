@@ -5,103 +5,144 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link 
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto:wght@400;500;700&display=swap" 
+  rel="stylesheet">
+  <link rel="stylesheet" 
+  href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <title>Elson Otake</title>
 </head>
 <body>
+
   <header class="header">
     <ul class="header_list themefff">
-      <li class="company"><a href="#">Origami Inc</a></li>
+      <li class="company fw500"><a href="#">Origami Inc</a></li>
       <li class="menu">
           <span class="material-symbols-rounded" id="hamburger">menu</span>
       </li>
+      <li class="header_desktop">
+        <ul class="header_container">
+          <li class="link_des fw500 themefff"><a href="#">Portfolio</a></li>
+          <li class="link_des fw500 themefff"><a href="#">About</a></li>
+          <li class="link_des fw500 themefff"><a href="#">Contact</a></li>
+          <li><a href="#"><span class="material-icons">email</span></a></li>
+        </ul>
+      </li>
     </ul>
   </header>
-  <section class="presentation ellipse_01">
-      <h1 class="name">Elson Otake</h1>
-      <h4 class="position theme44 fw500">Software Developer</h4>
-  </section>
-  <section class="qualification ellipse_02">
-    <h4 class="descr fw400">I can help you build a product , feature or website<br>Look through some of my work and experience! 
-      If you like what you see and have a project you need coded, don't hesitate to contact me.</h4>
-    <hr class="line_1">
-    <div class="qualif_table">
-      <div class="qualif_group">
-        <div class="qualif_title language theme43 fw500">Language</div>
-        <ul>
-          <li class="qualif_item javascript fw400">Javascript</li>
-          <li class="qualif_item ruby fw400">Ruby</li>
-          <li class="qualif_item html fw400">Html</li>
-          <li class="qualif_item css fw400">Css</li>
+
+  <div class="ellipses">
+
+    <section class="presentation">
+        <h1 class="name">Elson Otake</h1>
+        <h4 class="position theme44 fw500">Software Developer</h4>
+    </section>
+
+    <section class="qualification">
+      <h4 class="descr fw400">I can help you build a product , feature or website<br>
+        Look through some of my work and experience! 
+        If you like what you see and have a project you need coded, don't hesitate to contact me.</h4>
+      <hr class="line_1">
+      <div class="qualif_table">
+        <section class="qualif_group">
+          <h3 class="qualif_title language theme43 fw500">Language</h3>
+          <ul>
+            <li class="qualif_item javascript fw400">Javascript</li>
+            <li class="qualif_item ruby fw400">Ruby</li>
+            <li class="qualif_item html fw400">Html</li>
+            <li class="qualif_item css fw400">Css</li>
+          </ul>
+        </section>
+        <section class="qualif_group">
+          <h3 class="qualif_title frameworks theme43 fw500">Frameworks</h3>
+          <ul>
+            <li class="qualif_item bootstrap fw400">Bootstrap</li>
+            <li class="qualif_item ruby fw400">Ruby on Rails</li>
+            <li class="qualif_item rspec fw400">RSPec</li>
+            <li class="qualif_item capybara fw400">CapyBara</li>
+            <li class="qualif_item selenium fw400">Selenium</li>
+          </ul>
+        </section>
+        <section class="qualif_group">
+          <h3 class="qualif_title skills theme43 fw500">Skills</h3>
+          <ul>
+            <li class="qualif_item codekit fw400">Codekit</li>
+            <li class="qualif_item github fw400">Github</li>
+            <li class="qualif_item codepen fw400">Codepen</li>
+            <li class="qualif_item gitlab fw400">Gitlab</li>
+            <li class="qualif_item terminal fw400">Terminal</li>
+          </ul>
+        </section>
+      </div>
+      <hr class="line_2">
+    </section>
+
+    <div class="next_group">
+
+      <ul class="next_des">
+        <li class="next_section fw500">Work</li>
+        <li class="arrow"><a href="#"><img src="images/icons8-arrow-down-30.png" 
+          alt="arrow down icon from icons8"/></a></li>
+      </ul>
+
+      <div class="links">
+        <ul class="links_group">
+          <li>
+            <a href="#">
+              <img class="icon" src="images/icons8-github-30.png" 
+              alt="github icon from icons8"/>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="icon" src="images/icons8-linkedin-30.png" 
+              alt="linkedin icon from icons8"/>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="icon" src="images/icons8-mão-fazendo-sinal-de-paz-30.png" 
+              alt="peace icon from icons8"/>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="icon" src="images/icons8-twitter-30.png" 
+              alt="twitter icon from icons8"/>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="icon" src="images/icons8-circled-m-30.png" 
+              alt="M icon from icons8"/>
+            </a>
+          </li>
         </ul>
       </div>
-      <div class="qualif_group">
-        <div class="qualif_title frameworks theme43 fw500">Frameworks</div>
-        <ul>
-          <li class="qualif_item bootstrap fw400">Bootstrap</li>
-          <li class="qualif_item ruby fw400">Ruby on Rails</li>
-          <li class="qualif_item rspec fw400">RSPec</li>
-          <li class="qualif_item capybara fw400">CapyBara</li>
-          <li class="qualif_item selenium fw400">Selenium</li>
-        </ul>
-      </div>
-      <div class="qualif_group">
-        <div class="qualif_title skills theme43 fw500">Skills</div>
-        <ul>
-          <li class="qualif_item codekit fw400">Codekit</li>
-          <li class="qualif_item github fw400">Github</li>
-          <li class="qualif_item codepen fw400">Codepen</li>
-          <li class="qualif_item gitlab fw400">Gitlab</li>
-          <li class="qualif_item terminal fw400">Terminal</li>
-        </ul>
-      </div>
+
+      <ul class="next">
+        <li class="arrow"><a href="#"><img src="images/icons8-arrow-down-30.png" 
+          alt="arrow down icon from icons8"/></a></li>
+        <li class="next_section fw500">Work</li>
+      </ul>
+      
     </div>
-    <hr class="line_2">
-  </section>
-  <div class="links">
-    <ul class="links_group">
-      <li>
-        <a href="#">
-          <img class="icon" src="images/icons8-github-30.png" alt="github icon from icons8"/>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img class="icon" src="images/icons8-linkedin-30.png" alt="linkedin icon from icons8"/>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img class="icon" src="images/icons8-mão-fazendo-sinal-de-paz-30.png" alt="peace icon from icons8"/>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img class="icon" src="images/icons8-twitter-30.png" alt="twitter icon from icons8"/>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img class="icon" src="images/icons8-circled-m-30.png" alt="M icon from icons8"/>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <ul class="next">
-    <li class="arrow"><a href="#"><img src="images/icons8-arrow-down-30.png" alt="arrow down icon from icons8"/></a></li>
-    <li class="next_section fw500">Work</li>
-  </ul>
-  <section class="project ellipse_03">
-    <div class="work_title">
+
+    <section class="work_title">
       <h1 class="recent_work theme43 fw500">MY RECENT WORK</h1>
+      <h2 class="recent_work_des theme43 fw500">My recent work</h2>
       <hr class="line_3">
-    </div>
-    <div class="proj">
-      <img class="proj_img" src="images/projects-79906734.jpeg" alt="Image of project collected from iStock"/>
+    </section>
+
+    <section class="proj">
+      <img class="proj_img" src="images/projects-79906734.jpeg" 
+      alt="Image of project collected from iStock"/>
       <h4 class="proj_title themefff fw500">Multi-Post Stories</h4>
-      <p class="proj_txt ffinter fw400">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
+      <p class="proj_txt ffinter fw400">A daily selection of privately personalized reads; 
+        no accounts or sign-ups required. has been the industry's
         standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
       <ul class="proj_group">
         <li class="proj_lang themefff ffinter fw500"><a href="#">Css</a></li>
@@ -113,13 +154,14 @@
         <li class="proj_lang themefff ffinter fw500"><a href="#">Ruby</a></li>
       </ul>
       <button type="button" class="proj_button theme44">See project</button>
-    </div>
-  </section>
-  <section class="project ellipse_04">
-    <div class="proj">
-      <img class="proj_img" src="images/depositphotos-105666254.jpeg" alt="Image of 'about us' project collected from iStock"/>
+    </section>
+
+    <section class="proj">
+      <img class="proj_img" src="images/depositphotos-105666254.jpeg" 
+      alt="Image of 'about us' project collected from iStock"/>
       <h4 class="proj_title themefff fw500">Multi-Post Stories</h4>
-      <p class="proj_txt ffinter fw400">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
+      <p class="proj_txt ffinter fw400">A daily selection of privately personalized reads; 
+        no accounts or sign-ups required. has been the industry's
         standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
       <ul class="proj_group">
         <li class="proj_lang themefff ffinter fw500"><a href="#">Css</a></li>
@@ -131,13 +173,14 @@
         <li class="proj_lang themefff ffinter fw500"><a href="#">Ruby</a></li>
       </ul>
       <button type="button" class="proj_button theme44">See project</button>
-    </div>
-  </section>
-  <section class="project ellipse_05">
-    <div class="proj">
-      <img class="proj_img" src="images/istockphoto-1068113694.jpeg" alt="Image of webinar project collected from iStock"/>
+    </section>
+
+    <section class="proj">
+      <img class="proj_img" src="images/istockphoto-1068113694.jpeg" 
+      alt="Image of webinar project collected from iStock"/>
       <h4 class="proj_title themefff fw500">Multi-Post Stories</h4>
-      <p class="proj_txt ffinter fw400">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
+      <p class="proj_txt ffinter fw400">A daily selection of privately personalized reads; 
+        no accounts or sign-ups required. has been the industry's
         standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
       <ul class="proj_group">
         <li class="proj_lang themefff ffinter fw500"><a href="#">Css</a></li>
@@ -149,13 +192,14 @@
         <li class="proj_lang themefff ffinter fw500"><a href="#">Ruby</a></li>
       </ul>
       <button type="button" class="proj_button theme44">See project</button>
-    </div>
-  </section>
-  <section class="project ellipse_06">
-    <div class="proj">
-      <img class="proj_img" src="images/hobbies-187729558.jpeg" alt="Image of hobbies project collected from iStock"/>
+    </section>
+
+    <section class="proj">
+      <img class="proj_img" src="images/hobbies-187729558.jpeg" 
+      alt="Image of hobbies project collected from iStock"/>
       <h4 class="proj_title themefff fw500">Multi-Post Stories</h4>
-      <p class="proj_txt ffinter fw400">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
+      <p class="proj_txt ffinter fw400">A daily selection of privately personalized reads; 
+        no accounts or sign-ups required. has been the industry's
         standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
       <ul class="proj_group">
         <li class="proj_lang themefff ffinter fw500"><a href="#">Css</a></li>
@@ -167,26 +211,41 @@
         <li class="proj_lang themefff ffinter fw500"><a href="#">Ruby</a></li>
       </ul>
       <button type="button" class="proj_button theme44">See project</button>
-    </div>
-  </section>
-  <section class="contact">
+    </section>
+  </div>
+
+  <div class="contact">
     <div class="contact_group">
-      <div class="contact_us">
+      <section class="contact_us">
         <h1 class="contact_title fw500">CONTACT US</h1>
+        <h2 class="contact_title_des fw500">Let's chat!</h2>
         <p class="contact_text ffinter fw400">If you have an application you are interested in developing, 
           a feature that you need built or a project that needs coding. I'd love to help with it</p>
-      </div>
-      <form action="https://formspree.io/f/xpzbozga" method="post">
-        <input class="input_text ffinter fw400" type="text" name="title" placeholder="Full name" maxlength="30" required>
-        <input class="input_email ffinter fw400" type="email" name="email" placeholder="jeremy@gmail.com" required>
-        <textarea class="input_text input_msg" name="msg" placeholder="Enter text here" maxlength="500" required></textarea>
+      </section>
+      <form class="mob_form" action="https://formspree.io/f/xpzbozga" method="post">
+        <input class="input_text ffinter fw400" type="text" name="title" 
+        placeholder="Full name" maxlength="30" required>
+        <input class="input_email ffinter fw400" type="email" name="email" 
+        placeholder="jeremy@gmail.com" required>
+        <textarea class="input_text input_msg" name="msg" placeholder="Enter text here" 
+        maxlength="500" required></textarea>
         <button type="submit" class="contact_button theme44">See Project</button>
+      </form>
+      <form class="dsk_form" action="https://formspree.io/f/xpzbozga" method="post">
+        <input class="input_text ffinter fw400" type="text" name="title" 
+        placeholder="Full name" maxlength="30" required>
+        <input class="input_email ffinter fw400" type="email" name="email" 
+        placeholder="Email Address" required>
+        <textarea class="input_text input_msg" name="msg" placeholder="Write your message here" 
+        maxlength="500" required></textarea>
+        <button type="submit" class="contact_button theme44">Send</button>
       </form>
     </div>
     <hr class="contact_row">
-  </section>
-  <div class="links">
-    <ul class="links_group">
+  </div>
+
+  <footer class="footer_links">
+    <ul class="footer_links_group">
       <li>
         <a href="#">
           <img class="icon" src="images/icons8-github-30.png" alt="github icon from icons8"/>
@@ -199,7 +258,8 @@
       </li>
       <li>
         <a href="#">
-          <img class="icon" src="images/icons8-mão-fazendo-sinal-de-paz-30.png" alt="peace icon from icons8"/>
+          <img class="icon" src="images/icons8-mão-fazendo-sinal-de-paz-30.png" 
+          alt="peace icon from icons8"/>
         </a>
       </li>
       <li>
@@ -214,6 +274,7 @@
       </li>
     </ul>
     <p class="email fw400">elsonotake@gmail.com</p>
-  </div>
+  </footer>
+
 </body>
 </html>
