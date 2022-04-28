@@ -496,7 +496,6 @@ form {
 }
 
 @media only screen and (min-width: 768px) {
-
   .header {
     margin: 0 142px;
   }
@@ -641,7 +640,6 @@ form {
   }
 
   .recent_work_des {
-    display: contents;
     font-size: 64px;
     width: calc(100% - 48px);
     line-height: 114px;
@@ -803,5 +801,4 @@ form {
     flex-grow: 0;
     margin: 0 0;
   }
-
 }
