@@ -95,14 +95,14 @@ form {
   color: #fff;
 }
 
-.circle_1 {
+.ellipse_1 {
   background-image: url(images/Ellipse\ 18.svg);
   background-repeat: no-repeat;
   /* background-position: left center; */
   background-position: 0% 10%;
 }
 
-.circle_2 {
+.ellipse_2 {
   background-image: url(images/Ellipse\ 19.svg);
   background-repeat: no-repeat;
   /* background-position: right center; */
@@ -112,25 +112,25 @@ form {
 .ellipse_03 {
   background-image: url(images/new_Ellipse\ 19.svg);
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: left 5%;
 }
 
 .ellipse_04 {
   background-image: url(images/Ellipse\ 20.svg);
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right 35%;
 }
 
 .ellipse_05 {
   background-image: url(images/Ellipse\ 21.svg);
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: left 60%;
 }
 
 .ellipse_06 {
   background-image: url(images/Ellipse\ 22.svg);
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right 90%;
 }
 
 .header_list {
@@ -544,13 +544,13 @@ form {
     margin: 0 10px;
   }
 
-  .circle_1 {
+  .ellipse_1 {
     background-image: url(images/circle\ 1\ header.svg);
     background-repeat: no-repeat;
     background-position: 0% 25%;
   }
 
-  .circle_2 {
+  .ellipse_2 {
     background-image: url(images/circle\ 2\ header.svg);
     background-repeat: no-repeat;
     background-position: 100% 50%;
