@@ -666,61 +666,101 @@ form {
     margin-bottom: 33px;
   }
 
-  .proj {
+  section.proj {
     width: calc(100% - 284px);
     height: 448px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: flex-start;
     margin: auto;
     margin-bottom: 88px;
     justify-content: space-between;
   }
 
-  .proj_img {
-    height: 448px;
+  section.proj:nth-of-type(even) {
+    flex-wrap: wrap;
+  }
+
+  section.proj:nth-of-type(odd) {
+    flex-wrap: wrap-reverse;
+  }
+
+  img.proj_img {
+    height: 75%;
     margin-left: 0;
   }
 
-  .proj_title {
+  h4.proj_title {
+    width: 45%;
     font-size: 40px;
     font-weight: 700;
-    width: calc(40% - 12px);
     height: 105px;
     line-height: 52px;
-    margin-bottom: 24px;
+    margin-top: 0;
+    margin-bottom: 4px;
+    align-self: flex-end;
+  }
+
+  h4.proj_title:nth-of-type(even) {
+    align-self: flex-start;
+  }
+
+  h4.proj_title:nth-of-type(odd) {
     align-self: flex-end;
   }
   
-  .proj_txt {
+  p.proj_txt {
+    width: 45%;
     color: #dfe1e6;
-    width: calc(40% - 12px);
     margin-bottom: 14px;
     align-self: flex-end;
   }
+
+  p.proj_txt:nth-of-type(even) {
+    align-self: flex-start;
+  }
+
+  p.proj_txt:nth-of-type(odd) {
+    align-self: flex-end;
+  }
   
-  .proj_group {
-    width: calc(40% - 12px);
+  ul.proj_group {
+    width: 45%;
     display: flex;
     justify-content: flex-start;
-    gap: 20px;
     margin-bottom: 14px;
     align-self: flex-end;
   }
   
-  .proj_lang {
+  ul.proj_group:nth-of-type(even) {
+    align-self: flex-start;
+  }
+
+  ul.proj_group:nth-of-type(odd) {
+    align-self: flex-end;
+  }
+
+  li.proj_lang {
     font-family: 'Roboto', Helvetica, sans-serif;
+    margin: 0 20px;
   }
   
-  .proj_button {
+  button.proj_button {
     font-size: 15px;
     line-height: 24px;
     margin: 0 0;
     width: fit-content;
+    align-self: flex-end;
+  }
+
+  button.proj_button:nth-of-type(even) {
     align-self: flex-start;
   }
-  
+
+  button.proj_button:nth-of-type(odd) {
+    align-self: flex-end;
+  }
+
   .contact_group {
     width: 684px;
     margin: auto;
@@ -782,6 +822,10 @@ form {
     margin: 88px 0;
   }
   
+  .contact_row {
+    margin: auto;
+  }
+
   .email {
     font-size: 20px;
     color: #ebebff;
@@ -793,9 +837,11 @@ form {
     margin: 0 0;
   }
 
-  footer {
+  footer.links {
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin: auto;
+    margin-top: 20px;
   }
 }
