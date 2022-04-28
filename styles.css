@@ -729,6 +729,19 @@ form {
     flex: none;
     order: 0;
     flex-grow: 0;
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
   .contact_text {
