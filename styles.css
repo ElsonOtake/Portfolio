@@ -94,42 +94,12 @@ form {
   color: #fff;
 }
 
-.ellipse_1 {
-  background-image: url(images/Ellipse\ 18.svg);
-  background-repeat: no-repeat;
-  /* background-position: left center; */
-  background-position: 0% 10%;
-}
-
-.ellipse_2 {
-  background-image: url(images/Ellipse\ 19.svg);
-  background-repeat: no-repeat;
-  /* background-position: right center; */
-  background-position: 100% 50%;
-}
-
-.ellipse_03 {
-  background-image: url(images/new_Ellipse\ 19.svg);
-  background-repeat: no-repeat;
-  background-position: left 5%;
-}
-
-.ellipse_04 {
-  background-image: url(images/Ellipse\ 20.svg);
-  background-repeat: no-repeat;
-  background-position: right 35%;
-}
-
-.ellipse_05 {
-  background-image: url(images/Ellipse\ 21.svg);
-  background-repeat: no-repeat;
-  background-position: left 60%;
-}
-
-.ellipse_06 {
-  background-image: url(images/Ellipse\ 22.svg);
-  background-repeat: no-repeat;
-  background-position: right 90%;
+.ellipses {
+  background-image: url(images/Ellipse\ 18.svg), url(images/Ellipse\ 19.svg),
+  url(images/new_Ellipse\ 19.svg), url(images/Ellipse\ 20.svg),
+  url(images/Ellipse\ 21.svg), url(images/Ellipse\ 22.svg);
+  background-position: left top, right 12%, left 37%, right 56%, left 74%, right 93%;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
 }
 
 .header_list {
@@ -543,16 +513,11 @@ form {
     margin: 0 10px;
   }
 
-  .ellipse_1 {
-    background-image: url(images/circle\ 1\ header.svg);
-    background-repeat: no-repeat;
-    background-position: 0% 25%;
-  }
-
-  .ellipse_2 {
-    background-image: url(images/circle\ 2\ header.svg);
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
+  .ellipses {
+    background-image: url(images/circle\ 1\ header.svg), url(images/circle\ 2\ header.svg),
+    url(images/dsk_Ellipse\ 19.svg), url(images/dsk_Ellipse\ 20.svg),
+    url(images/dsk_Ellipse\ 21.svg), url(images/dsk_Ellipse\ 22.svg);
+    background-position: left 8%, right 18%, left 45%, right 66%, left 78%, right 90%;
   }
 
   .presentation {
