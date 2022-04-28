@@ -3,7 +3,6 @@
   padding: 0;
   font-family: 'Roboto', Helvetica, sans-serif;
   font-style: normal;
-  border: 1px solid white;
 }
 
 body {
@@ -677,11 +676,11 @@ form {
     justify-content: space-between;
   }
 
-  section.proj:nth-of-type(even) {
+  section.proj:nth-of-type(odd) {
     flex-wrap: wrap;
   }
 
-  section.proj:nth-of-type(odd) {
+  section.proj:nth-of-type(even) {
     flex-wrap: wrap-reverse;
   }
 
