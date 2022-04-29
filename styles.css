@@ -801,4 +801,12 @@ form {
     flex-grow: 0;
     margin: 0 0;
   }
+
+  .icon {
+    transition: transform 0.5s;
+  }
+
+  .icon:hover {
+    transform: scale(1.5);
+  }
 }
