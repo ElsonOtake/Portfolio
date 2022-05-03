@@ -791,7 +791,7 @@ form {
 
   .contact_row {
     margin: auto;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
 
   footer {
@@ -800,6 +800,7 @@ form {
     gap: 20px;
     margin: auto;
     margin-top: 20px;
+    padding: 20px 0;
   }
 
   .email {
