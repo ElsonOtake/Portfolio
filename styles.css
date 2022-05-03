@@ -487,6 +487,16 @@ form {
   width: 98%;
 }
 
+footer a {
+  transition: 1s;
+}
+
+footer a:hover {
+  transform: scale(1.5);
+  color: #9490ff;
+
+}
+
 .footer_links {
   width: fit-content;
   margin: auto;
@@ -797,7 +807,7 @@ form {
   footer {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 60px;
     margin: auto;
     margin-top: 20px;
     padding: 20px 0;
