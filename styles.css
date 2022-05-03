@@ -449,6 +449,7 @@ form {
   line-height: 24px;
   display: flex;
   align-items: center;
+  padding-left: 20px;
 }
 
 .input_email {
@@ -462,6 +463,7 @@ form {
   background: #f7f3ff;
   border: 1px solid #9490ff;
   box-sizing: border-box;
+  padding-left: 20px;
 }
 
 .input_msg {
@@ -469,6 +471,7 @@ form {
   margin-top: 24px;
   line-height: 24px;
   resize: none;
+  padding-top: 20px;
 }
 
 .contact_button {
@@ -783,6 +786,7 @@ form {
     height: 48px;
     padding: 12px;
     margin: 88px 0 106px;
+    font-size: 15px;
   }
 
   .contact_row {
