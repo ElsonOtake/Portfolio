@@ -24,9 +24,16 @@ a:visited {
   color: #fff;
 }
 
+ul a, 
+span {
+  transition: 1s;
+}
+
 a:hover,
-a:active {
+a:active,
+span:hover {
   color: #9490ff;
+  transform: scale(1.5);
 }
 
 button {
