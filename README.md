@@ -1,6 +1,6 @@
 # Portfolio
 
-> Personal portfolio in desktop and mobile versions, with informations about tecnichal knowledge and samples of projects. Screen sizes over 768 pixels are considered desktop screens, and under that value are considered mobile screens, this control was done using media queries. CSS Grid and Flexbox were used in the code.
+> Personal portfolio in desktop and mobile versions. Informations about tecnichal knowledge and samples of projects. Screen sizes over 768 pixels are considered desktop screens, and under that value are considered mobile screens, this control was done using media queries. CSS Grid and Flexbox were used in the code. The code receive accessibility features as a alternative text for images. 
 
 
 ## Built With
@@ -42,6 +42,10 @@ Once you completed these steps you should see the site in your browser.
 
 
 ## 🤝 Contributing
+
+[KaskMil](https://github.com/KaskMIL/) Tomas Milanesi
+
+[GiuseppeTG](https://github.com/GiuseppeTG/) Giuseppe Tomasini
 
 Contributions, issues, and feature requests are welcome!
 

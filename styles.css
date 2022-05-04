@@ -19,14 +19,36 @@ a {
   text-decoration: none;
 }
 
+ul a,
+span,
+i,
+.next_group a {
+  transition: 1s;
+}
+
+footer a {
+  transition: 1s;
+}
+
 a:link,
 a:visited {
   color: #fff;
 }
 
 a:hover,
-a:active {
+a:active,
+span:hover {
   color: #9490ff;
+  transform: scale(1.2);
+}
+
+i:hover {
+  transform: scale(1.5);
+  color: #9490ff;
+}
+
+footer a:hover {
+  transform: scale(1.2);
 }
 
 button {
@@ -252,6 +274,10 @@ form {
   display: none;
 }
 
+.next_des i {
+  color: #a2a3ae;
+}
+
 .next_section {
   font-size: 20px;
   line-height: 32px;
@@ -266,6 +292,10 @@ form {
   width: fit-content;
   margin: auto;
   margin-top: 58px;
+}
+
+.links i {
+  font-size: 20px;
 }
 
 .links_group {
@@ -283,6 +313,10 @@ form {
   margin-bottom: 80px;
   color: #a2a3ae;
   align-items: center;
+}
+
+.next i {
+  color: #a2a3ae;
 }
 
 .work_title {
@@ -442,6 +476,7 @@ form {
   line-height: 24px;
   display: flex;
   align-items: center;
+  padding-left: 20px;
 }
 
 .input_email {
@@ -455,6 +490,7 @@ form {
   background: #f7f3ff;
   border: 1px solid #9490ff;
   box-sizing: border-box;
+  padding-left: 20px;
 }
 
 .input_msg {
@@ -462,6 +498,7 @@ form {
   margin-top: 24px;
   line-height: 24px;
   resize: none;
+  padding-top: 20px;
 }
 
 .contact_button {
@@ -475,6 +512,10 @@ form {
   margin: 0 0 25px;
   color: #3a3837;
   width: 98%;
+}
+
+footer i {
+  font-size: 20px;
 }
 
 .footer_links {
@@ -493,6 +534,7 @@ form {
   color: #ebebff;
   text-align: center;
   line-height: 28px;
+  padding: 10px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -776,37 +818,30 @@ form {
     height: 48px;
     padding: 12px;
     margin: 88px 0 106px;
+    font-size: 15px;
   }
 
   .contact_row {
     margin: auto;
-    margin-bottom: 20px;
+
+    /* margin-bottom: 20px; */
   }
 
   footer {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    gap: 60px;
     margin: auto;
     margin-top: 20px;
+    padding: 20px 0;
   }
 
   .email {
-    font-size: 20px;
-    color: #ebebff;
-    text-align: center;
-    line-height: 28px;
     flex: none;
     order: 5;
     flex-grow: 0;
     margin: 0 0;
   }
 
-  .icon {
-    transition: transform 0.5s;
-  }
-
-  .icon:hover {
-    transform: scale(1.5);
-  }
 }
