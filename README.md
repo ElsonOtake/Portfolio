@@ -43,6 +43,10 @@ Once you completed these steps you should see the site in your browser.
 
 ## 🤝 Contributing
 
+[KaskMil](https://github.com/KaskMIL/) Tomas Milanesi
+
+[GiuseppeTG](https://github.com/GiuseppeTG/) Giuseppe Tomasini
+
 Contributions, issues, and feature requests are welcome!
 
 
