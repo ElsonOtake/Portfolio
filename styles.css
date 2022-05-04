@@ -20,7 +20,9 @@ a {
 }
 
 ul a,
-span {
+span,
+i,
+.next_group a {
   transition: 1s;
 }
 
@@ -37,11 +39,16 @@ a:hover,
 a:active,
 span:hover {
   color: #9490ff;
+  transform: scale(1.2);
+}
+
+i:hover {
   transform: scale(1.5);
+  color: #9490ff;
 }
 
 footer a:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 button {
@@ -267,6 +274,10 @@ form {
   display: none;
 }
 
+.next_des i {
+  color: #a2a3ae;
+}
+
 .next_section {
   font-size: 20px;
   line-height: 32px;
@@ -281,6 +292,10 @@ form {
   width: fit-content;
   margin: auto;
   margin-top: 58px;
+}
+
+.links i {
+  font-size: 20px;
 }
 
 .links_group {
@@ -298,6 +313,10 @@ form {
   margin-bottom: 80px;
   color: #a2a3ae;
   align-items: center;
+}
+
+.next i {
+  color: #a2a3ae;
 }
 
 .work_title {
@@ -495,6 +514,10 @@ form {
   width: 98%;
 }
 
+footer i {
+  font-size: 20px;
+}
+
 .footer_links {
   width: fit-content;
   margin: auto;
@@ -511,6 +534,7 @@ form {
   color: #ebebff;
   text-align: center;
   line-height: 28px;
+  padding: 10px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -806,6 +830,7 @@ form {
   footer {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 60px;
     margin: auto;
     margin-top: 20px;
@@ -813,21 +838,10 @@ form {
   }
 
   .email {
-    font-size: 20px;
-    color: #ebebff;
-    text-align: center;
-    line-height: 28px;
     flex: none;
     order: 5;
     flex-grow: 0;
     margin: 0 0;
   }
 
-  .icon {
-    transition: transform 0.5s;
-  }
-
-  .icon:hover {
-    transform: scale(1.5);
-  }
 }
