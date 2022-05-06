@@ -3,6 +3,7 @@
   padding: 0;
   font-family: 'Roboto', Helvetica, sans-serif;
   font-style: normal;
+  border: 1px solid white;
 }
 
 body {
@@ -336,7 +337,9 @@ header .header_desktop ul {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0 0 33px;
+  padding-bottom: 33px;
+  border-bottom: 1px solid #646369;
+  margin-bottom: 48px;
 }
 
 .recent_work_des {
@@ -351,7 +354,7 @@ header .header_desktop ul {
   margin: 40px 24px 0;
 }
 
-.proj_img {
+.proj img {
   max-width: 100%;
   height: auto;
   flex: none;
@@ -359,7 +362,7 @@ header .header_desktop ul {
   flex-grow: 0;
 }
 
-.proj_title {
+.proj h3 {
   font-size: 32px;
   align-self: flex-start;
   width: 100%;
@@ -372,7 +375,7 @@ header .header_desktop ul {
   margin: 24px 0;
 }
 
-.proj_txt {
+.proj p {
   font-size: 20px;
   color: #dcdce8;
   width: 100%;
@@ -383,7 +386,7 @@ header .header_desktop ul {
   margin-bottom: 24px;
 }
 
-.proj_group {
+.proj ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -393,7 +396,7 @@ header .header_desktop ul {
   margin-bottom: 24px;
 }
 
-.proj_lang {
+.proj .proj_lang {
   font-size: 15px;
   line-height: 20px;
   flex: none;
@@ -402,12 +405,12 @@ header .header_desktop ul {
   margin: 0 0;
 }
 
-.vl {
+.proj .vl {
   border-left: 1px solid #555;
   height: 40px;
 }
 
-.proj_button {
+.proj button {
   line-height: 24px;
   display: flex;
   align-items: center;
@@ -422,41 +425,22 @@ header .header_desktop ul {
 .contact {
   display: flex;
   flex-direction: column;
-  width: 100%;
-}
-
-.contact_group {
-  display: flex;
-  flex-direction: column;
-  width: calc(100% - 48px);
-  margin: 120px 24px 0;
-}
-
-.contact_us {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 120px 24px 70px;
   text-align: center;
 }
 
 .contact_title {
   font-size: 32px;
+  text-align: center;
   color: #9390ff;
   line-height: 44px;
-  display: flex;
-  align-items: center;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0 0;
 }
 
 .contact_title_des {
   display: none;
 }
 
-.contact_text {
+.contact p {
   font-size: 16px;
   color: #f5f5ff;
   line-height: 24px;
@@ -470,32 +454,29 @@ header .header_desktop ul {
   display: none;
 }
 
-.input_text {
+form .input_text {
   font-size: 15px;
   color: #81818c;
   margin-top: 40px;
   height: 48px;
   line-height: 24px;
-  display: flex;
-  align-items: center;
   padding-left: 20px;
+  width: calc(100% - 24px);
 }
 
-.input_email {
+form .input_email {
   font-size: 15px;
   color: #191765;
   margin-top: 24px;
   height: 48px;
   line-height: 24px;
-  display: flex;
-  align-items: center;
+  width: calc(100% - 24px);
   background: #f7f3ff;
   border: 1px solid #9490ff;
-  box-sizing: border-box;
   padding-left: 20px;
 }
 
-.input_msg {
+form .input_msg {
   height: 148px;
   margin-top: 24px;
   line-height: 24px;
@@ -503,17 +484,11 @@ header .header_desktop ul {
   padding-top: 20px;
 }
 
-.contact_button {
+form .contact_button {
   width: fit-content;
   margin-top: 40px;
   margin-bottom: 71px;
   align-self: center;
-}
-
-.contact_row {
-  margin: 0 0 25px;
-  color: #3a3837;
-  width: 98%;
 }
 
 footer i {
@@ -688,7 +663,9 @@ footer i {
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin-bottom: 33px;
+    padding-bottom: 33px;
+    border-bottom: 1px solid #646369;
+    margin-bottom: 96px;
   }
 
   .proj {
@@ -711,11 +688,11 @@ footer i {
     grid-template-areas: 'title img' 'txt img' 'group img' 'button img';
   }
 
-  .proj_img {
+  .proj img {
     grid-area: img;
   }
 
-  .proj_title {
+  .proj h3 {
     grid-area: title;
     font-size: 40px;
     font-weight: 700;
@@ -724,33 +701,37 @@ footer i {
     margin-bottom: 24px;
   }
 
-  .proj_txt {
+  .proj p {
     grid-area: txt;
     color: #dfe1e6;
   }
 
-  .proj_group {
+  .proj ul {
     grid-area: group;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
   }
 
-  .proj_lang {
+  .proj .proj_lang {
     font-family: 'Roboto', Helvetica, sans-serif;
     margin: 0 20px;
   }
 
-  .proj_button {
+  .proj button {
     grid-area: button;
     font-size: 15px;
     line-height: 24px;
   }
 
-  .contact_group {
+  .contact {
     width: 684px;
     margin: auto;
-    margin-top: 228px;
+    margin-top: 228px 0 100px;
+  }
+   
+  .contact div {
+    width: 100%;
   }
 
   .contact_title {
@@ -759,18 +740,13 @@ footer i {
 
   .contact_title_des {
     font-size: 40px;
-    height: 56px;
-    line-height: 24px;
-    margin: 24px 0;
+    line-height: 56px;
     color: #9390ff;
     display: flex;
-    align-items: center;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    justify-content: center;
   }
 
-  .contact_text {
+  .contact p {
     font-size: 20px;
     color: #ebebff;
     line-height: 28px;
@@ -785,7 +761,8 @@ footer i {
     display: contents;
   }
 
-  .input_text {
+  form:nth-child(1),
+  form:nth-child(3) {
     font-size: 17px;
     color: #191765;
     margin-top: 88px;
@@ -794,7 +771,7 @@ footer i {
     line-height: 20px;
   }
 
-  .input_email {
+  form:nth-child(2) {
     font-size: 17px;
     color: #6d6c70;
     margin-top: 20px;
@@ -803,25 +780,19 @@ footer i {
     line-height: 20px;
   }
 
-  .input_msg {
+  form:nth-child(3) {
     height: 108px;
     margin-top: 21px;
     border-radius: 2px;
     color: #6d6c70;
   }
 
-  .contact_button {
+  form button {
     width: 160px;
     height: 48px;
     padding: 12px;
     margin: 88px 0 106px;
     font-size: 15px;
-  }
-
-  .contact_row {
-    margin: auto;
-
-    /* margin-bottom: 20px; */
   }
 
   footer {
