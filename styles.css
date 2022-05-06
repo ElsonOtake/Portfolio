@@ -116,14 +116,14 @@ form {
   color: #fff;
 }
 
-.header_list {
+header ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 30px 24px 0;
 }
 
-.company {
+header .company {
   display: flex;
   align-items: center;
   text-align: center;
@@ -136,17 +136,17 @@ form {
   margin: 0 0;
 }
 
-.menu {
+header .menu {
   display: flex;
   align-items: center;
   text-align: center;
 }
 
-.header_desktop {
+header .header_desktop {
   display: none;
 }
 
-.header_container {
+header .header_desktop ul {
   display: none;
 }
 
@@ -170,7 +170,7 @@ form {
   padding: 60px 0 28px;
 }
 
-.name {
+.presentation h1 {
   width: calc(100% - 48px);
   font-size: 48px;
   color: #7d73fc;
@@ -183,7 +183,7 @@ form {
   margin: 12px 0;
 }
 
-.position {
+.presentation h2 {
   width: calc(100% - 48px);
   font-size: 32px;
   line-height: 44px;
@@ -205,7 +205,7 @@ form {
   margin: 0 0;
 }
 
-.descr {
+.qualification p {
   width: calc(100% - 48px);
   font-size: 20px;
   line-height: 28px;
@@ -216,23 +216,25 @@ form {
   margin-bottom: 33px;
 }
 
-.qualif_table {
+.qualification div {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: flex-start;
   width: calc(100% - 48px);
-  margin: 30px 0;
+  padding: 30px 0 40px;
+  border-top: 1px solid #646369;
+  border-bottom: 1px solid #646369;
 }
 
-.qualif_group {
+.qualification .qualif_group {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
 
-.qualif_title {
+.qualification h3 {
   font-size: 12px;
   display: flex;
   flex-direction: column;
@@ -246,19 +248,19 @@ form {
   margin: 10px 0;
 }
 
-.qualif_title.language {
+.qualification .language {
   width: 107px;
 }
 
-.qualif_title.frameworks {
+.qualification .frameworks {
   width: 140px;
 }
 
-.qualif_title.skills {
+.qualification .skills {
   width: 106px;
 }
 
-.qualif_item {
+.qualification li {
   font-size: 15px;
   color: #f5f5ff;
   line-height: 24px;
@@ -278,7 +280,7 @@ form {
   color: #a2a3ae;
 }
 
-.next_section {
+.next_group .next_section {
   font-size: 20px;
   line-height: 32px;
   text-align: center;
@@ -538,30 +540,30 @@ footer i {
 }
 
 @media only screen and (min-width: 768px) {
-  .header {
+  header {
     margin: 0 142px;
   }
 
-  .company {
+  header .company {
     line-height: 20px;
     margin: 0 10px;
   }
 
-  .menu {
+  header .menu {
     display: none;
   }
 
-  .header_desktop {
+  header .header_desktop {
     display: contents;
   }
 
-  .header_container {
+  header .header_desktop ul {
     display: flex;
     gap: 15px;
     align-items: center;
   }
 
-  .link_des {
+  header .header_desktop li {
     display: flex;
     align-items: center;
     text-align: center;
@@ -592,7 +594,7 @@ footer i {
     padding: 186px 142px 0;
   }
 
-  .name {
+  .presentation h1 {
     width: 100%;
     font-size: 90px;
     color: #9390ff;
@@ -601,7 +603,7 @@ footer i {
     margin-bottom: 24px;
   }
 
-  .position {
+  .presentation h2 {
     width: 100%;
     font-size: 40px;
     line-height: 47px;
@@ -615,31 +617,26 @@ footer i {
     margin-bottom: 108px;
   }
 
-  .descr {
+  .qualification p {
     width: 100%;
     line-height: 32px;
     color: #b3bac5;
     margin-bottom: 33px;
   }
 
-  hr {
-    width: 100%;
-    margin: auto;
-  }
-
-  .qualif_table {
+  .qualification div {
     width: 100%;
     margin: auto;
     margin-bottom: 41px;
   }
 
-  .qualif_title {
+  .qualification h3 {
     font-size: 18px;
     line-height: 29px;
     margin: 35px 8px 25px 0;
   }
 
-  .qualif_item {
+  .qualification li {
     font-size: 14.1935px;
     color: #fff;
     line-height: 28px;
@@ -664,7 +661,7 @@ footer i {
     order: 2;
   }
 
-  .links {
+  .next_group div {
     margin: 0 0;
   }
 
