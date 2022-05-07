@@ -20,11 +20,11 @@ a {
 }
 
 footer a {
+  display: flex;
+  justify-content: center;
   font-size: 20px;
   color: #ebebff;
-  text-align: center;
   line-height: 28px;
-  padding: 10px;
   transition: 1s;
 }
 
@@ -69,6 +69,13 @@ button {
   text-align: center;
   text-decoration: none;
   transition-duration: 0.4s;
+}
+
+form button {
+  width: fit-content;
+  margin-top: 40px;
+  margin-bottom: 71px;
+  align-self: center;
 }
 
 button:hover {
@@ -120,23 +127,24 @@ footer ul {
   display: flex;
   justify-content: center;
   gap: 20px;
+  padding-bottom: 10px;
 }
 
 header ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px 24px 0;
 }
 
 .proj ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
   margin-bottom: 24px;
+}
+
+header {
+  margin: 0 24px;
 }
 
 header .logo {
@@ -146,10 +154,6 @@ header .logo {
   font-size: 18px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0 0;
 }
 
 header .menu_mob {
@@ -170,7 +174,7 @@ header .menu_dsk {
     url(images/Ellipse\ 20.svg),
     url(images/Ellipse\ 21.svg),
     url(images/Ellipse\ 22.svg);
-  background-position: left top, right 10%, left 32%, right 46%, left 60%, right 76%;
+  background-position: left 1%, right 10%, left 31%, right 46%, left 61%, right 76%;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
 }
 
@@ -179,33 +183,23 @@ header .menu_dsk {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 60px 0 28px;
+  margin: 60px 24px 40px;
 }
 
 .pres h1 {
-  width: calc(100% - 48px);
   font-size: 48px;
   color: #7d73fc;
   font-weight: 700;
   line-height: 72px;
   letter-spacing: 0.37px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 12px 0;
 }
 
 .pres h2 {
-  width: calc(100% - 48px);
   font-size: 32px;
   line-height: 44px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 12px 0;
 }
 
 .qual {
@@ -214,17 +208,13 @@ header .menu_dsk {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0 0;
+  margin: 0 24px;
 }
 
 .qual p {
-  width: calc(100% - 48px);
   font-size: 20px;
   line-height: 28px;
   color: #c8c8d4;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   margin-bottom: 33px;
 }
 
@@ -233,7 +223,6 @@ header .menu_dsk {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: flex-start;
-  width: calc(100% - 48px);
   padding: 30px 0 40px;
   border-top: 1px solid #646369;
   border-bottom: 1px solid #646369;
@@ -252,11 +241,7 @@ header .menu_dsk {
   flex-direction: column;
   line-height: 24px;
   align-items: flex-start;
-  width: 50%;
   letter-spacing: 0.03em;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   margin: 10px 0;
 }
 
@@ -278,9 +263,6 @@ header .menu_dsk {
   line-height: 24px;
   display: flex;
   align-items: center;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   margin: 10px 0;
 }
 
@@ -296,9 +278,7 @@ header .menu_dsk {
   font-size: 20px;
   line-height: 32px;
   text-align: center;
-  flex: none;
   order: 1;
-  flex-grow: 0;
   margin: 0 12px;
 }
 
@@ -312,6 +292,10 @@ header .menu_dsk {
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+
+.next_mob i {
+  color: #a2a3ae;
 }
 
 .next div i {
@@ -329,28 +313,19 @@ header .menu_dsk {
   align-items: center;
 }
 
-.next_mob i {
-  color: #a2a3ae;
-}
-
 .rcnt {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 33px;
+  border-bottom: 1px solid #646369;
+  margin-bottom: 48px;
 }
 
 .rcnt_mob {
   font-size: 40px;
   width: calc(100% - 48px);
   line-height: 52px;
-  display: flex;
-  align-items: center;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  padding-bottom: 33px;
-  border-bottom: 1px solid #646369;
-  margin-bottom: 48px;
 }
 
 .rcnt_dsk {
@@ -361,7 +336,6 @@ header .menu_dsk {
   display: grid;
   grid-template-columns: auto;
   align-items: center;
-  width: calc(100% - 48px);
   margin: 40px 24px 0;
 }
 
@@ -380,30 +354,20 @@ header .menu_dsk {
   line-height: 44px;
   display: flex;
   align-items: center;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   margin: 24px 0;
+  padding: 30px 0;
 }
 
 .proj p {
   font-size: 20px;
   color: #dcdce8;
-  width: 100%;
   line-height: 28px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
   margin-bottom: 24px;
 }
 
 .proj .lngg {
   font-size: 15px;
   line-height: 20px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0 0;
 }
 
 .proj .vrln {
@@ -417,18 +381,15 @@ header .menu_dsk {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  flex: none;
-  order: 3;
-  flex-grow: 0;
   width: fit-content;
 }
 
 .cont {
   display: flex;
   flex-direction: column;
-  padding: 120px 24px 70px;
+  margin: 0 24px;
+  padding: 120px 0 70px;
   text-align: center;
-  border-bottom: 1px solid #3a3837;
 }
 
 .title_mob {
@@ -446,13 +407,14 @@ header .menu_dsk {
   font-size: 16px;
   color: #f5f5ff;
   line-height: 24px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 24px 0 0;
+  margin-top: 24px;
 }
 
 .form_dsk {
+  display: none;
+}
+
+form label {
   display: none;
 }
 
@@ -462,8 +424,7 @@ form .inpt_txt {
   margin-top: 40px;
   height: 48px;
   line-height: 24px;
-  padding-left: 20px;
-  width: calc(100% - 24px);
+  width: 100%;
 }
 
 form .inpt_eml {
@@ -472,10 +433,9 @@ form .inpt_eml {
   margin-top: 24px;
   height: 48px;
   line-height: 24px;
-  width: calc(100% - 24px);
   background: #f7f3ff;
   border: 1px solid #9490ff;
-  padding-left: 20px;
+  width: 100%;
 }
 
 form .inpt_msg {
@@ -483,20 +443,13 @@ form .inpt_msg {
   margin-top: 24px;
   line-height: 24px;
   resize: none;
-  padding-top: 20px;
-}
-
-form button {
-  width: fit-content;
-  margin-top: 40px;
-  margin-bottom: 71px;
-  align-self: center;
 }
 
 footer {
-  width: fit-content;
+  width: 100%;
   margin: auto;
-  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid #3a3837;
 }
 
 @media only screen and (min-width: 768px) {
@@ -504,7 +457,11 @@ footer {
     font-size: 14.1935px;
     color: #fff;
     line-height: 28px;
-    margin: 0 0;
+    margin: 0;
+  }
+
+  footer ul {
+    padding-bottom: 0;
   }
 
   .proj ul {
@@ -520,7 +477,7 @@ footer {
 
   header .logo {
     line-height: 20px;
-    margin: 0 10px;
+    padding: 12px;
   }
 
   header .menu_mob {
@@ -543,10 +500,7 @@ footer {
     text-align: center;
     font-size: 15px;
     line-height: 20px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0 10px;
+    padding: 12px;
   }
 
   .bckg {
@@ -557,7 +511,7 @@ footer {
       url(images/dsk_Ellipse\ 20.svg),
       url(images/dsk_Ellipse\ 21.svg),
       url(images/dsk_Ellipse\ 22.svg);
-    background-position: left 7%, right 13%, left 38%, right 52%, left 63%, right 70%;
+    background-position: left 7%, right 13%, left 35%, right 50%, left 60%, right 68%;
   }
 
   .pres {
@@ -565,11 +519,10 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 186px 142px 0;
+    margin: 186px 142px 88px;
   }
 
   .pres h1 {
-    width: 100%;
     font-size: 90px;
     color: #9390ff;
     font-weight: 700;
@@ -578,11 +531,10 @@ footer {
   }
 
   .pres h2 {
-    width: 100%;
     font-size: 40px;
     line-height: 47px;
     color: #dfe1e6;
-    margin-bottom: 88px;
+    padding-bottom: 25px;
   }
 
   .qual {
@@ -592,27 +544,27 @@ footer {
   }
 
   .qual p {
-    width: 100%;
     line-height: 32px;
     color: #b3bac5;
+    padding-bottom: 27px;
     margin-bottom: 33px;
   }
 
   .qual div {
     width: 100%;
     margin: auto;
-    margin-bottom: 41px;
   }
 
   .qual h3 {
     font-size: 18px;
     line-height: 29px;
-    margin: 35px 8px 25px 0;
+    margin: 0 8px 25px 0;
   }
 
   .next {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     margin-bottom: 232px;
   }
 
@@ -629,16 +581,16 @@ footer {
   }
 
   .next div {
-    margin: 0 0;
+    margin: 0;
   }
 
   .next_mob {
-    margin: 0 0;
+    margin: 0;
   }
 
   .rcnt {
     align-items: flex-start;
-    margin: 24px 142px;
+    margin: 0 142px 48px;
   }
 
   .rcnt_mob {
@@ -647,27 +599,18 @@ footer {
 
   .rcnt_dsk {
     font-size: 64px;
-    width: calc(100% - 48px);
     line-height: 114px;
     font-weight: 700;
     display: flex;
     align-items: center;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    padding-bottom: 33px;
-    border-bottom: 1px solid #646369;
-    margin-bottom: 96px;
   }
 
   .proj {
-    width: calc(100% - 284px);
     display: grid;
     grid-template-columns: calc(60% - 12px) calc(40% - 12px);
     grid-template-areas: 'img title' 'img txt' 'img group' 'img button';
     grid-column-gap: 24px;
-    margin: auto;
-    margin-bottom: 88px;
+    margin: 0 142px 88px;
   }
 
   .proj:nth-of-type(odd) {
@@ -682,6 +625,7 @@ footer {
 
   .proj img {
     grid-area: img;
+    align-self: end;
   }
 
   .proj h3 {
@@ -689,8 +633,7 @@ footer {
     font-size: 40px;
     font-weight: 700;
     line-height: 52px;
-    margin-top: 0;
-    margin-bottom: 24px;
+    padding: 26px 0;
   }
 
   .proj p {
@@ -720,11 +663,9 @@ footer {
   .cont {
     width: 684px;
     margin: auto;
-    margin-top: 228px 0 100px;
-  }
-
-  .cont div {
-    width: 100%;
+    padding-top: 228px;
+    padding-bottom: 100px;
+    margin-bottom: 0;
   }
 
   .title_mob {
@@ -743,7 +684,7 @@ footer {
     font-size: 20px;
     color: #ebebff;
     line-height: 28px;
-    margin: 24px 0;
+    margin-top: 24px;
   }
 
   .form_mob {
@@ -787,12 +728,5 @@ footer {
     margin: auto;
     margin-top: 20px;
     padding: 20px 0;
-  }
-
-  footer a {
-    flex: none;
-    order: 5;
-    flex-grow: 0;
-    margin: 0 0;
   }
 }
