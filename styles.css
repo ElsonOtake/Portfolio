@@ -144,7 +144,7 @@ header ul {
 }
 
 header {
-  margin: 0 24px;
+  margin: 60px 24px 0;
 }
 
 header .logo {
@@ -472,7 +472,7 @@ footer {
   }
 
   header {
-    margin: 0 142px;
+    margin: 14px 142px 0;
   }
 
   header .logo {
@@ -511,7 +511,7 @@ footer {
       url(images/dsk_Ellipse\ 20.svg),
       url(images/dsk_Ellipse\ 21.svg),
       url(images/dsk_Ellipse\ 22.svg);
-    background-position: left 7%, right 13%, left 35%, right 50%, left 60%, right 68%;
+    background-position: left 7%, right 13%, left 34%, right 50%, left 61%, right 69%;
   }
 
   .pres {
@@ -607,8 +607,6 @@ footer {
 
   .proj {
     display: grid;
-    grid-template-columns: calc(60% - 12px) calc(40% - 12px);
-    grid-template-areas: 'img title' 'img txt' 'img group' 'img button';
     grid-column-gap: 24px;
     margin: 0 142px 88px;
   }
