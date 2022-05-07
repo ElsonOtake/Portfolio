@@ -31,7 +31,7 @@ footer a {
 ul a,
 span,
 i,
-.next_group a {
+.next a {
   transition: 1s;
 }
 
@@ -84,15 +84,6 @@ button:active {
 button:disabled {
   background-color: #2a2b33;
   color: #c8c8d4;
-}
-
-hr {
-  border: 1px solid #646369;
-  width: calc(100% - 48px);
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0 24px;
 }
 
 form {
@@ -148,7 +139,7 @@ header ul {
   margin-bottom: 24px;
 }
 
-header .company {
+header .logo {
   display: flex;
   align-items: center;
   text-align: center;
@@ -161,21 +152,17 @@ header .company {
   margin: 0 0;
 }
 
-header .menu {
+header .menu_mob {
   display: flex;
   align-items: center;
   text-align: center;
 }
 
-header .header_desktop {
+header .menu_dsk {
   display: none;
 }
 
-header .header_desktop ul {
-  display: none;
-}
-
-.ellipses {
+.bckg {
   background-image:
     url(images/Ellipse\ 18.svg),
     url(images/Ellipse\ 19.svg),
@@ -183,11 +170,11 @@ header .header_desktop ul {
     url(images/Ellipse\ 20.svg),
     url(images/Ellipse\ 21.svg),
     url(images/Ellipse\ 22.svg);
-  background-position: left top, right 11%, left 39%, right 57%, left 76%, right 94%;
+  background-position: left top, right 10%, left 32%, right 46%, left 60%, right 76%;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
 }
 
-.presentation {
+.pres {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -195,7 +182,7 @@ header .header_desktop ul {
   padding: 60px 0 28px;
 }
 
-.presentation h1 {
+.pres h1 {
   width: calc(100% - 48px);
   font-size: 48px;
   color: #7d73fc;
@@ -208,7 +195,7 @@ header .header_desktop ul {
   margin: 12px 0;
 }
 
-.presentation h2 {
+.pres h2 {
   width: calc(100% - 48px);
   font-size: 32px;
   line-height: 44px;
@@ -221,7 +208,7 @@ header .header_desktop ul {
   margin: 12px 0;
 }
 
-.qualification {
+.qual {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -230,7 +217,7 @@ header .header_desktop ul {
   margin: 0 0;
 }
 
-.qualification p {
+.qual p {
   width: calc(100% - 48px);
   font-size: 20px;
   line-height: 28px;
@@ -241,7 +228,7 @@ header .header_desktop ul {
   margin-bottom: 33px;
 }
 
-.qualification div {
+.qual div {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -252,14 +239,14 @@ header .header_desktop ul {
   border-bottom: 1px solid #646369;
 }
 
-.qualification .qualif_group {
+.qual div section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
 
-.qualification h3 {
+.qual h3 {
   font-size: 12px;
   display: flex;
   flex-direction: column;
@@ -273,19 +260,19 @@ header .header_desktop ul {
   margin: 10px 0;
 }
 
-.qualification .language {
+.qual .lang {
   width: 107px;
 }
 
-.qualification .frameworks {
+.qual .fram {
   width: 140px;
 }
 
-.qualification .skills {
+.qual .skil {
   width: 106px;
 }
 
-.qualification li {
+.qual li {
   font-size: 15px;
   color: #f5f5ff;
   line-height: 24px;
@@ -297,15 +284,15 @@ header .header_desktop ul {
   margin: 10px 0;
 }
 
-.next_des {
+.next_dsk {
   display: none;
 }
 
-.next_des i {
+.next_dsk i {
   color: #a2a3ae;
 }
 
-.next_group .next_section {
+.next .work {
   font-size: 20px;
   line-height: 32px;
   text-align: center;
@@ -315,23 +302,23 @@ header .header_desktop ul {
   margin: 0 12px;
 }
 
-.links {
+.next div {
   width: fit-content;
   margin: auto;
   margin-top: 58px;
 }
 
-.links i {
-  font-size: 20px;
-}
-
-.links_group {
+.next div ul {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
-.next {
+.next div i {
+  font-size: 20px;
+}
+
+.next_mob {
   width: fit-content;
   display: flex;
   justify-content: center;
@@ -342,17 +329,17 @@ header .header_desktop ul {
   align-items: center;
 }
 
-.next i {
+.next_mob i {
   color: #a2a3ae;
 }
 
-.work_title {
+.rcnt {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.recent_work {
+.rcnt_mob {
   font-size: 40px;
   width: calc(100% - 48px);
   line-height: 52px;
@@ -366,7 +353,7 @@ header .header_desktop ul {
   margin-bottom: 48px;
 }
 
-.recent_work_des {
+.rcnt_dsk {
   display: none;
 }
 
@@ -410,7 +397,7 @@ header .header_desktop ul {
   margin-bottom: 24px;
 }
 
-.proj .proj_lang {
+.proj .lngg {
   font-size: 15px;
   line-height: 20px;
   flex: none;
@@ -419,7 +406,7 @@ header .header_desktop ul {
   margin: 0 0;
 }
 
-.proj .vl {
+.proj .vrln {
   border-left: 1px solid #555;
   height: 40px;
 }
@@ -436,7 +423,7 @@ header .header_desktop ul {
   width: fit-content;
 }
 
-.contact {
+.cont {
   display: flex;
   flex-direction: column;
   padding: 120px 24px 70px;
@@ -444,18 +431,18 @@ header .header_desktop ul {
   border-bottom: 1px solid #3a3837;
 }
 
-.contact_title {
+.title_mob {
   font-size: 32px;
   text-align: center;
   color: #9390ff;
   line-height: 44px;
 }
 
-.contact_title_des {
+.title_des {
   display: none;
 }
 
-.contact p {
+.cont p {
   font-size: 16px;
   color: #f5f5ff;
   line-height: 24px;
@@ -465,11 +452,11 @@ header .header_desktop ul {
   margin: 24px 0 0;
 }
 
-.dsk_form {
+.form_dsk {
   display: none;
 }
 
-form .input_text {
+form .inpt_txt {
   font-size: 15px;
   color: #81818c;
   margin-top: 40px;
@@ -479,7 +466,7 @@ form .input_text {
   width: calc(100% - 24px);
 }
 
-form .input_email {
+form .inpt_eml {
   font-size: 15px;
   color: #191765;
   margin-top: 24px;
@@ -491,7 +478,7 @@ form .input_email {
   padding-left: 20px;
 }
 
-form .input_msg {
+form .inpt_msg {
   height: 148px;
   margin-top: 24px;
   line-height: 24px;
@@ -499,7 +486,7 @@ form .input_msg {
   padding-top: 20px;
 }
 
-form .contact_button {
+form button {
   width: fit-content;
   margin-top: 40px;
   margin-bottom: 71px;
@@ -513,7 +500,7 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
-  .qualification li {
+  .qual li {
     font-size: 14.1935px;
     color: #fff;
     line-height: 28px;
@@ -531,26 +518,26 @@ footer {
     margin: 0 142px;
   }
 
-  header .company {
+  header .logo {
     line-height: 20px;
     margin: 0 10px;
   }
 
-  header .menu {
+  header .menu_mob {
     display: none;
   }
 
-  header .header_desktop {
+  header .menu_dsk {
     display: contents;
   }
 
-  header .header_desktop ul {
+  header .menu_dsk ul {
     display: flex;
     gap: 15px;
     align-items: center;
   }
 
-  header .header_desktop li {
+  header .menu_dsk li {
     display: flex;
     align-items: center;
     text-align: center;
@@ -562,7 +549,7 @@ footer {
     margin: 0 10px;
   }
 
-  .ellipses {
+  .bckg {
     background-image:
       url(images/circle\ 1\ header.svg),
       url(images/circle\ 2\ header.svg),
@@ -570,10 +557,10 @@ footer {
       url(images/dsk_Ellipse\ 20.svg),
       url(images/dsk_Ellipse\ 21.svg),
       url(images/dsk_Ellipse\ 22.svg);
-    background-position: left 7%, right 17%, left 48%, right 68%, left 84%, right 96%;
+    background-position: left 7%, right 13%, left 38%, right 52%, left 63%, right 70%;
   }
 
-  .presentation {
+  .pres {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -581,7 +568,7 @@ footer {
     padding: 186px 142px 0;
   }
 
-  .presentation h1 {
+  .pres h1 {
     width: 100%;
     font-size: 90px;
     color: #9390ff;
@@ -590,7 +577,7 @@ footer {
     margin-bottom: 24px;
   }
 
-  .presentation h2 {
+  .pres h2 {
     width: 100%;
     font-size: 40px;
     line-height: 47px;
@@ -598,38 +585,38 @@ footer {
     margin-bottom: 88px;
   }
 
-  .qualification {
+  .qual {
     width: 447px;
     margin: auto;
     margin-bottom: 108px;
   }
 
-  .qualification p {
+  .qual p {
     width: 100%;
     line-height: 32px;
     color: #b3bac5;
     margin-bottom: 33px;
   }
 
-  .qualification div {
+  .qual div {
     width: 100%;
     margin: auto;
     margin-bottom: 41px;
   }
 
-  .qualification h3 {
+  .qual h3 {
     font-size: 18px;
     line-height: 29px;
     margin: 35px 8px 25px 0;
   }
 
-  .next_group {
+  .next {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 232px;
   }
 
-  .next_des {
+  .next_dsk {
     width: fit-content;
     display: flex;
     justify-content: center;
@@ -637,28 +624,28 @@ footer {
     align-items: center;
   }
 
-  .next_des .arrow {
+  .next_dsk .ardw {
     order: 2;
   }
 
-  .next_group div {
+  .next div {
     margin: 0 0;
   }
 
-  .next {
+  .next_mob {
     margin: 0 0;
   }
 
-  .work_title {
+  .rcnt {
     align-items: flex-start;
     margin: 24px 142px;
   }
 
-  .recent_work {
+  .rcnt_mob {
     display: none;
   }
 
-  .recent_work_des {
+  .rcnt_dsk {
     font-size: 64px;
     width: calc(100% - 48px);
     line-height: 114px;
@@ -683,12 +670,12 @@ footer {
     margin-bottom: 88px;
   }
 
-  .proj:nth-of-type(even) {
+  .proj:nth-of-type(odd) {
     grid-template-columns: calc(60% - 12px) calc(40% - 12px);
     grid-template-areas: 'img title' 'img txt' 'img group' 'img button';
   }
 
-  .proj:nth-of-type(odd) {
+  .proj:nth-of-type(even) {
     grid-template-columns: calc(40% - 12px) calc(60% - 12px);
     grid-template-areas: 'title img' 'txt img' 'group img' 'button img';
   }
@@ -711,7 +698,7 @@ footer {
     color: #dfe1e6;
   }
 
-  .proj .proj_lang {
+  .proj .lngg {
     font-family: 'Roboto', Helvetica, sans-serif;
     margin: 0 20px;
   }
@@ -730,21 +717,21 @@ footer {
     line-height: 24px;
   }
 
-  .contact {
+  .cont {
     width: 684px;
     margin: auto;
     margin-top: 228px 0 100px;
   }
 
-  .contact div {
+  .cont div {
     width: 100%;
   }
 
-  .contact_title {
+  .title_mob {
     display: none;
   }
 
-  .contact_title_des {
+  .title_des {
     font-size: 40px;
     line-height: 56px;
     color: #9390ff;
@@ -752,22 +739,22 @@ footer {
     justify-content: center;
   }
 
-  .contact p {
+  .cont p {
     font-size: 20px;
     color: #ebebff;
     line-height: 28px;
     margin: 24px 0;
   }
 
-  .mob_form {
+  .form_mob {
     display: none;
   }
 
-  .dsk_form {
+  .form_dsk {
     display: contents;
   }
 
-  form .input_text {
+  form .inpt_txt {
     font-size: 17px;
     color: #191765;
     margin-top: 88px;
@@ -776,7 +763,7 @@ footer {
     line-height: 20px;
   }
 
-  form .input_email {
+  form .inpt_eml {
     font-size: 17px;
     color: #6d6c70;
     margin-top: 20px;
@@ -785,7 +772,7 @@ footer {
     line-height: 20px;
   }
 
-  form .input_msg {
+  form .inpt_msg {
     height: 108px;
     margin-top: 21px;
     border-radius: 2px;
