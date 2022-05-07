@@ -3,7 +3,6 @@
   padding: 0;
   font-family: 'Roboto', Helvetica, sans-serif;
   font-style: normal;
-  border: 1px solid white;
 }
 
 body {
@@ -20,14 +19,19 @@ a {
   text-decoration: none;
 }
 
+footer a {
+  font-size: 20px;
+  color: #ebebff;
+  text-align: center;
+  line-height: 28px;
+  padding: 10px;
+  transition: 1s;
+}
+
 ul a,
 span,
 i,
 .next_group a {
-  transition: 1s;
-}
-
-footer a {
   transition: 1s;
 }
 
@@ -41,6 +45,10 @@ a:active,
 span:hover {
   color: #9490ff;
   transform: scale(1.2);
+}
+
+footer i {
+  font-size: 20px;
 }
 
 i:hover {
@@ -117,11 +125,27 @@ form {
   color: #fff;
 }
 
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 header ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 30px 24px 0;
+}
+
+.proj ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin-bottom: 24px;
 }
 
 header .company {
@@ -386,16 +410,6 @@ header .header_desktop ul {
   margin-bottom: 24px;
 }
 
-.proj ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-  margin-bottom: 24px;
-}
-
 .proj .proj_lang {
   font-size: 15px;
   line-height: 20px;
@@ -427,6 +441,7 @@ header .header_desktop ul {
   flex-direction: column;
   padding: 120px 24px 70px;
   text-align: center;
+  border-bottom: 1px solid #3a3837;
 }
 
 .contact_title {
@@ -491,30 +506,27 @@ form .contact_button {
   align-self: center;
 }
 
-footer i {
-  font-size: 20px;
-}
-
-.footer_links {
+footer {
   width: fit-content;
   margin: auto;
-}
-
-.footer_links_group {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.email {
-  font-size: 20px;
-  color: #ebebff;
-  text-align: center;
-  line-height: 28px;
-  padding: 10px;
+  margin-top: 25px;
 }
 
 @media only screen and (min-width: 768px) {
+  .qualification li {
+    font-size: 14.1935px;
+    color: #fff;
+    line-height: 28px;
+    margin: 0 0;
+  }
+
+  .proj ul {
+    grid-area: group;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
   header {
     margin: 0 142px;
   }
@@ -611,13 +623,6 @@ footer i {
     margin: 35px 8px 25px 0;
   }
 
-  .qualification li {
-    font-size: 14.1935px;
-    color: #fff;
-    line-height: 28px;
-    margin: 0 0;
-  }
-
   .next_group {
     display: flex;
     justify-content: space-evenly;
@@ -706,16 +711,17 @@ footer i {
     color: #dfe1e6;
   }
 
-  .proj ul {
-    grid-area: group;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-
   .proj .proj_lang {
     font-family: 'Roboto', Helvetica, sans-serif;
     margin: 0 20px;
+  }
+
+  form button {
+    width: 160px;
+    height: 48px;
+    padding: 12px;
+    margin: 88px 0 106px;
+    font-size: 15px;
   }
 
   .proj button {
@@ -729,7 +735,7 @@ footer i {
     margin: auto;
     margin-top: 228px 0 100px;
   }
-   
+
   .contact div {
     width: 100%;
   }
@@ -761,8 +767,7 @@ footer i {
     display: contents;
   }
 
-  form:nth-child(1),
-  form:nth-child(3) {
+  form .input_text {
     font-size: 17px;
     color: #191765;
     margin-top: 88px;
@@ -771,7 +776,7 @@ footer i {
     line-height: 20px;
   }
 
-  form:nth-child(2) {
+  form .input_email {
     font-size: 17px;
     color: #6d6c70;
     margin-top: 20px;
@@ -780,19 +785,11 @@ footer i {
     line-height: 20px;
   }
 
-  form:nth-child(3) {
+  form .input_msg {
     height: 108px;
     margin-top: 21px;
     border-radius: 2px;
     color: #6d6c70;
-  }
-
-  form button {
-    width: 160px;
-    height: 48px;
-    padding: 12px;
-    margin: 88px 0 106px;
-    font-size: 15px;
   }
 
   footer {
@@ -805,11 +802,10 @@ footer i {
     padding: 20px 0;
   }
 
-  .email {
+  footer a {
     flex: none;
     order: 5;
     flex-grow: 0;
     margin: 0 0;
   }
-
 }
