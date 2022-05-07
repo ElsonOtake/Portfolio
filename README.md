@@ -38,7 +38,7 @@ Once you completed these steps you should see the site in your browser.
 
 - GitHub: [@elsonotake](https://github.com/elsonotake)
 - Twitter: [@elsonotake](https://twitter.com/elsonotake)
-- LinkedIn: [elsonotake](https://linkedin.com/in/elsonotake)
+- LinkedIn: [Elson Otake](https://linkedin.com/in/elson-otake-0b5b9138)
 
 
 ## 🤝 Contributing
