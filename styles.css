@@ -159,6 +159,23 @@ header.active {
   z-index: 1000;
 }
 
+header.active .logo,
+header.active .menu_mob,
+header.active .fa-envelope {
+  display: none;
+}
+
+header.active .menu_close {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: large;
+}
+
+header.active .fa-angle-right {
+  display: contents;
+}
+
 header.active ul {
   display: block;
   padding-top: 60px;
