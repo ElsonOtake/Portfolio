@@ -159,6 +159,11 @@ header .menu_mob {
   text-align: center;
 }
 
+header .menu_close,
+header .fa-angle-right {
+  display: none;
+}
+
 header .menu_dsk {
   display: none;
 }
