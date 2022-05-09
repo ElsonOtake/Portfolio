@@ -130,12 +130,6 @@ footer ul {
   padding-bottom: 10px;
 }
 
-header ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .proj ul {
   display: flex;
   justify-content: space-around;
@@ -144,6 +138,9 @@ header ul {
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 60px 24px 0;
 }
 
@@ -322,14 +319,11 @@ header .menu_dsk {
   margin-bottom: 48px;
 }
 
-.rcnt_mob {
+.rcnt h2 {
   font-size: 40px;
   width: calc(100% - 48px);
   line-height: 52px;
-}
-
-.rcnt_dsk {
-  display: none;
+  text-transform: uppercase;
 }
 
 .proj {
@@ -593,16 +587,13 @@ footer {
     margin: 0 142px 48px;
   }
 
-  .rcnt_mob {
-    display: none;
-  }
-
-  .rcnt_dsk {
+  .rcnt h2 {
     font-size: 64px;
     line-height: 114px;
     font-weight: 700;
     display: flex;
     align-items: center;
+    text-transform: none;
   }
 
   .proj {
