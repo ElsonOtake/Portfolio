@@ -49,6 +49,8 @@ Once you completed these steps you should see the site in your browser.
 
 [GiuseppeTG](https://github.com/GiuseppeTG/) Giuseppe Tomasini
 
+[Ibnballo1](https://github.com/Ibnballo1) Abdullateef Bello
+
 Contributions, issues, and feature requests are welcome!
 
 
