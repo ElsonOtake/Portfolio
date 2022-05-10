@@ -54,8 +54,7 @@ const projects = [{
   technologies: ["Css", "html", "Javascript", "Ruby"],
   linkLiveVersion: "https://elsonotake.github.io/Portfolio/",
   linkSource: "https://github.com/ElsonOtake/Portfolio",
-},
-]
+}]
 
 const portfolio = document.getElementById("portfolio");
 for (let i = projects.length - 1; i >= 0 ; i--) {
@@ -83,8 +82,16 @@ for (let i = projects.length - 1; i >= 0 ; i--) {
   section.appendChild(ul);
   const button = document.createElement("button");
   button.type = "button";
-  button.className = "theme44";
+  /* create a class with the object number after underline */
+  button.className = "_" + i + " theme44";
   button.innerText = "See project";
   section.appendChild(button);
   portfolio.insertAdjacentElement("afterend", section);
 }
+
+const seeProjectButtons = document.querySelectorAll(".proj button");
+seeProjectButtons.forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    console.log(e.target.classList[0].substring(1))}
+    )})
+
