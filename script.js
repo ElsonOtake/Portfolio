@@ -13,3 +13,45 @@ header.addEventListener('click', (event) => {
     }
   }
 });
+
+const projects = [{
+  name: "Multi-Post Stories 1",
+  description: "A daily selection of privately personalized reads; " + 
+  "no accounts or sign-ups required. has been the industry's " +
+  "standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+  featuredImage: "images/projects-79906734.jpeg",
+  technologies: ["Css", "html", "Javascript", "Ruby"],
+  linkLiveVersion: "https://elsonotake.github.io/Portfolio/",
+  linkSource: "https://github.com/ElsonOtake/Portfolio",
+},{
+  name: "Multi-Post Stories 2",
+  description: "A daily selection of privately personalized reads; " + 
+  "no accounts or sign-ups required. has been the industry's " +
+  "standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+  featuredImage: "images/depositphotos-105666254.jpeg",
+  technologies: ["Css", "html", "Javascript", "Ruby"],
+  linkLiveVersion: "https://elsonotake.github.io/Portfolio/",
+  linkSource: "https://github.com/ElsonOtake/Portfolio",
+},{
+  name: "Multi-Post Stories 3",
+  description: "A daily selection of privately personalized reads; " + 
+  "no accounts or sign-ups required. has been the industry's " +
+  "standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+  featuredImage: "images/istockphoto-1068113694.jpeg",
+  technologies: ["Css", "html", "Javascript", "Ruby"],
+  linkLiveVersion: "https://elsonotake.github.io/Portfolio/",
+  linkSource: "https://github.com/ElsonOtake/Portfolio",
+},{
+  name: "Multi-Post Stories 4",
+  description: "A daily selection of privately personalized reads; " + 
+  "no accounts or sign-ups required. has been the industry's " +
+  "standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+  featuredImage: "images/hobbies-187729558.jpeg",
+  technologies: ["Css", "html", "Javascript", "Ruby"],
+  linkLiveVersion: "https://elsonotake.github.io/Portfolio/",
+  linkSource: "https://github.com/ElsonOtake/Portfolio",
+},
+]
+for (let i = 0; i < projects.length; i++) {
+  console.log(projects[i].name);
+}
