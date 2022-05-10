@@ -10,22 +10,31 @@
   rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://kit.fontawesome.com/550c21f898.js" crossorigin="anonymous"></script>
-
+  <script src="script.js" defer></script>
   <title>Elson Otake's Portfolio</title>
 </head>
 <body class="bckg">
 
-  <header>
+  <header id="#about">
+    <a class="logo fw500" href="#">Origami Inc</a>
     <ul class="themefff">
-      <li class="logo fw500"><a href="#">Origami Inc</a></li>
       <li class="menu_mob">
         <i class="fa-solid fa-bars"></i>
       </li>
+      <li class="menu_close">
+        <i class="fa-solid fa-x"></i>
+      </li>
       <li class="menu_dsk">
         <ul>
-          <li class="fw500 themefff"><a href="#">Portfolio</a></li>
-          <li class="fw500 themefff"><a href="#">About</a></li>
-          <li class="fw500 themefff"><a href="#">Contact</a></li>
+          <li class="fw500 themefff">
+            <a class="menu_link" href="#portfolio">Portfolio</a>
+            <a href="#portfolio"><i class="fa-solid fa-angle-right"></i></a></li>
+          <li class="fw500 themefff">
+            <a class="menu_link" href="#about">About</a>
+            <a href="#about"><i class="fa-solid fa-angle-right"></i></a></li>
+          <li class="fw500 themefff">
+            <a class="menu_link" href="#contact">Contact</a>
+            <a href="#contact"><i class="fa-solid fa-angle-right"></i></a></li>
           <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
         </ul>
       </li>
@@ -86,12 +95,12 @@
     <div>
       <ul>
         <li>
-          <a href="#">
+          <a href="https://github.com/elsonotake">
             <i class="fa-brands fa-github"></i>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="https://linkedin.com/in/elson-otake-0b5b9138">
             <i class="fa-brands fa-linkedin"></i>
           </a>
         </li>
@@ -101,7 +110,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="https://twitter.com/elsonotake">
             <i class="fa-brands fa-twitter"></i>
           </a>
         </li>
@@ -122,9 +131,8 @@
     
   </div>
 
-  <section class="rcnt">
-    <h2 class="rcnt_mob theme43 fw500">MY RECENT WORK</h2>
-    <h2 class="rcnt_dsk theme43 fw500">My recent work</h2>
+  <section class="rcnt" id="portfolio">
+    <h2 class="theme43 fw500">My recent work</h2>
   </section>
 
   <section class="proj">
@@ -203,7 +211,7 @@
     <button type="button" class="theme44">See project</button>
   </section>
 
-  <section class="cont">
+  <section class="cont" id="contact">
     <div>
       <h2 class="title_mob fw500">CONTACT US</h2>
       <h2 class="title_des fw500">Let's chat!</h2>
@@ -239,12 +247,12 @@
   <footer>
     <ul>
       <li>
-        <a href="#">
+        <a href="https://github.com/elsonotake">
           <i class="fa-brands fa-github"></i>
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="https://linkedin.com/in/elson-otake-0b5b9138">
           <i class="fa-brands fa-linkedin"></i>
         </a>
       </li>
@@ -254,7 +262,7 @@
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="https://twitter.com/elsonotake">
           <i class="fa-brands fa-twitter"></i>
         </a>
       </li>
