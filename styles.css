@@ -145,7 +145,8 @@ header {
 }
 
 header.active { 
-  position: relative;
+  position: sticky;
+  display: block;
   top: 0;
   left: 0;
   padding: 0;
@@ -185,24 +186,21 @@ header.active ul {
 
 header.active .menu_dsk {
   display: block;
+}
+
+header.active .menu_dsk ul {
   width: 100%;
 }
 
 header.active .menu_dsk li {
-  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
   width: 100%;
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
   color: #EDECFF;
-}
-
-header.active .menu_dsk i {
-  width: 10px;
-}
-
-header.active .menu_dsk a:first-child {
-  width: calc(100% - 10px);
 }
 
 header .logo {
@@ -226,7 +224,7 @@ header .fa-angle-right {
 }
 
 header .menu_dsk {
-  display: block;
+  display: none;
 }
 
 .bckg {
