@@ -92,6 +92,8 @@ for (let i = projects.length - 1; i >= 0 ; i--) {
 const seeProjectButtons = document.querySelectorAll(".proj button");
 seeProjectButtons.forEach(btn => {
   btn.addEventListener('click', (e) => {
-    console.log(e.target.classList[0].substring(1))}
+    // console.log(e.target.classList[0].substring(1))
+    
+  }
     )})
 
