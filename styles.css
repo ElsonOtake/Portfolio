@@ -9,6 +9,10 @@ body {
   background-color: #191765;
 }
 
+body.noscroll {
+  overflow-y: hidden;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
