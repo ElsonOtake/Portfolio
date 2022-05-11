@@ -596,6 +596,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   gap: 24px;
+  padding-top: 24px;
+  padding-bottom: 28px;
 }
 
 .popup_wrapper article div:last-child img,
@@ -890,7 +892,7 @@ footer {
   .popup_wrapper article {
     top: 112px;
     left: 142px;
-    width: calc(100% - 248px);
+    width: calc(100% - 284px);
   }
 
   .popup_wrapper h1 {
@@ -903,12 +905,15 @@ footer {
     font-size: 16px;
     line-height: 30px;
     padding: 40px 0 60px;
-    width: 100%;
+    width: 684px;
+    margin: auto;
   }
 
   .popup_wrapper article div:last-child {
     flex-direction: row;
     justify-content: center;
     gap: 78px;
+    padding-top: 50px;
+    padding-bottom: 90px;
   }
 }
