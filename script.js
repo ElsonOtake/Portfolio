@@ -32,7 +32,7 @@ const projects = [{
   "standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
   featuredImage: "images/projects-79906734.jpeg",
   altTextImage: "Office desk with the word 'Project' written with chalk in the middle. Source: iStock",
-  technologies: ["Css", "html", "Javascript", "Ruby"],
+  technologies: ["Css", "html", "JCL", "Ruby", "Java"],
   linkLiveVersion: "https://elsonotake.github.io/Portfolio/",
   linkSource: "https://github.com/ElsonOtake/Portfolio",
 },{
@@ -42,7 +42,7 @@ const projects = [{
   "standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
   featuredImage: "images/depositphotos-105666254.jpeg",
   altTextImage: "Worktable stamped with 'About us' in the middle and 'Creative thinking' on the top and bottom edges. Source: iStock",
-  technologies: ["Css", "html", "Javascript", "Ruby"],
+  technologies: ["Css", "html", "Javascript"],
   linkLiveVersion: "https://elsonotake.github.io/Portfolio/",
   linkSource: "https://github.com/ElsonOtake/Portfolio",
 },{
@@ -52,7 +52,7 @@ const projects = [{
   "standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
   featuredImage: "images/hobbies-187729558.jpeg",
   altTextImage: "Worktable with the word 'Hobbies' in the middle surronded by drawings of bicycle, microphone, joystick, film projector, and paint palette. Source: iStock",
-  technologies: ["Css", "html", "Javascript", "Ruby"],
+  technologies: ["Css", "html", "Javascript", "Bootstrap"],
   linkLiveVersion: "https://elsonotake.github.io/Portfolio/",
   linkSource: "https://github.com/ElsonOtake/Portfolio",
 },{
@@ -62,7 +62,7 @@ const projects = [{
   "standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
   featuredImage: "images/istockphoto-1068113694.jpeg",
   altTextImage: "Computer table with dices with letters on top forming the word 'webinar'. Source: iStock",
-  technologies: ["Css", "html", "Javascript", "Ruby"],
+  technologies: ["Java", "Css", "html", "Javascript"],
   linkLiveVersion: "https://elsonotake.github.io/Portfolio/",
   linkSource: "https://github.com/ElsonOtake/Portfolio",
 }]
@@ -106,16 +106,14 @@ for (let i = projects.length - 1; i >= 0 ; i--) {
 // 
 const seeProjectButtons = document.querySelectorAll(".proj button");
 seeProjectButtons.forEach(btn => {btn.addEventListener('click', (e) => {
-    console.log(e.target.classList[0].substring(1));
     let i = parseInt(e.target.classList[0].substring(1));
-    // if (popupWrapper) {
-    //   popupWrapper.remove();
-    // }
     const popupWrapper = document.createElement("div");
     popupWrapper.className = "popup_wrapper";
     popupWrapper.id = "popup_container";
+    
+    // Close popup window click on "X" or outside the popup 
+
     popupWrapper.addEventListener('click', (e) => {
-      console.log(e.target);
       if (e.target.id == "popup_container" || e.target.classList[0] == 'popup_close') {
         popupWrapper.remove();
       }
@@ -126,13 +124,9 @@ seeProjectButtons.forEach(btn => {btn.addEventListener('click', (e) => {
     h1.className = "themefff fw500";
     h1.innerText = projects[i].name;
     div.appendChild(h1);
-    // const p1 = document.createElement("p");
-    // p1.className = "popup_close themefff fw500";
-    // p1.innerText = "X";
     const i0 = document.createElement("i");
     i0.className = "popup_close themefff fa-solid fa-x";
     div.appendChild(i0);
-    // div.appendChild(p1);
     article.appendChild(div);
     const img1 = document.createElement("img");
     img1.src = projects[i].featuredImage;
@@ -153,21 +147,27 @@ seeProjectButtons.forEach(btn => {btn.addEventListener('click', (e) => {
     const div1 = document.createElement("div");
     const button1 = document.createElement("button");
     button1.className = "themefff fw500";
+    const a1 = document.createElement("a");
+    a1.href = projects[i].linkLiveVersion;
     const span = document.createElement("span");
     span.innerText = "See Live";
-    button1.appendChild(span);
+    a1.appendChild(span);
     const img = document.createElement("img");
     img.src = "images/icons-live.svg"
-    button1.appendChild(img);
+    a1.appendChild(img);
+    button1.appendChild(a1);
     div1.appendChild(button1);
     const button2 = document.createElement("button");
     button2.className = "themefff fw500";
+    const a2 = document.createElement("a");
+    a2.href = projects[i].linkSource;
     const span1 = document.createElement("span");
     span1.innerText = "See Source";
-    button2.appendChild(span1);
+    a2.appendChild(span1);
     const i1 = document.createElement("i");
     i1.className = "fa-brands fa-github";
-    button2.appendChild(i1);
+    a2.appendChild(i1);
+    button2.appendChild(a2);
     div1.appendChild(button2);
     article.appendChild(div1);
     popupWrapper.appendChild(article);
