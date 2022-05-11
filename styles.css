@@ -3,7 +3,6 @@
   padding: 0;
   font-family: 'Roboto', Helvetica, sans-serif;
   font-style: normal;
-  border: 1px solid white;
 }
 
 body {
@@ -79,7 +78,7 @@ button {
 form p {
   display: block;
   margin: 10px auto;
-  font-size: smaller;
+  font-size: xx-small;
 }
 
 form button {
