@@ -136,9 +136,47 @@ footer ul {
 
 .proj ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin-bottom: 24px;
+}
+
+.proj li {
+  font-size: 15px;
+  line-height: 40px;
+  border-left: 1px solid #555;
+  padding: 0 20px;
+}
+
+.popup_wrapper li {
+  font-size: 15px;
+  line-height: 20px;
+  float: left;
+  padding: 14px;
+  border-left: 1px solid #81818c;
+}
+
+.qual li {
+  font-size: 15px;
+  color: #f5f5ff;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.proj li:first-child {
+  border-left: none;
+}
+
+.popup_wrapper ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup_wrapper li:last-child {
+  border-right: 1px solid #81818c;
 }
 
 header {
@@ -224,15 +262,6 @@ header.active .menu_dsk {
 
 header.active .menu_dsk ul {
   width: 100%;
-}
-
-.qual li {
-  font-size: 15px;
-  color: #f5f5ff;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
 }
 
 header.active .menu_dsk li {
@@ -427,16 +456,6 @@ header.active .menu_dsk li {
   margin-bottom: 24px;
 }
 
-.proj .lngg {
-  font-size: 15px;
-  line-height: 20px;
-}
-
-.proj .vrln {
-  border-left: 1px solid #555;
-  height: 40px;
-}
-
 .proj button {
   line-height: 24px;
   display: flex;
@@ -514,6 +533,94 @@ footer {
   border-top: 1px solid #3a3837;
 }
 
+.popup_wrapper {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  overflow: auto;
+  background-color: #191765;
+  background-image:
+    url(images/Ellipse\ 18.svg),
+    url(images/Ellipse\ 19.svg);
+  background-position: left 15%, right 75%;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.popup_wrapper article {
+  position: absolute;
+  top: 51px;
+  left: 24px;
+  width: calc(100% - 48px);
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  background: rgba(255, 255, 255, 0.16);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: center;
+}
+
+.popup_wrapper article div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.popup_wrapper h1 {
+  font-size: 20px;
+  line-height: 28px;
+  padding-left: 24px;
+}
+
+.popup_wrapper div:first-child i {
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  padding: 0 30px;
+  align-self: flex-start;
+}
+
+.popup_wrapper img {
+  width: calc(100% - 48px);
+  height: auto;
+  margin: auto;
+}
+
+.popup_wrapper p {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  padding: 24px;
+}
+
+.popup_wrapper article div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  padding-top: 24px;
+  padding-bottom: 28px;
+}
+
+.popup_wrapper article div:last-child img,
+.popup_wrapper article div:last-child i {
+  width: 14px;
+  height: 14px;
+}
+
+.popup_wrapper article div:last-child span {
+  padding: 12px;
+}
+
+.popup_wrapper article div:last-child button {
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
 @media only screen and (min-width: 768px) {
   .qual li {
     font-size: 14.1935px;
@@ -531,6 +638,11 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+  }
+
+  .proj li {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    padding: 0 20px;
   }
 
   header {
@@ -698,11 +810,6 @@ footer {
     color: #dfe1e6;
   }
 
-  .proj .lngg {
-    font-family: 'Roboto', Helvetica, sans-serif;
-    margin: 0 20px;
-  }
-
   form button {
     width: 160px;
     height: 48px;
@@ -785,5 +892,39 @@ footer {
     margin: auto;
     margin-top: 20px;
     padding: 20px 0;
+  }
+
+  .popup_wrapper {
+    background-image:
+      url(images/circle\ 1\ header.svg),
+      url(images/circle\ 2\ header.svg);
+  }
+
+  .popup_wrapper article {
+    top: 112px;
+    left: 142px;
+    width: calc(100% - 284px);
+  }
+
+  .popup_wrapper h1 {
+    padding: 24px 0 40px 24px;
+    font-size: 40px;
+    line-height: 32px;
+  }
+
+  .popup_wrapper p {
+    font-size: 16px;
+    line-height: 30px;
+    padding: 40px 0 60px;
+    width: 684px;
+    margin: auto;
+  }
+
+  .popup_wrapper article div:last-child {
+    flex-direction: row;
+    justify-content: center;
+    gap: 78px;
+    padding-top: 50px;
+    padding-bottom: 90px;
   }
 }
