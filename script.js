@@ -140,3 +140,8 @@ seeProjectButtons.forEach(btn => {
   })
 })
 
+popupWrapper.addEventListener('click', (e) => {
+  if (e.target.id == "popup_container" || e.target.className == 'popup_close') {
+    popupWrapper.remove();
+  }
+})
