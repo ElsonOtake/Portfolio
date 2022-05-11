@@ -1,11 +1,20 @@
+// 
+// Menu mobile toggle active
+// 
 const body = document.querySelector('body');
 const header = document.querySelector('header');
+
+// Classes for close menu
+
 const classNames = ['fa-solid', 'menu_link'];
 header.addEventListener('click', (event) => {
   const clickedElementClassName = event.target.classList[0];
   const shouldToggle = classNames.some((className) => className === clickedElementClassName);
   if (shouldToggle) {
     header.classList.toggle('active');
+
+    // Vertical scroll disabled
+
     if (header.classList.contains('active')) {
       body.classList.add('noscroll');
     } else {
@@ -13,7 +22,9 @@ header.addEventListener('click', (event) => {
     }
   }
 });
-
+// 
+// Array of projects objects
+// 
 const projects = [{
   name: "Multi-Post Stories 1",
   description: "A daily selection of privately personalized reads; " + 
@@ -55,7 +66,9 @@ const projects = [{
   linkLiveVersion: "https://elsonotake.github.io/Portfolio/",
   linkSource: "https://github.com/ElsonOtake/Portfolio",
 }]
-
+// 
+// Project sections created when page loads
+// 
 const portfolio = document.getElementById("portfolio");
 for (let i = projects.length - 1; i >= 0 ; i--) {
   const section = document.createElement("section");
@@ -88,28 +101,38 @@ for (let i = projects.length - 1; i >= 0 ; i--) {
   section.appendChild(button);
   portfolio.insertAdjacentElement("afterend", section);
 }
-
+// 
+// Project popup window
+// 
 const seeProjectButtons = document.querySelectorAll(".proj button");
-seeProjectButtons.forEach(btn => {
-  btn.addEventListener('click', (e) => {
-    // console.log(e.target.classList[0].substring(1))
+seeProjectButtons.forEach(btn => {btn.addEventListener('click', (e) => {
+    console.log(e.target.classList[0].substring(1));
     let i = parseInt(e.target.classList[0].substring(1));
-    if (popupWrapper) {
-      popupWrapper.remove();
-    }
+    // if (popupWrapper) {
+    //   popupWrapper.remove();
+    // }
     const popupWrapper = document.createElement("div");
     popupWrapper.className = "popup_wrapper";
     popupWrapper.id = "popup_container";
+    popupWrapper.addEventListener('click', (e) => {
+      console.log(e.target);
+      if (e.target.id == "popup_container" || e.target.classList[0] == 'popup_close') {
+        popupWrapper.remove();
+      }
+    })
     const article = document.createElement("article");
     const div = document.createElement("div");
     const h1 = document.createElement("h1");
     h1.className = "themefff fw500";
     h1.innerText = projects[i].name;
-    const p1 = document.createElement("p");
-    p1.className = "popup_close themefff fw500";
-    p1.innerText = "X";
     div.appendChild(h1);
-    div.appendChild(p1);
+    // const p1 = document.createElement("p");
+    // p1.className = "popup_close themefff fw500";
+    // p1.innerText = "X";
+    const i0 = document.createElement("i");
+    i0.className = "popup_close themefff fa-solid fa-x";
+    div.appendChild(i0);
+    // div.appendChild(p1);
     article.appendChild(div);
     const img1 = document.createElement("img");
     img1.src = projects[i].featuredImage;
@@ -124,24 +147,32 @@ seeProjectButtons.forEach(btn => {
       const li = document.createElement("li");
       li.className = "themefff ffinter fw500";
       li.innerText = projects[i].technologies[k];
-      ul.appendChild(li);
+      ul1.appendChild(li);
     }
-    article.appendChild(ul);
+    article.appendChild(ul1);
     const div1 = document.createElement("div");
     const button1 = document.createElement("button");
     button1.className = "themefff fw500";
-    button1.innerHTML = "See Live <i class='fa-brands fa-github'></i>";
+    const span = document.createElement("span");
+    span.innerText = "See Live";
+    button1.appendChild(span);
+    const img = document.createElement("img");
+    img.src = "images/icons-live.svg"
+    button1.appendChild(img);
     div1.appendChild(button1);
     const button2 = document.createElement("button");
     button2.className = "themefff fw500";
-    button2.innerHTML = "See Source <i class='fa-solid fa-screencast'></i>";
+    const span1 = document.createElement("span");
+    span1.innerText = "See Source";
+    button2.appendChild(span1);
+    const i1 = document.createElement("i");
+    i1.className = "fa-brands fa-github";
+    button2.appendChild(i1);
     div1.appendChild(button2);
-    body.insertAdjacentElement("afterend", article);
+    article.appendChild(div1);
+    popupWrapper.appendChild(article);
+    portfolio.insertAdjacentElement("afterend", popupWrapper);
   })
 })
 
-popupWrapper.addEventListener('click', (e) => {
-  if (e.target.id == "popup_container" || e.target.className == 'popup_close') {
-    popupWrapper.remove();
-  }
-})
+

@@ -552,7 +552,7 @@ footer {
   padding-left: 24px;
 }
 
-.popup_wrapper div p {
+.popup_wrapper div:first-child i {
   width: 12px;
   height: 12px;
   cursor: pointer;
@@ -561,7 +561,7 @@ footer {
 }
 
 .popup_wrapper img {
-  width: calc(100% -48px);
+  width: calc(100% - 48px);
   height: auto;
   margin: auto;
 }
@@ -598,7 +598,17 @@ footer {
   gap: 24px;
 }
 
-.popup_wrapper button {
+.popup_wrapper article div:last-child img,
+.popup_wrapper article div:last-child i {
+  width: 14px;
+  height: 14px;
+}
+
+.popup_wrapper article div:last-child span {
+  padding: 12px;
+}
+
+.popup_wrapper article div:last-child button {
   font-size: 12px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -880,7 +890,7 @@ footer {
   .popup_wrapper article {
     top: 112px;
     left: 142px;
-    width: calc(100% -248px);
+    width: calc(100% - 248px);
   }
 
   .popup_wrapper h1 {
