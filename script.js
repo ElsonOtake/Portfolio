@@ -79,7 +79,6 @@ const projects = [{
 const portfolio = document.getElementById('portfolio');
 
 for (let i = projects.length - 1; i >= 0; i -= 1) {
-
   const section = document.createElement('section');
   section.className = 'proj';
 
@@ -126,7 +125,6 @@ const seeProjectButtons = document.querySelectorAll('.proj button');
 
 seeProjectButtons.forEach((btn) => {
   btn.addEventListener('click', (e) => {
-
     const i = parseInt(e.target.classList[0].substring(1), 10);
     const popupWrapper = document.createElement('div');
     popupWrapper.className = 'popup_wrapper';
@@ -218,65 +216,60 @@ seeProjectButtons.forEach((btn) => {
 //
 
 function showMessage(input, message, type) {
-	// get the small element and set the message
-	const msg = input.parentNode.querySelector("p");
-	msg.innerText = message;
+  // get the small element and set the message
+  const msg = input.parentNode.querySelector('p');
+  msg.innerText = message;
 
-	return type;
+  return type;
 }
 
 function validateEmail(input, invalidMsg) {
-
-	// validate email format
-	const emailRegex =
-		/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
+  // validate email format
+  const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
   // validate uppercase letters
-    const upperRegex = /[A-Z]/;
-	const email = input.value.trim();
+  const upperRegex = /[A-Z]/;
+  const email = input.value.trim();
 
-	if (!emailRegex.test(email) || upperRegex.test(email)) {
+  if (!emailRegex.test(email) || upperRegex.test(email)) {
+    return showMessage(input, invalidMsg, false);
+  }
 
-		return showMessage(input, invalidMsg, false);
-	}
-
-	return true;
+  return true;
 }
 
-const formMob = document.querySelector(".form_mob");
-const formDsk = document.querySelector(".form_dsk");
+const formMob = document.querySelector('.form_mob');
+const formDsk = document.querySelector('.form_dsk');
 
-const EMAIL_INVALID = "Please, no uppercase letters on the email address";
+const EMAIL_INVALID = 'Please, no uppercase letters on the email address';
 
-formMob.addEventListener("submit", function (event) {
-
-	// stop form submission
-	event.preventDefault();
+formMob.addEventListener('submit', (event) => {
+  // stop form submission
+  event.preventDefault();
 
   // clear the message field
-  showMessage(formMob.elements["email"], "", true);
+  showMessage(formMob.elements.email, '', true);
 
-	// validate the form
-	let emailValid = validateEmail(formMob.elements["email"], EMAIL_INVALID);
+  // validate the form
+  const emailValid = validateEmail(formMob.elements.email, EMAIL_INVALID);
 
   // if valid, submit the form.
   if (emailValid) {
-		alert("Demo only. No form was posted.");
-	}
+    alert('Demo only. No form was posted.');
+  }
 });
 
-formDsk.addEventListener("submit", function (event) {
-
-	// stop form submission
-	event.preventDefault();
+formDsk.addEventListener('submit', (event) => {
+  // stop form submission
+  event.preventDefault();
 
   // clear the message field
-  showMessage(formMob.elements["email"], "", true);
+  showMessage(formMob.elements.email, '', true);
 
-	// validate the form
-	let emailValid = validateEmail(formDsk.elements["email"], EMAIL_INVALID);
+  // validate the form
+  const emailValid = validateEmail(formDsk.elements.email, EMAIL_INVALID);
 
   // if valid, submit the form.
   if (emailValid) {
-		alert("Demo only. No form was posted.");
-	}
+    alert('Demo only. No form was posted.');
+  }
 });

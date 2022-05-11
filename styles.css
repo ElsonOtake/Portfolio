@@ -725,6 +725,10 @@ footer {
     margin-bottom: 108px;
   }
 
+  form p {
+    margin: 30px 0;
+  }
+
   .qual p {
     line-height: 32px;
     color: #b3bac5;
@@ -816,10 +820,6 @@ footer {
   .proj p {
     grid-area: txt;
     color: #dfe1e6;
-  }
-
-  form p {
-    margin: 30px 0;
   }
 
   form button {
