@@ -93,7 +93,50 @@ const seeProjectButtons = document.querySelectorAll(".proj button");
 seeProjectButtons.forEach(btn => {
   btn.addEventListener('click', (e) => {
     // console.log(e.target.classList[0].substring(1))
-    
-  }
-    )})
+    let i = parseInt(e.target.classList[0].substring(1));
+    if (popupWrapper) {
+      popupWrapper.remove();
+    }
+    const popupWrapper = document.createElement("div");
+    popupWrapper.className = "popup_wrapper";
+    popupWrapper.id = "popup_container";
+    const article = document.createElement("article");
+    const div = document.createElement("div");
+    const h1 = document.createElement("h1");
+    h1.className = "themefff fw500";
+    h1.innerText = projects[i].name;
+    const p1 = document.createElement("p");
+    p1.className = "popup_close themefff fw500";
+    p1.innerText = "X";
+    div.appendChild(h1);
+    div.appendChild(p1);
+    article.appendChild(div);
+    const img1 = document.createElement("img");
+    img1.src = projects[i].featuredImage;
+    img1.alt = projects[i].altTextImage;
+    article.appendChild(img1);
+    const p2 = document.createElement("p");
+    p2.className = "themefff fw400";
+    p2.innerText = projects[i].description;
+    article.appendChild(p2);
+    const ul1 = document.createElement("ul");
+    for (let k = 0; k < projects[i].technologies.length; k++) {
+      const li = document.createElement("li");
+      li.className = "themefff ffinter fw500";
+      li.innerText = projects[i].technologies[k];
+      ul.appendChild(li);
+    }
+    article.appendChild(ul);
+    const div1 = document.createElement("div");
+    const button1 = document.createElement("button");
+    button1.className = "themefff fw500";
+    button1.innerHTML = "See Live <i class='fa-brands fa-github'></i>";
+    div1.appendChild(button1);
+    const button2 = document.createElement("button");
+    button2.className = "themefff fw500";
+    button2.innerHTML = "See Source <i class='fa-solid fa-screencast'></i>";
+    div1.appendChild(button2);
+    body.insertAdjacentElement("afterend", article);
+  })
+})
 

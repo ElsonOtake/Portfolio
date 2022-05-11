@@ -516,7 +516,7 @@ footer {
 }
 
 .popup_wrapper {
-  display: none;
+  display: flex;
   position: fixed;
   top: 0;
   width: 100%;
@@ -524,10 +524,6 @@ footer {
   z-index: 1000;
   overflow: auto;
   background-color: #191765;
-}
-
-.popup_wrapper.active {
-  display: flex;
 }
 
 .popup_wrapper article {
