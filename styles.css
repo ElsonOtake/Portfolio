@@ -3,6 +3,7 @@
   padding: 0;
   font-family: 'Roboto', Helvetica, sans-serif;
   font-style: normal;
+  border: 1px solid white;
 }
 
 body {
@@ -75,9 +76,16 @@ button {
   transition-duration: 0.4s;
 }
 
+form p {
+  display: block;
+  margin: 10px auto;
+  font-size: smaller;
+}
+
 form button {
+  display: block;
   width: fit-content;
-  margin-top: 40px;
+  margin-top: 10px;
   margin-bottom: 71px;
   align-self: center;
 }
@@ -138,6 +146,7 @@ footer ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 24px;
 }
 
@@ -810,11 +819,16 @@ footer {
     color: #dfe1e6;
   }
 
+  form p {
+    margin: 30px 0;
+  }
+
   form button {
+    display: block;
     width: 160px;
     height: 48px;
     padding: 12px;
-    margin: 88px 0 106px;
+    margin: 20px auto 106px;
     font-size: 15px;
   }
 
