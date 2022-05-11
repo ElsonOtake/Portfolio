@@ -542,6 +542,11 @@ footer {
   z-index: 1000;
   overflow: auto;
   background-color: #191765;
+  background-image:
+    url(images/Ellipse\ 18.svg),
+    url(images/Ellipse\ 19.svg);
+  background-position: left 15%, right 75%;
+  background-repeat: no-repeat, no-repeat;
 }
 
 .popup_wrapper article {
@@ -889,6 +894,12 @@ footer {
     padding: 20px 0;
   }
 
+  .popup_wrapper {
+    background-image:
+      url(images/circle\ 1\ header.svg),
+      url(images/circle\ 2\ header.svg);
+  }
+  
   .popup_wrapper article {
     top: 112px;
     left: 142px;
