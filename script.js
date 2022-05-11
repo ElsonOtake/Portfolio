@@ -29,7 +29,7 @@ header.addEventListener('click', (event) => {
 //
 
 const projects = [{
-  name: 'Multi-Post Stories 1',
+  name: 'Portfolio Elson Otake',
   description: 'A daily selection of privately personalized reads; '
   + "no accounts or sign-ups required. has been the industry's "
   + 'standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
@@ -39,35 +39,35 @@ const projects = [{
   linkLiveVersion: 'https://elsonotake.github.io/Portfolio/',
   linkSource: 'https://github.com/ElsonOtake/Portfolio',
 }, {
-  name: 'Multi-Post Stories 2',
+  name: 'Portfolio Bootstrap',
   description: 'A daily selection of privately personalized reads; '
   + "no accounts or sign-ups required. has been the industry's "
   + 'standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
   featuredImage: 'images/depositphotos-105666254.jpeg',
   altTextImage: "Worktable stamped with 'About us' in the middle and 'Creative thinking' on the top and bottom edges. Source: iStock",
   technologies: ['Css', 'html', 'Javascript'],
-  linkLiveVersion: 'https://elsonotake.github.io/Portfolio/',
-  linkSource: 'https://github.com/ElsonOtake/Portfolio',
+  linkLiveVersion: 'https://elsonotake.github.io/Bootstrap_Portfolio/',
+  linkSource: 'https://github.com/ElsonOtake/Bootstrap_Portfolio',
 }, {
-  name: 'Multi-Post Stories 3',
+  name: 'Multi-Post Trials',
   description: 'A daily selection of privately personalized reads; '
   + "no accounts or sign-ups required. has been the industry's "
   + 'standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
   featuredImage: 'images/hobbies-187729558.jpeg',
   altTextImage: "Worktable with the word 'Hobbies' in the middle surronded by drawings of bicycle, microphone, joystick, film projector, and paint palette. Source: iStock",
   technologies: ['Css', 'html', 'Javascript', 'Bootstrap'],
-  linkLiveVersion: 'https://elsonotake.github.io/Portfolio/',
-  linkSource: 'https://github.com/ElsonOtake/Portfolio',
+  linkLiveVersion: 'https://elsonotake.github.io/elson-nico/',
+  linkSource: 'https://github.com/ElsonOtake/elson-nico',
 }, {
-  name: 'Multi-Post Stories 4',
+  name: 'Multi-Post Recipes',
   description: 'A daily selection of privately personalized reads; '
   + "no accounts or sign-ups required. has been the industry's "
   + 'standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
   featuredImage: 'images/istockphoto-1068113694.jpeg',
   altTextImage: "Computer table with dices with letters on top forming the word 'webinar'. Source: iStock",
   technologies: ['Java', 'Css', 'html', 'Javascript'],
-  linkLiveVersion: 'https://elsonotake.github.io/Portfolio/',
-  linkSource: 'https://github.com/ElsonOtake/Portfolio',
+  linkLiveVersion: 'https://elsonotake.github.io/odin-recipes/',
+  linkSource: 'https://github.com/ElsonOtake/odin-recipes',
 }];
 //
 // Project sections created when page loads
