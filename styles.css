@@ -117,20 +117,20 @@ form {
   font-weight: 500;
 }
 
-.ffinter {
+.ff_inter {
   font-family: 'Inter', 'Roboto', sans-serif;
   font-style: normal;
 }
 
-.theme43 {
+.color43 {
   color: #9490ff;
 }
 
-.theme44 {
+.color44 {
   color: #edecff;
 }
 
-.themefff {
+.colorfff {
   color: #fff;
 }
 
@@ -525,10 +525,6 @@ form .inpt_eml {
   background: #f7f3ff;
   border: 1px solid #9490ff;
   width: 100%;
-}
-
-form .inpt_eml.invalid {
-  background-color: rgb(237, 224, 224);
 }
 
 form .inpt_msg {
