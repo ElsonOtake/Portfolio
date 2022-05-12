@@ -75,7 +75,14 @@ button {
   transition-duration: 0.4s;
 }
 
+form p {
+  display: block;
+  margin: 10px auto;
+  font-size: xx-small;
+}
+
 form button {
+  display: block;
   width: fit-content;
   margin-top: 40px;
   margin-bottom: 71px;
@@ -110,20 +117,20 @@ form {
   font-weight: 500;
 }
 
-.ffinter {
+.ff_inter {
   font-family: 'Inter', 'Roboto', sans-serif;
   font-style: normal;
 }
 
-.theme43 {
+.color43 {
   color: #9490ff;
 }
 
-.theme44 {
+.color44 {
   color: #edecff;
 }
 
-.themefff {
+.colorfff {
   color: #fff;
 }
 
@@ -138,6 +145,7 @@ footer ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 24px;
 }
 
@@ -717,6 +725,10 @@ footer {
     margin-bottom: 108px;
   }
 
+  form p {
+    margin: 30px 0;
+  }
+
   .qual p {
     line-height: 32px;
     color: #b3bac5;
@@ -811,10 +823,11 @@ footer {
   }
 
   form button {
+    display: block;
     width: 160px;
     height: 48px;
     padding: 12px;
-    margin: 88px 0 106px;
+    margin: 90px auto 106px;
     font-size: 15px;
   }
 
