@@ -84,7 +84,7 @@ form p {
 form button {
   display: block;
   width: fit-content;
-  margin-top: 10px;
+  margin-top: 40px;
   margin-bottom: 71px;
   align-self: center;
 }
@@ -827,7 +827,7 @@ footer {
     width: 160px;
     height: 48px;
     padding: 12px;
-    margin: 20px auto 106px;
+    margin: 90px auto 106px;
     font-size: 15px;
   }
 
