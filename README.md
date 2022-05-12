@@ -3,6 +3,7 @@
 > Personal portfolio in desktop and mobile versions. Informations about tecnichal knowledge and samples of projects. Screen sizes over 768 pixels are considered desktop screens, and under that value are considered mobile screens, this control was done using media queries. CSS Grid and Flexbox were used in the code. The code receive accessibility features as a alternative text for images. Mobile menu also available. 
 The popup window with detailed information about each project was created.
 Error checking in email data entry. Input with capital letters generates an error message.
+Use of local storage to save user input.
 
 
 ## Built With
