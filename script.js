@@ -311,7 +311,6 @@ formDsk.addEventListener('submit', (event) => {
   }
 });
 
-
 //
 // Use of local storage
 //
