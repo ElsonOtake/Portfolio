@@ -251,40 +251,6 @@ function validateEmail(input, invalidMsg) {
   return true;
 }
 
-titleMob.addEventListener('input', () => {
-  // update the same field in desktop form
-  titleDsk.value = titleMob.value;
-});
-
-titleDsk.addEventListener('input', () => {
-  // update the same field in mobile form
-  titleMob.value = titleDsk.value;
-});
-
-emailMob.addEventListener('input', () => {
-  // clear the message field
-  showMessage('', true);
-  // update the same field in desktop form
-  emailDsk.value = emailMob.value;
-});
-
-emailDsk.addEventListener('input', () => {
-  // clear the message field
-  showMessage('', true);
-  // update the same field in mobile form
-  emailMob.value = emailDsk.value;
-});
-
-msgMob.addEventListener('input', () => {
-  // update the same field in desktop form
-  msgDsk.value = msgMob.value;
-});
-
-msgDsk.addEventListener('input', () => {
-  // update the same field in mobile form
-  msgMob.value = msgDsk.value;
-});
-
 formMob.addEventListener('submit', (event) => {
   // stop form submission
   event.preventDefault();
