@@ -279,75 +279,87 @@ formDsk.addEventListener('submit', (event) => {
 
 //
 // Use of local storage
-// 
+//
 const contact = {
-  name: "",
-  email: "",
-  msg: ""
-}
+  name: '',
+  email: '',
+  msg: '',
+};
 
-if(!localStorage.getItem('data')) {
-  populateStorage();
-} else {
-  populateContactForm();
+function populateContactForm() {
+  const currentContact = JSON.parse(localStorage.getItem('data'));
+  titleMob.value = currentContact.name;
+  titleDsk.value = currentContact.name;
+  emailMob.value = currentContact.email;
+  emailDsk.value = currentContact.email;
+  msgMob.value = currentContact.msg;
+  msgDsk.value = currentContact.msg;
 }
 
 function populateStorage() {
-  contact["name"] = titleMob.value;
-  contact["email"] = emailMob.value;
-  contact["msg"] = msgMob.value;
+  contact.name = titleMob.value;
+  contact.email = emailMob.value;
+  contact.msg = msgMob.value;
   const storeData = JSON.stringify(contact);
   localStorage.setItem('data', storeData);
 
   populateContactForm();
 }
 
-function populateContactForm() {
-  const currentContact = JSON.parse(localStorage.getItem('data'));
-  titleMob.value = currentContact["name"];
-  titleDsk.value = currentContact["name"];
-  emailMob.value = currentContact["email"];
-  emailDsk.value = currentContact["email"];
-  msgMob.value = currentContact["msg"];
-  msgDsk.value = currentContact["msg"];
+if (!localStorage.getItem('data')) {
+  populateStorage();
+} else {
+  populateContactForm();
 }
 
 titleMob.addEventListener('input', () => {
   // update the same field in desktop form
   titleDsk.value = titleMob.value;
-  populateStorage()
+
+  populateStorage();
 });
 
 titleDsk.addEventListener('input', () => {
   // update the same field in mobile form
   titleMob.value = titleDsk.value;
-  populateStorage()
+
+  populateStorage();
 });
 
 emailMob.addEventListener('input', () => {
-  // clear the message field
-  showMessage('', true);
+  if (errorMob === EMAIL_INVALID) {
+    // clear the error message field
+    showMessage('', true);
+  }
+
   // update the same field in desktop form
   emailDsk.value = emailMob.value;
-  populateStorage()
+
+  populateStorage();
 });
 
 emailDsk.addEventListener('input', () => {
-  // clear the message field
-  showMessage('', true);
+  if (errorDsk === EMAIL_INVALID) {
+    // clear the error message field
+    showMessage('', true);
+  }
+
   // update the same field in mobile form
   emailMob.value = emailDsk.value;
-  populateStorage()
+
+  populateStorage();
 });
 
 msgMob.addEventListener('input', () => {
   // update the same field in desktop form
   msgDsk.value = msgMob.value;
-  populateStorage()
+
+  populateStorage();
 });
 
 msgDsk.addEventListener('input', () => {
   // update the same field in mobile form
   msgMob.value = msgDsk.value;
-  populateStorage()
+
+  populateStorage();
 });
