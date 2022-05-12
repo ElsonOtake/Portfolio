@@ -240,7 +240,7 @@ function validateEmail(input, invalidMsg) {
 const formMob = document.querySelector('.form_mob');
 const formDsk = document.querySelector('.form_dsk');
 
-const EMAIL_INVALID = 'Please, no uppercase letters on the email address';
+const EMAIL_INVALID = 'Please, no capital letters in the email address';
 
 formMob.addEventListener('submit', (event) => {
   // stop form submission
@@ -263,7 +263,7 @@ formDsk.addEventListener('submit', (event) => {
   event.preventDefault();
 
   // clear the message field
-  showMessage(formMob.elements.email, '', true);
+  showMessage(formDsk.elements.email, '', true);
 
   // validate the form
   const emailValid = validateEmail(formDsk.elements.email, EMAIL_INVALID);
