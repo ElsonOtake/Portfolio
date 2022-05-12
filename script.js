@@ -214,40 +214,100 @@ seeProjectButtons.forEach((btn) => {
 //
 // Validate contact form
 //
+// forms mobile and desktop
+const formMob = document.querySelector('.form_mob');
+const formDsk = document.querySelector('.form_dsk');
+// Full name input mobile and desktop
+const titleMob = document.getElementById('title_mob');
+const titleDsk = document.getElementById('title_dsk');
+// email input mobile and desktop
+const emailMob = document.getElementById('email_mob');
+const emailDsk = document.getElementById('email_dsk');
+// message input mobile and desktop
+const msgMob = document.getElementById('msg_mob');
+const msgDsk = document.getElementById('msg_dsk');
+// message input mobile and desktop
+const errorMob = document.querySelector('.form_mob p');
+const errorDsk = document.querySelector('.form_dsk p');
 
-function showMessage(input, message, type) {
+const emailRegex = /^[a-z]+@[a-z]+(?:\.[a-z]+)*$/;
+const EMAIL_INVALID = 'Please, no capital letters in the email address';
+
+function showMessage(message, type) {
   // get the small element and set the message
-  const msg = input.parentNode.querySelector('p');
-  msg.innerText = message;
+  errorMob.innerText = message;
+  errorDsk.innerText = message;
 
   return type;
 }
 
 function validateEmail(input, invalidMsg) {
-  // validate email format
-  const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
-  // validate uppercase letters
-  const upperRegex = /[A-Z]/;
   const email = input.value.trim();
 
-  if (!emailRegex.test(email) || upperRegex.test(email)) {
-    return showMessage(input, invalidMsg, false);
+  if (!emailRegex.test(email)) {
+    return showMessage(invalidMsg, false);
   }
 
   return true;
 }
 
-const formMob = document.querySelector('.form_mob');
-const formDsk = document.querySelector('.form_dsk');
+titleMob.addEventListener('input', function(event) {
+  // update the same field in desktop form
+  titleDsk.value = titleMob.value;
+});
 
-const EMAIL_INVALID = 'Please, no capital letters in the email address';
+titleDsk.addEventListener('input', function(event) {
+  // update the same field in mobile form
+  titleMob.value = titleDsk.value;
+});
+
+emailMob.addEventListener('input', function(event) {
+  // clear the message field
+  showMessage('', true);
+  // update the same field in desktop form
+  emailDsk.value = emailMob.value;
+
+  if (!emailRegex.test(emailMob.value)) {
+    emailMob.classList.add('invalid');
+    emailDsk.classList.add('invalid');
+  } else {
+    if (emailMob.classList.contains('invalid')) {
+      emailMob.classList.remove('invalid');
+      emailDsk.classList.remove('invalid'); 
+    }
+  }
+});
+
+emailDsk.addEventListener('input', function(event) {
+  // clear the message field
+  showMessage('', true);
+  // update the same field in mobile form
+  emailMob.value = emailDsk.value;
+
+  if (!emailRegex.test(emailDsk.value)) {
+    emailMob.classList.add('invalid');
+    emailDsk.classList.add('invalid');
+  } else {
+    if (emailDsk.classList.contains('invalid')) {
+      emailMob.classList.remove('invalid');
+      emailDsk.classList.remove('invalid'); 
+    }
+  }
+});
+
+msgMob.addEventListener('input', function(event) {
+  // update the same field in desktop form
+  msgDsk.value = msgMob.value;
+});
+
+msgDsk.addEventListener('input', function(event) {
+  // update the same field in mobile form
+  msgMob.value = msgDsk.value;
+});
 
 formMob.addEventListener('submit', (event) => {
   // stop form submission
   event.preventDefault();
-
-  // clear the message field
-  showMessage(formMob.elements.email, '', true);
 
   // validate the form
   const emailValid = validateEmail(formMob.elements.email, EMAIL_INVALID);
@@ -261,9 +321,6 @@ formMob.addEventListener('submit', (event) => {
 formDsk.addEventListener('submit', (event) => {
   // stop form submission
   event.preventDefault();
-
-  // clear the message field
-  showMessage(formDsk.elements.email, '', true);
 
   // validate the form
   const emailValid = validateEmail(formDsk.elements.email, EMAIL_INVALID);
