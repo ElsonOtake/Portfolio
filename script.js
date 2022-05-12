@@ -314,7 +314,7 @@ formMob.addEventListener('submit', (event) => {
 
   // if valid, submit the form.
   if (emailValid) {
-    alert('Demo only. No form was posted.');
+    form.submit();
   }
 });
 
@@ -327,6 +327,6 @@ formDsk.addEventListener('submit', (event) => {
 
   // if valid, submit the form.
   if (emailValid) {
-    alert('Demo only. No form was posted.');
+    form.submit();
   }
 });
