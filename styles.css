@@ -78,7 +78,8 @@ button {
 form p {
   display: block;
   margin: 10px auto;
-  font-size: xx-small;
+  font-family: Inter;
+  font-size: 10px;
 }
 
 form button {
