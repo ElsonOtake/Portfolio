@@ -4,25 +4,30 @@
 
 const body = document.querySelector('body');
 const header = document.querySelector('header');
+const hamburger = document.querySelector('.menu_mob');
 
 // Classes for close menu
+const classNames = ['fa-x', 'menu_link'];
 
-const classNames = ['fa-solid', 'menu_link'];
+hamburger.addEventListener('click', () => {
+  header.classList.add('active');
+  body.classList.add('noscroll');
+});
 
 header.addEventListener('click', (event) => {
   const clickedElementClassName = event.target.classList[0];
   const shouldToggle = classNames.some((className) => className === clickedElementClassName);
 
-  if (shouldToggle) {
-    header.classList.toggle('active');
+  if (shouldToggle && header.classList.contains('active')) {
+    header.classList.remove('active');
+    body.classList.remove('noscroll');
+  }
+});
 
-    // Vertical scroll disabled
-
-    if (header.classList.contains('active')) {
-      body.classList.add('noscroll');
-    } else {
-      body.classList.remove('noscroll');
-    }
+window.addEventListener('resize', () => {
+  if (header.classList.contains('active')) {
+    header.classList.remove('active');
+    body.classList.remove('noscroll');
   }
 });
 
