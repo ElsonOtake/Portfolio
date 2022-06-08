@@ -38,10 +38,10 @@ window.addEventListener('resize', () => {
 const projects = [{
   name: 'Osesp',
   description: 'This project was built using a Creative Commons conference as a base design. '
-  + "Pages have been adapted to suit desktop and mobile viewing. "
+  + 'Pages have been adapted to suit desktop and mobile viewing. '
   + 'The content was created using Javascript.',
   featuredImage: 'images/Osesp.png',
-  altTextImage: "Osesp website main page",
+  altTextImage: 'Osesp website main page',
   technologies: ['JavaScript', 'Html', 'Css'],
   linkLiveVersion: 'https://elsonotake.github.io/Osesp/',
   linkSource: 'https://github.com/ElsonOtake/Osesp',
@@ -51,17 +51,17 @@ const projects = [{
   + 'It simply lists the things that need to be done and allows to mark them as complete. '
   + 'This project were developed using ES6 and Webpack.',
   featuredImage: 'images/TodoList.png',
-  altTextImage: "To-do list app",
+  altTextImage: 'To-do list app',
   technologies: ['Javascript', 'Html', 'Css'],
   linkLiveVersion: 'https://elsonotake.github.io/TodoList/dist/',
   linkSource: 'https://github.com/ElsonOtake/TodoList',
 }, {
   name: 'Awesome books',
   description: '"Awesome books" is a simple website that displays a list of books and allows you to add '
-  + "and remove books from that list. In this project, modular JavaScript was written using ES6, "
+  + 'and remove books from that list. In this project, modular JavaScript was written using ES6, '
   + 'npm and Luxon were used as a software packages system.',
   featuredImage: 'images/Awesome.png',
-  altTextImage: "Awesome books main page",
+  altTextImage: 'Awesome books main page',
   technologies: ['Javascript', 'Html', 'Css'],
   linkLiveVersion: 'https://elsonotake.github.io/AwesomeBooks/',
   linkSource: 'https://github.com/ElsonOtake/AwesomeBooks',
