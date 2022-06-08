@@ -36,35 +36,35 @@ window.addEventListener('resize', () => {
 //
 
 const projects = [{
-  name: 'Portfolio Elson Otake',
-  description: 'A daily selection of privately personalized reads; '
-  + "no accounts or sign-ups required. has been the industry's "
-  + 'standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-  featuredImage: 'images/projects-79906734.jpeg',
-  altTextImage: "Office desk with the word 'Project' written with chalk in the middle. Source: iStock",
-  technologies: ['Css', 'html', 'JCL', 'Ruby', 'Java'],
-  linkLiveVersion: 'https://elsonotake.github.io/Portfolio/',
-  linkSource: 'https://github.com/ElsonOtake/Portfolio',
+  name: 'Osesp',
+  description: 'This project was built using a Creative Commons conference as a base design. '
+  + 'Pages have been adapted to suit desktop and mobile viewing. '
+  + 'The content was created using Javascript.',
+  featuredImage: 'images/Osesp.png',
+  altTextImage: 'Osesp website main page',
+  technologies: ['JavaScript', 'Html', 'Css'],
+  linkLiveVersion: 'https://elsonotake.github.io/Osesp/',
+  linkSource: 'https://github.com/ElsonOtake/Osesp',
 }, {
-  name: 'Portfolio Bootstrap',
-  description: 'A daily selection of privately personalized reads; '
-  + "no accounts or sign-ups required. has been the industry's "
-  + 'standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-  featuredImage: 'images/depositphotos-105666254.jpeg',
-  altTextImage: "Worktable stamped with 'About us' in the middle and 'Creative thinking' on the top and bottom edges. Source: iStock",
-  technologies: ['Css', 'html', 'Javascript'],
-  linkLiveVersion: 'https://elsonotake.github.io/Bootstrap_Portfolio/',
-  linkSource: 'https://github.com/ElsonOtake/Bootstrap_Portfolio',
+  name: 'To-do list',
+  description: '"To-do list" is a tool that helps to organize the day. '
+  + 'It simply lists the things that need to be done and allows to mark them as complete. '
+  + 'This project were developed using ES6 and Webpack.',
+  featuredImage: 'images/TodoList.png',
+  altTextImage: 'To-do list app',
+  technologies: ['Javascript', 'Html', 'Css'],
+  linkLiveVersion: 'https://elsonotake.github.io/TodoList/dist/',
+  linkSource: 'https://github.com/ElsonOtake/TodoList',
 }, {
-  name: 'Multi-Post Trials',
-  description: 'A daily selection of privately personalized reads; '
-  + "no accounts or sign-ups required. has been the industry's "
-  + 'standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-  featuredImage: 'images/hobbies-187729558.jpeg',
-  altTextImage: "Worktable with the word 'Hobbies' in the middle surronded by drawings of bicycle, microphone, joystick, film projector, and paint palette. Source: iStock",
-  technologies: ['Css', 'html', 'Javascript', 'Bootstrap'],
-  linkLiveVersion: 'https://elsonotake.github.io/elson-nico/',
-  linkSource: 'https://github.com/ElsonOtake/elson-nico',
+  name: 'Awesome books',
+  description: '"Awesome books" is a simple website that displays a list of books and allows you to add '
+  + 'and remove books from that list. In this project, modular JavaScript was written using ES6, '
+  + 'npm and Luxon were used as a software packages system.',
+  featuredImage: 'images/Awesome.png',
+  altTextImage: 'Awesome books main page',
+  technologies: ['Javascript', 'Html', 'Css'],
+  linkLiveVersion: 'https://elsonotake.github.io/AwesomeBooks/',
+  linkSource: 'https://github.com/ElsonOtake/AwesomeBooks',
 }, {
   name: 'Multi-Post Recipes',
   description: 'A daily selection of privately personalized reads; '
