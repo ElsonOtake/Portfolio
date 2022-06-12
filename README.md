@@ -24,17 +24,29 @@ To get a local copy, follow these simple steps.
 
 ### Prerequisites
 
-In order to run this project on your computer, please make sure that you have a web browser installed
+Web browser installed
 
 ### Setup
 
- - Create a new folder;
- - Copy the index.html to this folder;
- - Copy the styles.css to this folder;
- - Copy the styles.js to this folder;
- - Double click on the index.html on the location of this folder;
+Cloning a repository
 
-Once you completed these steps you should see the site in your browser.
+- On GitHub.com, navigate to the main page of the repository;
+
+- Above the list of files, click "Code" button;
+
+- Copy the URL to clone the repository. 
+
+  - To clone the repository using HTTPS : `https://github.com/ElsonOtake/Portfolio.git`
+
+  - To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority : `git@github.com:ElsonOtake/Portfolio.git`
+
+  - To clone a repository using GitHub CLI : `gh repo clone ElsonOtake/Portfolio`
+
+- Open Terminal;
+
+- Change the current working directory to the location where you want the cloned directory;
+
+- Type `git clone`, and then paste the URL you copied earlier;
 
 
 ## Author
@@ -68,3 +80,8 @@ Give a ⭐️ if you like this project!
 - W3Schools
 - Figma
 - Formspree
+
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
