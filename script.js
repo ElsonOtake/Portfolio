@@ -65,16 +65,6 @@ const projects = [{
   technologies: ['Javascript', 'Html', 'Css'],
   linkLiveVersion: 'https://elsonotake.github.io/AwesomeBooks/',
   linkSource: 'https://github.com/ElsonOtake/AwesomeBooks',
-}, {
-  name: 'Multi-Post Recipes',
-  description: 'A daily selection of privately personalized reads; '
-  + "no accounts or sign-ups required. has been the industry's "
-  + 'standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-  featuredImage: 'images/istockphoto-1068113694.jpeg',
-  altTextImage: "Computer table with dices with letters on top forming the word 'webinar'. Source: iStock",
-  technologies: ['Java', 'Css', 'html', 'Javascript'],
-  linkLiveVersion: 'https://elsonotake.github.io/odin-recipes/',
-  linkSource: 'https://github.com/ElsonOtake/odin-recipes',
 }];
 
 //
@@ -292,7 +282,7 @@ const contact = {
 };
 
 function populateContactForm() {
-  const currentContact = JSON.parse(localStorage.getItem('data'));
+  const currentContact = JSON.parse(localStorage.getItem('portfolio'));
   titleMob.value = currentContact.name;
   titleDsk.value = currentContact.name;
   emailMob.value = currentContact.email;
@@ -306,12 +296,12 @@ function populateStorage() {
   contact.email = emailMob.value;
   contact.msg = msgMob.value;
   const storeData = JSON.stringify(contact);
-  localStorage.setItem('data', storeData);
+  localStorage.setItem('portfolio', storeData);
 
   populateContactForm();
 }
 
-if (!localStorage.getItem('data')) {
+if (!localStorage.getItem('portfolio')) {
   populateStorage();
 } else {
   populateContactForm();
