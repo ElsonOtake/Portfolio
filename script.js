@@ -36,35 +36,35 @@ window.addEventListener('resize', () => {
 //
 
 const projects = [{
-  name: 'Osesp',
-  description: 'This project was built using a Creative Commons conference as a base design. '
-  + 'Pages have been adapted to suit desktop and mobile viewing. '
-  + 'The content was created using Javascript.',
-  featuredImage: 'images/Osesp.png',
-  altTextImage: 'Osesp website main page',
-  technologies: ['JavaScript', 'Html', 'Css'],
-  linkLiveVersion: 'https://elsonotake.github.io/Osesp/',
-  linkSource: 'https://github.com/ElsonOtake/Osesp',
+  name: 'Bookstore',
+  description: '"Bookstore" is a simple website for book lovers that display a list of books, '
+  + 'add a book, and remove a selected book. '
+  + 'The content was created using an external API to store the data.',
+  featuredImage: 'images/Bookstore.png',
+  altTextImage: 'Bookstore main page',
+  technologies: ['React', 'Redux', 'JavaScript'],
+  linkLiveVersion: 'https://elsonotake-bookstore.herokuapp.com/',
+  linkSource: 'https://github.com/ElsonOtake/Bookstore',
 }, {
-  name: 'To-do list',
-  description: '"To-do list" is a tool that helps to organize the day. '
-  + 'It simply lists the things that need to be done and allows to mark them as complete. '
-  + 'This project were developed using ES6 and Webpack.',
-  featuredImage: 'images/TodoList.png',
-  altTextImage: 'To-do list app',
-  technologies: ['Javascript', 'Html', 'Css'],
-  linkLiveVersion: 'https://elsonotake.github.io/TodoList/dist/',
-  linkSource: 'https://github.com/ElsonOtake/TodoList',
+  name: 'Math Magicians',
+  description: '"Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) '
+  + ' that allows users to make simple calculations and read a random math-related quote. '
+  + 'This project were developed using React.',
+  featuredImage: 'images/MathMagicians.png',
+  altTextImage: 'Math Magicians app',
+  technologies: ['React', 'JavaScript', 'Html'],
+  linkLiveVersion: 'https://elsonotake-math-magicians.netlify.app/',
+  linkSource: 'https://github.com/ElsonOtake/math-magicians',
 }, {
-  name: 'Awesome books',
-  description: '"Awesome books" is a simple website that displays a list of books and allows you to add '
-  + 'and remove books from that list. In this project, modular JavaScript was written using ES6, '
-  + 'npm and Luxon were used as a software packages system.',
-  featuredImage: 'images/Awesome.png',
-  altTextImage: 'Awesome books main page',
+  name: 'TV Maze',
+  description: 'This project is a web application based on an external API about TV series and movies. '
+  + 'Built with pair programming activity with developer Andres Garzon Maldonado. '
+  + 'This project was developed using ES6, Webpack, and Kanban board.',
+  featuredImage: 'images/TVMaze.png',
+  altTextImage: 'TV Maze main page',
   technologies: ['Javascript', 'Html', 'Css'],
-  linkLiveVersion: 'https://elsonotake.github.io/AwesomeBooks/',
-  linkSource: 'https://github.com/ElsonOtake/AwesomeBooks',
+  linkLiveVersion: 'https://elsonotake.github.io/TVMaze/dist/',
+  linkSource: 'https://github.com/ElsonOtake/TVMaze',
 }];
 
 //
