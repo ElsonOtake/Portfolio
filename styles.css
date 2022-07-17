@@ -291,7 +291,7 @@ header.active .menu_dsk li {
     url(images/Ellipse\ 20.svg),
     url(images/Ellipse\ 21.svg),
     url(images/Ellipse\ 22.svg);
-  background-position: left 1%, right 10%, left 31%, right 46%, left 61%, right 76%;
+  background-position: left 1%, right 10%, left 31%, right 46%, left 61%, right 81%;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
 }
 
@@ -693,7 +693,7 @@ footer {
       url(images/dsk_Ellipse\ 20.svg),
       url(images/dsk_Ellipse\ 21.svg),
       url(images/dsk_Ellipse\ 22.svg);
-    background-position: left 7%, right 13%, left 34%, right 50%, left 61%, right 69%;
+    background-position: left 7%, right 13%, left 34%, right 50%, left 61%, right 79%;
   }
 
   .pres {
