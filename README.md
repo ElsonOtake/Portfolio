@@ -1,9 +1,6 @@
 # Portfolio
 
-> Personal portfolio in desktop and mobile versions. Informations about tecnichal knowledge and samples of projects. Screen sizes over 768 pixels are considered desktop screens, and under that value are considered mobile screens, this control was done using media queries. CSS Grid and Flexbox were used in the code. The code receive accessibility features as a alternative text for images. Mobile menu also available. 
-The popup window with detailed information about each project was created.
-Error checking in email data entry. Input with capital letters generates an error message.
-Use of local storage to save user input.
+> Personal portfolio to present technical knowledge and project samples. Created mobile and desktop versions. Use Javascript, HTML, CSS, media queries, CSS Grid, Flexbox, and local storage.
 
 
 ## Built With
@@ -15,7 +12,7 @@ Use of local storage to save user input.
 
 ## Live Demo
 
-[Live Demo Link](https://elsonotake.github.io/Portfolio/)
+[Live Demo](https://elsonotake.github.io/Portfolio/)
 
 
 ## Getting Started
@@ -84,4 +81,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](https://github.com/ElsonOtake/) licensed.
+This project is [MIT](./MIT.md) licensed.
