@@ -36,6 +36,15 @@ window.addEventListener('resize', () => {
 //
 
 const projects = [{
+  name: 'Covid-19 in South America',
+  description: '"Covid-19 in South America" is a web application for presenting numerical data regarding '
+  + 'the covid-19 pandemic in South America.',
+  featuredImage: 'images/Covid19.png',
+  altTextImage: 'Covid-19 details page',
+  technologies: ['React', 'Redux', 'JavaScript'],
+  linkLiveVersion: 'https://elsonotake-who-covid19.herokuapp.com/',
+  linkSource: 'https://github.com/ElsonOtake/WHO-Covid19',
+}, {
   name: 'Bookstore',
   description: '"Bookstore" is a simple website for book lovers that display a list of books, '
   + 'add a book, and remove a selected book. '
@@ -48,23 +57,12 @@ const projects = [{
 }, {
   name: 'Math Magicians',
   description: '"Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) '
-  + ' that allows users to make simple calculations and read a random math-related quote. '
-  + 'This project were developed using React.',
+  + ' that allows users to make simple calculations and read a random math-related quote.',
   featuredImage: 'images/MathMagicians.png',
   altTextImage: 'Math Magicians app',
   technologies: ['React', 'JavaScript', 'Html'],
   linkLiveVersion: 'https://elsonotake-math-magicians.netlify.app/',
   linkSource: 'https://github.com/ElsonOtake/math-magicians',
-}, {
-  name: 'TV Maze',
-  description: 'This project is a web application based on an external API about TV series and movies. '
-  + 'Built with pair programming activity with developer Andres Garzon Maldonado. '
-  + 'This project was developed using ES6, Webpack, and Kanban board.',
-  featuredImage: 'images/TVMaze.png',
-  altTextImage: 'TV Maze main page',
-  technologies: ['Javascript', 'Html', 'Css'],
-  linkLiveVersion: 'https://elsonotake.github.io/TVMaze/dist/',
-  linkSource: 'https://github.com/ElsonOtake/TVMaze',
 }];
 
 //
