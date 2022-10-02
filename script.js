@@ -55,14 +55,14 @@ const projects = [{
   linkLiveVersion: 'https://elsonotake-bookstore.herokuapp.com/',
   linkSource: 'https://github.com/ElsonOtake/Bookstore',
 }, {
-  name: 'Math Magicians',
-  description: '"Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) '
-  + ' that allows users to make simple calculations and read a random math-related quote.',
-  featuredImage: 'images/MathMagicians.png',
-  altTextImage: 'Math Magicians app',
-  technologies: ['React', 'JavaScript', 'Html'],
-  linkLiveVersion: 'https://elsonotake-math-magicians.netlify.app/',
-  linkSource: 'https://github.com/ElsonOtake/math-magicians',
+  name: 'Blog',
+  description: '"Blog" is a website for social media. The application authenticates users, authorizes access,'
+  + ' creates posts, comments and likes. In addition to providing access to data via API.',
+  featuredImage: 'images/Blog.png',
+  altTextImage: 'Blog app',
+  technologies: ['RoR', 'Ruby', 'Rspec'],
+  linkLiveVersion: '',
+  linkSource: 'https://github.com/ElsonOtake/Blog_App',
 }];
 
 //
