@@ -36,6 +36,24 @@ window.addEventListener('resize', () => {
 //
 
 const projects = [{
+  name: 'Origami',
+  description: 'Origami is a mobile web app to manage budget. The user registers and enters new transactions '
+  + 'associated with an expense category, tracking the amount spent in each category.',
+  featuredImage: 'images/Origami.png',
+  altTextImage: 'Origami main page',
+  technologies: ['RoR', 'Ruby', 'Capybara'],
+  linkLiveVersion: 'https://elsonotake-origami.herokuapp.com/',
+  linkSource: 'https://github.com/ElsonOtake/Origami',
+}, {
+  name: 'Blog',
+  description: '"Blog" is a website for social media. The application authenticates users, authorizes access,'
+  + ' creates posts, comments and likes. In addition to providing access to data via API.',
+  featuredImage: 'images/Blog.png',
+  altTextImage: 'Blog app',
+  technologies: ['RoR', 'Ruby', 'Rspec'],
+  linkLiveVersion: 'https://elsonotake-blog-app.herokuapp.com/',
+  linkSource: 'https://github.com/ElsonOtake/Blog_App',
+}, {
   name: 'Covid-19 in South America',
   description: '"Covid-19 in South America" is a web application for presenting numerical data regarding '
   + 'the covid-19 pandemic in South America.',
@@ -44,25 +62,6 @@ const projects = [{
   technologies: ['React', 'Redux', 'JavaScript'],
   linkLiveVersion: 'https://elsonotake-who-covid19.herokuapp.com/',
   linkSource: 'https://github.com/ElsonOtake/WHO-Covid19',
-}, {
-  name: 'Bookstore',
-  description: '"Bookstore" is a simple website for book lovers that display a list of books, '
-  + 'add a book, and remove a selected book. '
-  + 'The content was created using an external API to store the data.',
-  featuredImage: 'images/Bookstore.png',
-  altTextImage: 'Bookstore main page',
-  technologies: ['React', 'Redux', 'JavaScript'],
-  linkLiveVersion: 'https://elsonotake-bookstore.herokuapp.com/',
-  linkSource: 'https://github.com/ElsonOtake/Bookstore',
-}, {
-  name: 'Blog',
-  description: '"Blog" is a website for social media. The application authenticates users, authorizes access,'
-  + ' creates posts, comments and likes. In addition to providing access to data via API.',
-  featuredImage: 'images/Blog.png',
-  altTextImage: 'Blog app',
-  technologies: ['RoR', 'Ruby', 'Rspec'],
-  linkLiveVersion: '',
-  linkSource: 'https://github.com/ElsonOtake/Blog_App',
 }];
 
 //
