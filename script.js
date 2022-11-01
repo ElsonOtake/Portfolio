@@ -36,6 +36,15 @@ window.addEventListener('resize', () => {
 //
 
 const projects = [{
+  name: 'Exo Cars',
+  description: 'Exo Cars is a website for renting exotic cars, list the available cars and make reservations. '
+  + 'Admin users are allowed to add and remove cars from the database.',
+  featuredImage: 'images/Exocars.png',
+  altTextImage: 'Exo Cars main page',
+  technologies: ['React', 'RoR', 'Postgresql'],
+  linkLiveVersion: 'https://exo-cars.herokuapp.com/',
+  linkSource: 'https://github.com/ElsonOtake/Final_capstone_backend',
+}, {
   name: 'Origami',
   description: 'Origami is a mobile web app to manage budget. The user registers and enters new transactions '
   + 'associated with an expense category, tracking the amount spent in each category.',
