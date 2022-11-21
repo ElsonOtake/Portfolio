@@ -1,61 +1,113 @@
-# Portfolio
+<a name="readme-top"></a>
 
-> Personal portfolio to present technical knowledge and project samples. Created mobile and desktop versions. Use Javascript, HTML, CSS, media queries, CSS Grid, Flexbox, and local storage.
+<!-- TABLE OF CONTENTS -->
+
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
+
+<!-- PROJECT DESCRIPTION -->
 
 
-## Built With
-
-- HTML
-- CSS
-- Javascript
+# 📖 Portfolio <a name="about-project"></a>
 
 
-## Live Demo
+**Portfolio** is a responsive web page to present technical knowledge and project samples. This project was used to study Javascript, HTML, CSS, media queries, CSS Grid, Flexbox, Bootstrap, Sass and local storage..
 
-[Live Demo](https://elsonotake.github.io/Portfolio/)
+## 🛠 Built With <a name="built-with"></a>
 
+### Tech Stack <a name="tech-stack"></a>
 
-## Getting Started
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+    <li><a href="https://www.w3.org/Style/CSS/">CSS</a></li>
+    <li><a href="https://www.javascript.com/">Javascript</a></li>
+  </ul>
+</details>
 
-To get a local copy, follow these simple steps.
+<!-- Features -->
 
-### Prerequisites
+### Key Features <a name="key-features"></a>
 
-Web browser installed
+- **[Figma template](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=23%3A10&t=LsmmSTf3Uvj1MQVi-0)**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://elsonotake.github.io/Portfolio/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
 
 ### Setup
 
-Cloning a repository
+Clone this repository to your desired folder:
 
-- On GitHub.com, navigate to the main page of the repository;
+using HTTPS:
+```sh
+  git clone https://github.com/ElsonOtake/Portfolio.git
+  cd Portfolio
+```
 
-- Above the list of files, click "Code" button;
+using an SSH key:
+```sh
+  git clone git@github.com:ElsonOtake/Portfolio.git
+  cd Portfolio
+```
 
-- Copy the URL to clone the repository. 
+using GitHub CLI:
+```sh
+  git clone gh repo clone ElsonOtake/Portfolios
+  cd Portfolio
+```
 
-  - To clone the repository using HTTPS : `https://github.com/ElsonOtake/Portfolio.git`
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-  - To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority : `git@github.com:ElsonOtake/Portfolio.git`
+<!-- AUTHORS -->
 
-  - To clone a repository using GitHub CLI : `gh repo clone ElsonOtake/Portfolio`
-
-- Open Terminal;
-
-- Change the current working directory to the location where you want the cloned directory;
-
-- Type `git clone`, and then paste the URL you copied earlier;
-
-
-## Author
+## 👥 Author <a name="authors"></a>
 
 👤 **Elson Otake**
 
-- GitHub: [@elsonotake](https://github.com/elsonotake)
+- GitHub: [elsonotake](https://github.com/elsonotake)
 - Twitter: [@elsonotake](https://twitter.com/elsonotake)
 - LinkedIn: [elsonotake](https://linkedin.com/in/elsonotake)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🤝 Contributing
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **[Update the content using React JS]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
 
 [KaskMil](https://github.com/KaskMIL/) Tomas Milanesi
 
@@ -65,20 +117,36 @@ Cloning a repository
 
 Contributions, issues, and feature requests are welcome!
 
+Feel free to check the [issues page](../../issues/).
 
-## Show your support
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
 
 Give a ⭐️ if you like this project!
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Acknowledgments
+<!-- ACKNOWLEDGEMENTS -->
 
-- Microverse
-- W3Schools
-- Figma
-- Formspree
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
+I would like to thank:
 
-## 📝 License
+- [Figma](https://www.figma.com/)
+- [Formspree](https://formspree.io/)
+- [Microverse](https://www.microverse.org/)
+- [W3Schools](https://www.w3schools.com/)
+- [Stack Overflow](https://stackoverflow.com/)
 
-This project is [MIT](./MIT.md) licensed.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./MIT) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
