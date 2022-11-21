@@ -47,22 +47,13 @@ a:visited {
 
 a:hover,
 a:active,
-span:hover {
+span:hover,
+i:hover {
   color: #9490ff;
-  transform: scale(1.2);
 }
 
 footer i {
   font-size: 20px;
-}
-
-i:hover {
-  transform: scale(1.5);
-  color: #9490ff;
-}
-
-footer a:hover {
-  transform: scale(1.2);
 }
 
 button {
