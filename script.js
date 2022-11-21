@@ -47,30 +47,30 @@ const projects = [{
 }, {
   name: 'Origami',
   description: 'Origami is a mobile web app to manage budget. The user registers and enters new transactions '
-  + 'associated with an expense category, tracking the amount spent in each category.',
+  + 'associated with an expense category. Data stored in a database.',
   featuredImage: 'images/Origami.png',
   altTextImage: 'Origami main page',
   technologies: ['RoR', 'Ruby', 'Postgresql'],
-  linkLiveVersion: 'https://elsonotake-origami.herokuapp.com/',
+  linkLiveVersion: 'https://elsonotake-origami.onrender.com/',
   linkSource: 'https://github.com/ElsonOtake/Origami',
 }, {
   name: 'Blog',
   description: '"Blog" is a website for social media. The application authenticates users, authorizes access,'
-  + ' creates posts, comments and likes. In addition to providing access to data via API.',
+  + ' creates posts, comments and likes. Consumes API data.',
   featuredImage: 'images/Blog.png',
   altTextImage: 'Blog app',
   technologies: ['RoR', 'Ruby', 'Postgresql', 'Rspec'],
   linkLiveVersion: 'https://elsonotake-blog-app.herokuapp.com/',
   linkSource: 'https://github.com/ElsonOtake/Blog_App',
 }, {
-  name: 'Covid-19 in South America',
-  description: '"Covid-19 in South America" is a web application for presenting numerical data regarding '
-  + 'the covid-19 pandemic in South America.',
-  featuredImage: 'images/Covid19.png',
-  altTextImage: 'Covid-19 details page',
+  name: "Space Travelers' Hub",
+  description: "Space Travelers' Hub is a web application for a company that provides commercial and scientific "
+  + 'space travel services. Consumes API data.',
+  featuredImage: 'images/Space.png',
+  altTextImage: "Space Travelers' Hub details page",
   technologies: ['React', 'Redux', 'JavaScript'],
-  linkLiveVersion: 'https://elsonotake-who-covid19.herokuapp.com/',
-  linkSource: 'https://github.com/ElsonOtake/WHO-Covid19',
+  linkLiveVersion: 'https://elsonotake-space-travelers.netlify.app/',
+  linkSource: 'https://github.com/ElsonOtake/Space-Travelers',
 }];
 
 //
