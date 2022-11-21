@@ -45,15 +45,15 @@ a:visited {
   color: #fff;
 }
 
+footer i {
+  font-size: 20px;
+}
+
 a:hover,
 a:active,
 span:hover,
 i:hover {
   color: #9490ff;
-}
-
-footer i {
-  font-size: 20px;
 }
 
 button {
@@ -158,6 +158,16 @@ footer ul {
 
 .popup_wrapper li:last-child {
   border-right: 1px solid #81818c;
+}
+
+.next ul {
+  width: fit-content;
+  margin: auto;
+}
+
+.popup_wrapper article ul {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 header {
@@ -360,11 +370,6 @@ header.active .menu_dsk li {
   margin-bottom: 48px;
 }
 
-.next ul {
-  width: fit-content;
-  margin: auto;
-}
-
 .next_mob i {
   color: #a2a3ae;
 }
@@ -564,11 +569,6 @@ footer {
   letter-spacing: 0.03em;
 }
 
-.popup_wrapper article ul {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 @media only screen and (min-width: 768px) {
   .qual li {
     font-size: 14.1935px;
@@ -716,7 +716,6 @@ footer {
 
   .rcnt {
     align-items: flex-start;
-    /* margin: 0 48px 48px; */
     margin-left: 24px;
   }
 
