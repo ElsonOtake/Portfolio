@@ -622,6 +622,11 @@ footer {
   letter-spacing: 0.03em;
 }
 
+.popup_wrapper article ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @media only screen and (min-width: 768px) {
   .qual li {
     font-size: 14.1935px;
