@@ -7,7 +7,7 @@ const header = document.querySelector('header');
 const hamburger = document.querySelector('.menu_mob');
 
 // Classes for close menu
-const classNames = ['fa-x', 'menu_link'];
+const classNames = ['fa-x', 'menu_link', 'fa-solid', 'fa-envelope'];
 
 hamburger.addEventListener('click', () => {
   header.classList.add('active');
@@ -50,7 +50,7 @@ const projects = [{
   + 'associated with an expense category, tracking the amount spent in each category.',
   featuredImage: 'images/Origami.png',
   altTextImage: 'Origami main page',
-  technologies: ['RoR', 'Ruby', 'Capybara'],
+  technologies: ['RoR', 'Ruby', 'Postgresql'],
   linkLiveVersion: 'https://elsonotake-origami.herokuapp.com/',
   linkSource: 'https://github.com/ElsonOtake/Origami',
 }, {
@@ -59,7 +59,7 @@ const projects = [{
   + ' creates posts, comments and likes. In addition to providing access to data via API.',
   featuredImage: 'images/Blog.png',
   altTextImage: 'Blog app',
-  technologies: ['RoR', 'Ruby', 'Rspec'],
+  technologies: ['RoR', 'Ruby', 'Postgresql', 'Rspec'],
   linkLiveVersion: 'https://elsonotake-blog-app.herokuapp.com/',
   linkSource: 'https://github.com/ElsonOtake/Blog_App',
 }, {
@@ -210,157 +210,4 @@ seeProjectButtons.forEach((btn) => {
     popupWrapper.appendChild(article);
     portfolio.insertAdjacentElement('afterend', popupWrapper);
   });
-});
-
-//
-// Validate contact form
-//
-// forms mobile and desktop
-const formMob = document.querySelector('.form_mob');
-const formDsk = document.querySelector('.form_dsk');
-// Full name input mobile and desktop
-const titleMob = document.getElementById('title_mob');
-const titleDsk = document.getElementById('title_dsk');
-// email input mobile and desktop
-const emailMob = document.getElementById('email_mob');
-const emailDsk = document.getElementById('email_dsk');
-// message input mobile and desktop
-const msgMob = document.getElementById('msg_mob');
-const msgDsk = document.getElementById('msg_dsk');
-// message input mobile and desktop
-const errorMob = document.querySelector('.form_mob p');
-const errorDsk = document.querySelector('.form_dsk p');
-
-const emailRegex = /^[a-z]+@[a-z]+(?:\.[a-z]+)*$/;
-const EMAIL_INVALID = 'Please, no capital letters in the email address';
-
-function showMessage(message, type) {
-  // get the small element and set the message
-  errorMob.innerText = message;
-  errorDsk.innerText = message;
-
-  return type;
-}
-
-function validateEmail(input, invalidMsg) {
-  const email = input.value.trim();
-
-  if (!emailRegex.test(email)) {
-    return showMessage(invalidMsg, false);
-  }
-
-  return true;
-}
-
-formMob.addEventListener('submit', (event) => {
-  // stop form submission
-  event.preventDefault();
-
-  // validate the form
-  const emailValid = validateEmail(formMob.elements.email, EMAIL_INVALID);
-
-  // if valid, submit the form.
-  if (emailValid) {
-    formMob.submit();
-  }
-});
-
-formDsk.addEventListener('submit', (event) => {
-  // stop form submission
-  event.preventDefault();
-
-  // validate the form
-  const emailValid = validateEmail(formDsk.elements.email, EMAIL_INVALID);
-
-  // if valid, submit the form.
-  if (emailValid) {
-    formDsk.submit();
-  }
-});
-
-//
-// Use of local storage
-//
-const contact = {
-  name: '',
-  email: '',
-  msg: '',
-};
-
-function populateContactForm() {
-  const currentContact = JSON.parse(localStorage.getItem('portfolio'));
-  titleMob.value = currentContact.name;
-  titleDsk.value = currentContact.name;
-  emailMob.value = currentContact.email;
-  emailDsk.value = currentContact.email;
-  msgMob.value = currentContact.msg;
-  msgDsk.value = currentContact.msg;
-}
-
-function populateStorage() {
-  contact.name = titleMob.value;
-  contact.email = emailMob.value;
-  contact.msg = msgMob.value;
-  const storeData = JSON.stringify(contact);
-  localStorage.setItem('portfolio', storeData);
-
-  populateContactForm();
-}
-
-if (!localStorage.getItem('portfolio')) {
-  populateStorage();
-} else {
-  populateContactForm();
-}
-
-titleMob.addEventListener('input', () => {
-  // update the same field in desktop form
-  titleDsk.value = titleMob.value;
-
-  populateStorage();
-});
-
-titleDsk.addEventListener('input', () => {
-  // update the same field in mobile form
-  titleMob.value = titleDsk.value;
-
-  populateStorage();
-});
-
-emailMob.addEventListener('input', () => {
-  if (errorMob === EMAIL_INVALID) {
-    // clear the error message field
-    showMessage('', true);
-  }
-
-  // update the same field in desktop form
-  emailDsk.value = emailMob.value;
-
-  populateStorage();
-});
-
-emailDsk.addEventListener('input', () => {
-  if (errorDsk === EMAIL_INVALID) {
-    // clear the error message field
-    showMessage('', true);
-  }
-
-  // update the same field in mobile form
-  emailMob.value = emailDsk.value;
-
-  populateStorage();
-});
-
-msgMob.addEventListener('input', () => {
-  // update the same field in desktop form
-  msgDsk.value = msgMob.value;
-
-  populateStorage();
-});
-
-msgDsk.addEventListener('input', () => {
-  // update the same field in mobile form
-  msgMob.value = msgDsk.value;
-
-  populateStorage();
 });
