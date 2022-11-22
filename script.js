@@ -112,7 +112,7 @@ for (let i = projects.length - 1; i >= 0; i -= 1) {
   const button = document.createElement('button');
   button.type = 'button';
   /* create a class with the object id number after underline */
-  button.className = `_${i} color44`;
+  button.className = `_${i} colorfff`;
   button.innerText = 'See project';
   section.appendChild(button);
   portfolio.insertAdjacentElement('afterend', section);
