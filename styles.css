@@ -58,7 +58,7 @@ i:hover {
 
 button {
   padding: 12px;
-  background-color: #7d73fc;
+  background-color: #5e42d7;
   border: none;
   font-size: 12px;
   font-weight: 500;
@@ -69,12 +69,12 @@ button {
 
 button:hover {
   color: #fff;
-  box-shadow: 0 8px 16px #7d73fc7a;
+  box-shadow: 0 8px 16px #5e42d77a;
 }
 
 button:active {
   background-color: #5e42d7;
-  color: #eaeaf6;
+  color: #fff;
 }
 
 button:disabled {
