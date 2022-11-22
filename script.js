@@ -37,37 +37,37 @@ window.addEventListener('resize', () => {
 
 const projects = [{
   name: 'Exo Cars',
-  description: 'Exo Cars is a website for renting exotic cars, list the available cars and make reservations. '
+  description: 'Exo Cars is a website for renting exotic cars. List the vehicles available, and make reservations. '
   + 'Admin users are allowed to add and remove cars from the database.',
   featuredImage: 'images/Exocars.png',
   altTextImage: 'Exo Cars main page',
-  technologies: ['React', 'RoR', 'Postgresql'],
+  technologies: ['React', 'RoR', 'PostgreSQL'],
   linkLiveVersion: 'https://exo-cars.herokuapp.com/',
   linkSource: 'https://github.com/ElsonOtake/Final_capstone_backend',
 }, {
   name: 'Origami',
-  description: 'Origami is a mobile web app to manage budget. The user registers and enters new transactions '
-  + 'associated with an expense category. Data stored in a database.',
+  description: 'Origami is a mobile web app to manage the budget. The user adds new transactions associated with an '
+  + 'expense category. A database store the budget.',
   featuredImage: 'images/Origami.png',
   altTextImage: 'Origami main page',
-  technologies: ['RoR', 'Ruby', 'Postgresql'],
+  technologies: ['RoR', 'Ruby', 'PostgreSQL'],
   linkLiveVersion: 'https://elsonotake-origami.onrender.com/',
   linkSource: 'https://github.com/ElsonOtake/Origami',
 }, {
   name: 'Blog',
-  description: '"Blog" is a website for social media. The application authenticates users, authorizes access,'
-  + ' creates posts, comments and likes. Consumes API data.',
+  description: 'The blog is a website for social media. The application authenticates users, authorizes access,'
+  + ' and creates posts, comments, and likes. The app consumes a REST API.',
   featuredImage: 'images/Blog.png',
-  altTextImage: 'Blog app',
-  technologies: ['RoR', 'Ruby', 'Postgresql', 'Rspec'],
+  altTextImage: 'Blog app main page',
+  technologies: ['RoR', 'Ruby', 'PostgreSQL ', 'Rspec'],
   linkLiveVersion: 'https://elsonotake-blog-app.herokuapp.com/',
   linkSource: 'https://github.com/ElsonOtake/Blog_App',
 }, {
   name: "Space Travelers' Hub",
   description: "Space Travelers' Hub is a web application for a company that provides commercial and scientific "
-  + 'space travel services. Consumes API data.',
+  + 'space travel services. The app consumes a REST API.',
   featuredImage: 'images/Space.png',
-  altTextImage: "Space Travelers' Hub details page",
+  altTextImage: "Space Travelers' Hub rockets page",
   technologies: ['React', 'Redux', 'JavaScript'],
   linkLiveVersion: 'https://elsonotake-space-travelers.netlify.app/',
   linkSource: 'https://github.com/ElsonOtake/Space-Travelers',
@@ -112,7 +112,7 @@ for (let i = projects.length - 1; i >= 0; i -= 1) {
   const button = document.createElement('button');
   button.type = 'button';
   /* create a class with the object id number after underline */
-  button.className = `_${i} color44`;
+  button.className = `_${i} colorfff`;
   button.innerText = 'See project';
   section.appendChild(button);
   portfolio.insertAdjacentElement('afterend', section);
