@@ -60,7 +60,7 @@ const projects = [{
   featuredImage: 'images/Blog.png',
   altTextImage: 'Blog app main page',
   technologies: ['RoR', 'Ruby', 'PostgreSQL ', 'Rspec'],
-  linkLiveVersion: 'https://elsonotake-blog-app.herokuapp.com/',
+  linkLiveVersion: 'https://elsonotake-blog.onrender.com/',
   linkSource: 'https://github.com/ElsonOtake/Blog_App',
 }, {
   name: "Space Travelers' Hub",
