@@ -63,7 +63,7 @@ const projects = [{
   linkLiveVersion: 'https://elsonotake-blog.onrender.com/',
   linkSource: 'https://github.com/ElsonOtake/Blog_App',
 }, {
-  name: "Covid-19 pandemic in South America",
+  name: 'Covid-19 pandemic in South America',
   description: 'Covid19 is a web application to present numerical data about the covid-19 pandemic in South America. '
   + 'API data based on Johns Hopkins CSSE Reports.',
   featuredImage: 'images/Covid.png',
