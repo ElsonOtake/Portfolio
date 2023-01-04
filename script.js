@@ -63,14 +63,14 @@ const projects = [{
   linkLiveVersion: 'https://elsonotake-blog.onrender.com/',
   linkSource: 'https://github.com/ElsonOtake/Blog_App',
 }, {
-  name: "Space Travelers' Hub",
-  description: "Space Travelers' Hub is a web application for a company that provides commercial and scientific "
-  + 'space travel services. The app consumes a REST API.',
-  featuredImage: 'images/Space.png',
-  altTextImage: "Space Travelers' Hub rockets page",
+  name: 'Covid-19 pandemic in South America',
+  description: 'Covid19 is a web application to present numerical data about the covid-19 pandemic in South America. '
+  + 'API data based on Johns Hopkins CSSE Reports.',
+  featuredImage: 'images/Covid.png',
+  altTextImage: 'Covid-19 pandemic in South America page',
   technologies: ['React', 'Redux', 'JavaScript'],
-  linkLiveVersion: 'https://elsonotake-space-travelers.netlify.app/',
-  linkSource: 'https://github.com/ElsonOtake/Space-Travelers',
+  linkLiveVersion: 'https://covid19-ei9hazrhu-elsonotake.vercel.app/',
+  linkSource: 'https://github.com/ElsonOtake/Covid19',
 }];
 
 //
