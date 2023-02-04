@@ -42,7 +42,7 @@ const projects = [{
   featuredImage: 'images/Exocars.png',
   altTextImage: 'Exo Cars main page',
   technologies: ['React', 'RoR', 'PostgreSQL'],
-  linkLiveVersion: 'https://exo-cars.herokuapp.com/',
+  linkLiveVersion: 'https://final-capstone-frontend-fkvzig4w0-elsonotake.vercel.app/login',
   linkSource: 'https://github.com/ElsonOtake/Final_capstone_backend',
 }, {
   name: 'Origami',
