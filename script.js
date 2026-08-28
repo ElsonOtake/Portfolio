@@ -35,7 +35,17 @@ window.addEventListener('resize', () => {
 // Array of projects objects
 //
 
-const projects = [{
+const projects = [
+  {
+  name: 'Family Tree',
+  description: 'A Ruby on Rails application for managing family trees with support for multiple languages, '
+  + 'dark mode, and collaborative editing.',
+  featuredImage: 'images/FamilyTree.png',
+  altTextImage: 'Family Tree main page',
+  technologies: ['RoR', 'PostgreSQL'],
+  linkLiveVersion: 'https://elsonotake-familytree.onrender.com/',
+  linkSource: 'https://github.com/ElsonOtake/FamilyTree',
+}, {
   name: 'Exo Cars',
   description: 'Exo Cars is a website for renting exotic cars. List the vehicles available, and make reservations. '
   + 'Admin users are allowed to add and remove cars from the database.',
@@ -45,23 +55,14 @@ const projects = [{
   linkLiveVersion: 'https://final-capstone-frontend-fkvzig4w0-elsonotake.vercel.app/login',
   linkSource: 'https://github.com/ElsonOtake/Final_capstone_backend',
 }, {
-  name: 'Origami',
-  description: 'Origami is a mobile web app to manage the budget. The user adds new transactions associated with an '
-  + 'expense category. A database store the budget.',
-  featuredImage: 'images/Origami.png',
-  altTextImage: 'Origami main page',
-  technologies: ['RoR', 'Ruby', 'PostgreSQL'],
-  linkLiveVersion: 'https://elsonotake-origami.onrender.com/',
-  linkSource: 'https://github.com/ElsonOtake/Origami',
-}, {
-  name: 'Blog',
-  description: 'The blog is a website for social media. The application authenticates users, authorizes access,'
-  + ' and creates posts, comments, and likes. The app consumes a REST API.',
-  featuredImage: 'images/Blog.png',
-  altTextImage: 'Blog app main page',
-  technologies: ['RoR', 'Ruby', 'PostgreSQL ', 'Rspec'],
-  linkLiveVersion: 'https://elsonotake-blog.onrender.com/',
-  linkSource: 'https://github.com/ElsonOtake/Blog_App',
+  name: 'Stripe',
+  description: 'This repository handles products hosted on Stripe. It performs payments, subscriptions, and billing. '
+  + 'Payment for products from the local database also.',
+  featuredImage: 'images/Stripe.png',
+  altTextImage: 'Stripe main page',
+  technologies: ['RoR', 'PostgreSQL'],
+  linkLiveVersion: 'https://elsonotake-stripe.onrender.com/',
+  linkSource: 'https://github.com/ElsonOtake/Stripe',
 }, {
   name: 'Covid-19 pandemic in South America',
   description: 'Covid19 is a web application to present numerical data about the covid-19 pandemic in South America. '
