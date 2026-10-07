@@ -1,0 +1,14 @@
+.eslintrc.json
+  h_da978aeed56e72 4,7,15-16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7f8d8c8b3f88b424c7aa07ef49e2c25eaf60ca9f",
+  "prompts": {},
+  "humans": {
+    "h_da978aeed56e72": {
+      "author": "Elson Otake <elsonotake@yahoo.com.br>"
+    }
+  }
+}
