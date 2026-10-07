@@ -37,42 +37,42 @@ window.addEventListener('resize', () => {
 
 const projects = [
   {
-  name: 'Family Tree',
-  description: 'A Ruby on Rails application for managing family trees with support for multiple languages, '
-  + 'dark mode, and collaborative editing.',
-  featuredImage: 'images/FamilyTree.png',
-  altTextImage: 'Family Tree main page',
-  technologies: ['RoR', 'PostgreSQL'],
-  linkLiveVersion: 'https://elsonotake-familytree.onrender.com/',
-  linkSource: 'https://github.com/ElsonOtake/FamilyTree',
-}, {
-  name: 'Exo Cars',
-  description: 'Exo Cars is a website for renting exotic cars. List the vehicles available, and make reservations. '
-  + 'Admin users are allowed to add and remove cars from the database.',
-  featuredImage: 'images/Exocars.png',
-  altTextImage: 'Exo Cars main page',
-  technologies: ['React', 'RoR', 'PostgreSQL'],
-  linkLiveVersion: 'https://final-capstone-frontend-fkvzig4w0-elsonotake.vercel.app/login',
-  linkSource: 'https://github.com/ElsonOtake/Final_capstone_backend',
-}, {
-  name: 'Stripe',
-  description: 'This repository handles products hosted on Stripe. It performs payments, subscriptions, and billing. '
-  + 'Payment for products from the local database also.',
-  featuredImage: 'images/Stripe.png',
-  altTextImage: 'Stripe main page',
-  technologies: ['RoR', 'PostgreSQL'],
-  linkLiveVersion: 'https://elsonotake-stripe.onrender.com/',
-  linkSource: 'https://github.com/ElsonOtake/Stripe',
-}, {
-  name: 'Covid-19 pandemic in South America',
-  description: 'Covid19 is a web application to present numerical data about the covid-19 pandemic in South America. '
-  + 'API data based on Johns Hopkins CSSE Reports.',
-  featuredImage: 'images/Covid.png',
-  altTextImage: 'Covid-19 pandemic in South America page',
-  technologies: ['React', 'Redux', 'JavaScript'],
-  linkLiveVersion: 'https://covid19-ei9hazrhu-elsonotake.vercel.app/',
-  linkSource: 'https://github.com/ElsonOtake/Covid19',
-}];
+    name: 'Family Tree',
+    description: 'A Ruby on Rails application for managing family trees with support for multiple languages, '
+    + 'dark mode, and collaborative editing.',
+    featuredImage: 'images/FamilyTree.png',
+    altTextImage: 'Family Tree main page',
+    technologies: ['RoR', 'PostgreSQL'],
+    linkLiveVersion: 'https://elsonotake-familytree.onrender.com/',
+    linkSource: 'https://github.com/ElsonOtake/FamilyTree',
+  }, {
+    name: 'Exo Cars',
+    description: 'Exo Cars is a website for renting exotic cars. List the vehicles available, and make reservations. '
+    + 'Admin users are allowed to add and remove cars from the database.',
+    featuredImage: 'images/Exocars.png',
+    altTextImage: 'Exo Cars main page',
+    technologies: ['React', 'RoR', 'PostgreSQL'],
+    linkLiveVersion: 'https://final-capstone-frontend-mocha.vercel.app/',
+    linkSource: 'https://github.com/ElsonOtake/Final_capstone_backend',
+  }, {
+    name: 'Stripe',
+    description: 'This repository handles products hosted on Stripe. It performs payments, subscriptions, and billing. '
+    + 'Payment for products from the local database also.',
+    featuredImage: 'images/Stripe.png',
+    altTextImage: 'Stripe main page',
+    technologies: ['RoR', 'PostgreSQL'],
+    linkLiveVersion: 'https://elsonotake-stripe.onrender.com/',
+    linkSource: 'https://github.com/ElsonOtake/Stripe',
+  }, {
+    name: 'Covid-19 pandemic in South America',
+    description: 'Covid19 is a web application to present numerical data about the covid-19 pandemic in South America. '
+    + 'API data based on Johns Hopkins CSSE Reports.',
+    featuredImage: 'images/Covid.png',
+    altTextImage: 'Covid-19 pandemic in South America page',
+    technologies: ['React', 'Redux', 'Vite', 'JavaScript'],
+    linkLiveVersion: 'https://covid19-coral.vercel.app/',
+    linkSource: 'https://github.com/ElsonOtake/Covid19',
+  }];
 
 //
 // Project sections created when page loads
