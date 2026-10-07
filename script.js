@@ -52,7 +52,7 @@ const projects = [
   featuredImage: 'images/Exocars.png',
   altTextImage: 'Exo Cars main page',
   technologies: ['React', 'RoR', 'PostgreSQL'],
-  linkLiveVersion: 'https://final-capstone-frontend-fkvzig4w0-elsonotake.vercel.app/login',
+  linkLiveVersion: 'https://final-capstone-frontend-mocha.vercel.app/',
   linkSource: 'https://github.com/ElsonOtake/Final_capstone_backend',
 }, {
   name: 'Stripe',
@@ -69,8 +69,8 @@ const projects = [
   + 'API data based on Johns Hopkins CSSE Reports.',
   featuredImage: 'images/Covid.png',
   altTextImage: 'Covid-19 pandemic in South America page',
-  technologies: ['React', 'Redux', 'JavaScript'],
-  linkLiveVersion: 'https://covid19-ei9hazrhu-elsonotake.vercel.app/',
+  technologies: ['React', 'Redux', 'Vite', 'JavaScript'],
+  linkLiveVersion: 'https://covid19-coral.vercel.app/',
   linkSource: 'https://github.com/ElsonOtake/Covid19',
 }];
 
