@@ -1,0 +1,14 @@
+.github/workflows/linters.yml
+  h_da978aeed56e72 11,13-14,16,18,23,25-26,28,31,37,39-40,42,51,53-54,56,59
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "515620a64d62827a93efb788d98be8bb5637bad0",
+  "prompts": {},
+  "humans": {
+    "h_da978aeed56e72": {
+      "author": "Elson Otake <elsonotake@yahoo.com.br>"
+    }
+  }
+}
